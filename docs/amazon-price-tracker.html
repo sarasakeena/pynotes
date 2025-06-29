@@ -57,116 +57,337 @@
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;amazon_products.csv&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\Users\HP\Desktop\amazon_products.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="nx">FileNotFoundError</span><span class="w">                         </span><span class="nx">Traceback</span><span class="w"> </span><span class="p">(</span><span class="nx">most</span><span class="w"> </span><span class="nx">recent</span><span class="w"> </span><span class="nx">call</span><span class="w"> </span><span class="nx">last</span><span class="p">)</span>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
-<span class="nx">Cell</span><span class="w"> </span><span class="nx">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="w"> </span><span class="nx">line</span><span class="w"> </span><span class="mi">1</span>
-<span class="o">----</span><span class="p">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="nx">df</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">pd</span><span class="p">.</span><span class="nx">read_csv</span><span class="p">(</span><span class="s">&quot;amazon_products.csv&quot;</span><span class="p">)</span>
-<span class="w">      </span><span class="mi">2</span><span class="w"> </span><span class="nx">df</span>
-
-
-<span class="nx">File</span><span class="w"> </span><span class="o">~</span><span class="err">\</span><span class="nx">AppData</span><span class="err">\</span><span class="nx">Roaming</span><span class="err">\</span><span class="nx">Python</span><span class="err">\</span><span class="nx">Python312</span><span class="err">\</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="err">\</span><span class="nx">pandas</span><span class="err">\</span><span class="nx">io</span><span class="err">\</span><span class="nx">parsers</span><span class="err">\</span><span class="nx">readers</span><span class="p">.</span><span class="nx">py</span><span class="p">:</span><span class="mi">1026</span><span class="p">,</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">read_csv</span><span class="p">(</span><span class="nx">filepath_or_buffer</span><span class="p">,</span><span class="w"> </span><span class="nx">sep</span><span class="p">,</span><span class="w"> </span><span class="nx">delimiter</span><span class="p">,</span><span class="w"> </span><span class="nx">header</span><span class="p">,</span><span class="w"> </span><span class="nx">names</span><span class="p">,</span><span class="w"> </span><span class="nx">index_col</span><span class="p">,</span><span class="w"> </span><span class="nx">usecols</span><span class="p">,</span><span class="w"> </span><span class="nx">dtype</span><span class="p">,</span><span class="w"> </span><span class="nx">engine</span><span class="p">,</span><span class="w"> </span><span class="nx">converters</span><span class="p">,</span><span class="w"> </span><span class="nx">true_values</span><span class="p">,</span><span class="w"> </span><span class="nx">false_values</span><span class="p">,</span><span class="w"> </span><span class="nx">skipinitialspace</span><span class="p">,</span><span class="w"> </span><span class="nx">skiprows</span><span class="p">,</span><span class="w"> </span><span class="nx">skipfooter</span><span class="p">,</span><span class="w"> </span><span class="nx">nrows</span><span class="p">,</span><span class="w"> </span><span class="nx">na_values</span><span class="p">,</span><span class="w"> </span><span class="nx">keep_default_na</span><span class="p">,</span><span class="w"> </span><span class="nx">na_filter</span><span class="p">,</span><span class="w"> </span><span class="nx">verbose</span><span class="p">,</span><span class="w"> </span><span class="nx">skip_blank_lines</span><span class="p">,</span><span class="w"> </span><span class="nx">parse_dates</span><span class="p">,</span><span class="w"> </span><span class="nx">infer_datetime_format</span><span class="p">,</span><span class="w"> </span><span class="nx">keep_date_col</span><span class="p">,</span><span class="w"> </span><span class="nx">date_parser</span><span class="p">,</span><span class="w"> </span><span class="nx">date_format</span><span class="p">,</span><span class="w"> </span><span class="nx">dayfirst</span><span class="p">,</span><span class="w"> </span><span class="nx">cache_dates</span><span class="p">,</span><span class="w"> </span><span class="nx">iterator</span><span class="p">,</span><span class="w"> </span><span class="nx">chunksize</span><span class="p">,</span><span class="w"> </span><span class="nx">compression</span><span class="p">,</span><span class="w"> </span><span class="nx">thousands</span><span class="p">,</span><span class="w"> </span><span class="nx">decimal</span><span class="p">,</span><span class="w"> </span><span class="nx">lineterminator</span><span class="p">,</span><span class="w"> </span><span class="nx">quotechar</span><span class="p">,</span><span class="w"> </span><span class="nx">quoting</span><span class="p">,</span><span class="w"> </span><span class="nx">doublequote</span><span class="p">,</span><span class="w"> </span><span class="nx">escapechar</span><span class="p">,</span><span class="w"> </span><span class="nx">comment</span><span class="p">,</span><span class="w"> </span><span class="nx">encoding</span><span class="p">,</span><span class="w"> </span><span class="nx">encoding_errors</span><span class="p">,</span><span class="w"> </span><span class="nx">dialect</span><span class="p">,</span><span class="w"> </span><span class="nx">on_bad_lines</span><span class="p">,</span><span class="w"> </span><span class="nx">delim_whitespace</span><span class="p">,</span><span class="w"> </span><span class="nx">low_memory</span><span class="p">,</span><span class="w"> </span><span class="nx">memory_map</span><span class="p">,</span><span class="w"> </span><span class="nx">float_precision</span><span class="p">,</span><span class="w"> </span><span class="nx">storage_options</span><span class="p">,</span><span class="w"> </span><span class="nx">dtype_backend</span><span class="p">)</span>
-<span class="w">   </span><span class="mi">1013</span><span class="w"> </span><span class="nx">kwds_defaults</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">_refine_defaults_read</span><span class="p">(</span>
-<span class="w">   </span><span class="mi">1014</span><span class="w">     </span><span class="nx">dialect</span><span class="p">,</span>
-<span class="w">   </span><span class="mi">1015</span><span class="w">     </span><span class="nx">delimiter</span><span class="p">,</span>
-<span class="w">   </span><span class="p">(</span><span class="o">...</span><span class="p">)</span><span class="w">   </span><span class="mi">1022</span><span class="w">     </span><span class="nx">dtype_backend</span><span class="p">=</span><span class="nx">dtype_backend</span><span class="p">,</span>
-<span class="w">   </span><span class="mi">1023</span><span class="w"> </span><span class="p">)</span>
-<span class="w">   </span><span class="mi">1024</span><span class="w"> </span><span class="nx">kwds</span><span class="p">.</span><span class="nx">update</span><span class="p">(</span><span class="nx">kwds_defaults</span><span class="p">)</span>
-<span class="o">-&gt;</span><span class="w"> </span><span class="mi">1026</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">_read</span><span class="p">(</span><span class="nx">filepath_or_buffer</span><span class="p">,</span><span class="w"> </span><span class="nx">kwds</span><span class="p">)</span>
-
-
-<span class="nx">File</span><span class="w"> </span><span class="o">~</span><span class="err">\</span><span class="nx">AppData</span><span class="err">\</span><span class="nx">Roaming</span><span class="err">\</span><span class="nx">Python</span><span class="err">\</span><span class="nx">Python312</span><span class="err">\</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="err">\</span><span class="nx">pandas</span><span class="err">\</span><span class="nx">io</span><span class="err">\</span><span class="nx">parsers</span><span class="err">\</span><span class="nx">readers</span><span class="p">.</span><span class="nx">py</span><span class="p">:</span><span class="mi">620</span><span class="p">,</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">_read</span><span class="p">(</span><span class="nx">filepath_or_buffer</span><span class="p">,</span><span class="w"> </span><span class="nx">kwds</span><span class="p">)</span>
-<span class="w">    </span><span class="mi">617</span><span class="w"> </span><span class="nx">_validate_names</span><span class="p">(</span><span class="nx">kwds</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;names&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">None</span><span class="p">))</span>
-<span class="w">    </span><span class="mi">619</span><span class="w"> </span><span class="err">#</span><span class="w"> </span><span class="nx">Create</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">parser</span><span class="p">.</span>
-<span class="o">--</span><span class="p">&gt;</span><span class="w"> </span><span class="mi">620</span><span class="w"> </span><span class="nx">parser</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">TextFileReader</span><span class="p">(</span><span class="nx">filepath_or_buffer</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="nx">kwds</span><span class="p">)</span>
-<span class="w">    </span><span class="mi">622</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nx">chunksize</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="nx">iterator</span><span class="p">:</span>
-<span class="w">    </span><span class="mi">623</span><span class="w">     </span><span class="k">return</span><span class="w"> </span><span class="nx">parser</span>
-
-
-<span class="nx">File</span><span class="w"> </span><span class="o">~</span><span class="err">\</span><span class="nx">AppData</span><span class="err">\</span><span class="nx">Roaming</span><span class="err">\</span><span class="nx">Python</span><span class="err">\</span><span class="nx">Python312</span><span class="err">\</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="err">\</span><span class="nx">pandas</span><span class="err">\</span><span class="nx">io</span><span class="err">\</span><span class="nx">parsers</span><span class="err">\</span><span class="nx">readers</span><span class="p">.</span><span class="nx">py</span><span class="p">:</span><span class="mi">1620</span><span class="p">,</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">TextFileReader</span><span class="p">.</span><span class="nx">__init__</span><span class="p">(</span><span class="kp">self</span><span class="p">,</span><span class="w"> </span><span class="nx">f</span><span class="p">,</span><span class="w"> </span><span class="nx">engine</span><span class="p">,</span><span class="w"> </span><span class="o">**</span><span class="nx">kwds</span><span class="p">)</span>
-<span class="w">   </span><span class="mi">1617</span><span class="w">     </span><span class="kp">self</span><span class="p">.</span><span class="nx">options</span><span class="p">[</span><span class="s">&quot;has_index_names&quot;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">kwds</span><span class="p">[</span><span class="s">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="w">   </span><span class="mi">1619</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">handles</span><span class="p">:</span><span class="w"> </span><span class="nx">IOHandles</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">None</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">None</span>
-<span class="o">-&gt;</span><span class="w"> </span><span class="mi">1620</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">_engine</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">_make_engine</span><span class="p">(</span><span class="nx">f</span><span class="p">,</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">engine</span><span class="p">)</span>
-
-
-<span class="nx">File</span><span class="w"> </span><span class="o">~</span><span class="err">\</span><span class="nx">AppData</span><span class="err">\</span><span class="nx">Roaming</span><span class="err">\</span><span class="nx">Python</span><span class="err">\</span><span class="nx">Python312</span><span class="err">\</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="err">\</span><span class="nx">pandas</span><span class="err">\</span><span class="nx">io</span><span class="err">\</span><span class="nx">parsers</span><span class="err">\</span><span class="nx">readers</span><span class="p">.</span><span class="nx">py</span><span class="p">:</span><span class="mi">1880</span><span class="p">,</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">TextFileReader</span><span class="p">.</span><span class="nx">_make_engine</span><span class="p">(</span><span class="kp">self</span><span class="p">,</span><span class="w"> </span><span class="nx">f</span><span class="p">,</span><span class="w"> </span><span class="nx">engine</span><span class="p">)</span>
-<span class="w">   </span><span class="mi">1878</span><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="s">&quot;b&quot;</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">mode</span><span class="p">:</span>
-<span class="w">   </span><span class="mi">1879</span><span class="w">         </span><span class="nx">mode</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="s">&quot;b&quot;</span>
-<span class="o">-&gt;</span><span class="w"> </span><span class="mi">1880</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">handles</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">get_handle</span><span class="p">(</span>
-<span class="w">   </span><span class="mi">1881</span><span class="w">     </span><span class="nx">f</span><span class="p">,</span>
-<span class="w">   </span><span class="mi">1882</span><span class="w">     </span><span class="nx">mode</span><span class="p">,</span>
-<span class="w">   </span><span class="mi">1883</span><span class="w">     </span><span class="nx">encoding</span><span class="p">=</span><span class="kp">self</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;encoding&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">None</span><span class="p">),</span>
-<span class="w">   </span><span class="mi">1884</span><span class="w">     </span><span class="nx">compression</span><span class="p">=</span><span class="kp">self</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;compression&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">None</span><span class="p">),</span>
-<span class="w">   </span><span class="mi">1885</span><span class="w">     </span><span class="nx">memory_map</span><span class="p">=</span><span class="kp">self</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;memory_map&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">False</span><span class="p">),</span>
-<span class="w">   </span><span class="mi">1886</span><span class="w">     </span><span class="nx">is_text</span><span class="p">=</span><span class="nx">is_text</span><span class="p">,</span>
-<span class="w">   </span><span class="mi">1887</span><span class="w">     </span><span class="nx">errors</span><span class="p">=</span><span class="kp">self</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;encoding_errors&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;strict&quot;</span><span class="p">),</span>
-<span class="w">   </span><span class="mi">1888</span><span class="w">     </span><span class="nx">storage_options</span><span class="p">=</span><span class="kp">self</span><span class="p">.</span><span class="nx">options</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s">&quot;storage_options&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">None</span><span class="p">),</span>
-<span class="w">   </span><span class="mi">1889</span><span class="w"> </span><span class="p">)</span>
-<span class="w">   </span><span class="mi">1890</span><span class="w"> </span><span class="nx">assert</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">handles</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="nx">None</span>
-<span class="w">   </span><span class="mi">1891</span><span class="w"> </span><span class="nx">f</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">handles</span><span class="p">.</span><span class="nx">handle</span>
-
-
-<span class="nx">File</span><span class="w"> </span><span class="o">~</span><span class="err">\</span><span class="nx">AppData</span><span class="err">\</span><span class="nx">Roaming</span><span class="err">\</span><span class="nx">Python</span><span class="err">\</span><span class="nx">Python312</span><span class="err">\</span><span class="nx">site</span><span class="o">-</span><span class="nx">packages</span><span class="err">\</span><span class="nx">pandas</span><span class="err">\</span><span class="nx">io</span><span class="err">\</span><span class="nx">common</span><span class="p">.</span><span class="nx">py</span><span class="p">:</span><span class="mi">873</span><span class="p">,</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">get_handle</span><span class="p">(</span><span class="nx">path_or_buf</span><span class="p">,</span><span class="w"> </span><span class="nx">mode</span><span class="p">,</span><span class="w"> </span><span class="nx">encoding</span><span class="p">,</span><span class="w"> </span><span class="nx">compression</span><span class="p">,</span><span class="w"> </span><span class="nx">memory_map</span><span class="p">,</span><span class="w"> </span><span class="nx">is_text</span><span class="p">,</span><span class="w"> </span><span class="nx">errors</span><span class="p">,</span><span class="w"> </span><span class="nx">storage_options</span><span class="p">)</span>
-<span class="w">    </span><span class="mi">868</span><span class="w"> </span><span class="nx">elif</span><span class="w"> </span><span class="nx">isinstance</span><span class="p">(</span><span class="nx">handle</span><span class="p">,</span><span class="w"> </span><span class="nx">str</span><span class="p">):</span>
-<span class="w">    </span><span class="mi">869</span><span class="w">     </span><span class="err">#</span><span class="w"> </span><span class="nx">Check</span><span class="w"> </span><span class="nx">whether</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">filename</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">be</span><span class="w"> </span><span class="nx">opened</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">binary</span><span class="w"> </span><span class="nx">mode</span><span class="p">.</span>
-<span class="w">    </span><span class="mi">870</span><span class="w">     </span><span class="err">#</span><span class="w"> </span><span class="nx">Binary</span><span class="w"> </span><span class="nx">mode</span><span class="w"> </span><span class="nx">does</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="nx">support</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">encoding</span><span class="err">&#39;</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">newline</span><span class="err">&#39;</span><span class="p">.</span>
-<span class="w">    </span><span class="mi">871</span><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="nx">ioargs</span><span class="p">.</span><span class="nx">encoding</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="s">&quot;b&quot;</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nx">ioargs</span><span class="p">.</span><span class="nx">mode</span><span class="p">:</span>
-<span class="w">    </span><span class="mi">872</span><span class="w">         </span><span class="err">#</span><span class="w"> </span><span class="nx">Encoding</span>
-<span class="o">--</span><span class="p">&gt;</span><span class="w"> </span><span class="mi">873</span><span class="w">         </span><span class="nx">handle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">open</span><span class="p">(</span>
-<span class="w">    </span><span class="mi">874</span><span class="w">             </span><span class="nx">handle</span><span class="p">,</span>
-<span class="w">    </span><span class="mi">875</span><span class="w">             </span><span class="nx">ioargs</span><span class="p">.</span><span class="nx">mode</span><span class="p">,</span>
-<span class="w">    </span><span class="mi">876</span><span class="w">             </span><span class="nx">encoding</span><span class="p">=</span><span class="nx">ioargs</span><span class="p">.</span><span class="nx">encoding</span><span class="p">,</span>
-<span class="w">    </span><span class="mi">877</span><span class="w">             </span><span class="nx">errors</span><span class="p">=</span><span class="nx">errors</span><span class="p">,</span>
-<span class="w">    </span><span class="mi">878</span><span class="w">             </span><span class="nx">newline</span><span class="p">=</span><span class="s">&quot;&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="mi">879</span><span class="w">         </span><span class="p">)</span>
-<span class="w">    </span><span class="mi">880</span><span class="w">     </span><span class="k">else</span><span class="p">:</span>
-<span class="w">    </span><span class="mi">881</span><span class="w">         </span><span class="err">#</span><span class="w"> </span><span class="nx">Binary</span><span class="w"> </span><span class="nx">mode</span>
-<span class="w">    </span><span class="mi">882</span><span class="w">         </span><span class="nx">handle</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">open</span><span class="p">(</span><span class="nx">handle</span><span class="p">,</span><span class="w"> </span><span class="nx">ioargs</span><span class="p">.</span><span class="nx">mode</span><span class="p">)</span>
-
-
-<span class="nx">FileNotFoundError</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="nx">Errno</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="nx">No</span><span class="w"> </span><span class="nx">such</span><span class="w"> </span><span class="nx">file</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="nx">directory</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">amazon_products</span><span class="p">.</span><span class="nx">csv</span><span class="err">&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">seaborn</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">Collecting</span><span class="w"> </span><span class="n">seaborn</span>
-<span class="w">  </span><span class="n">Using</span><span class="w"> </span><span class="n">cached</span><span class="w"> </span><span class="n">seaborn</span><span class="o">-</span><span class="mf">0.13</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">any</span><span class="o">.</span><span class="n">whl</span><span class="o">.</span><span class="n">metadata</span><span class="w"> </span><span class="p">(</span><span class="mf">5.4</span><span class="w"> </span><span class="n">kB</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">numpy</span><span class="o">!=</span><span class="mf">1.24</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">1.20</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">py312</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">2.3</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">pandas</span><span class="o">&gt;=</span><span class="mf">1.2</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">2.2</span><span class="o">.</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">3.9</span><span class="o">.</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">contourpy</span><span class="o">&gt;=</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">1</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">1.3</span><span class="o">.</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">cycler</span><span class="o">&gt;=</span><span class="mf">0.10</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">0.12</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">fonttools</span><span class="o">&gt;=</span><span class="mf">4.22</span><span class="o">.</span><span class="mi">0</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">4.53</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">kiwisolver</span><span class="o">&gt;=</span><span class="mf">1.3</span><span class="o">.</span><span class="mi">1</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">1.4</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">packaging</span><span class="o">&gt;=</span><span class="mf">20.0</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">py312</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">24.2</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">pillow</span><span class="o">&gt;=</span><span class="mi">8</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">py312</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">11.2</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">pyparsing</span><span class="o">&gt;=</span><span class="mf">2.3</span><span class="o">.</span><span class="mi">1</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">3.1</span><span class="o">.</span><span class="mi">4</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">python</span><span class="o">-</span><span class="n">dateutil</span><span class="o">&gt;=</span><span class="mf">2.7</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">py312</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">2.9</span><span class="o">.</span><span class="mf">0.</span><span class="n">post0</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">pytz</span><span class="o">&gt;=</span><span class="mf">2020.1</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">pandas</span><span class="o">&gt;=</span><span class="mf">1.2</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">2024.1</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">tzdata</span><span class="o">&gt;=</span><span class="mf">2022.7</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">appdata</span>\<span class="n">roaming</span>\<span class="n">python</span>\<span class="n">python312</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">pandas</span><span class="o">&gt;=</span><span class="mf">1.2</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">2025.1</span><span class="p">)</span>
-<span class="n">Requirement</span><span class="w"> </span><span class="n">already</span><span class="w"> </span><span class="n">satisfied</span><span class="p">:</span><span class="w"> </span><span class="n">six</span><span class="o">&gt;=</span><span class="mf">1.5</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">c</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">hp</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">py312</span>\<span class="n">lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="w"> </span><span class="p">(</span><span class="n">from</span><span class="w"> </span><span class="n">python</span><span class="o">-</span><span class="n">dateutil</span><span class="o">&gt;=</span><span class="mf">2.7</span><span class="o">-&gt;</span><span class="n">matplotlib</span><span class="o">!=</span><span class="mf">3.6</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.4</span><span class="o">-&gt;</span><span class="n">seaborn</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="mf">1.17</span><span class="o">.</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Using</span><span class="w"> </span><span class="n">cached</span><span class="w"> </span><span class="n">seaborn</span><span class="o">-</span><span class="mf">0.13</span><span class="o">.</span><span class="mi">2</span><span class="o">-</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">any</span><span class="o">.</span><span class="n">whl</span><span class="w"> </span><span class="p">(</span><span class="mi">294</span><span class="w"> </span><span class="n">kB</span><span class="p">)</span>
-<span class="n">Installing</span><span class="w"> </span><span class="n">collected</span><span class="w"> </span><span class="n">packages</span><span class="p">:</span><span class="w"> </span><span class="n">seaborn</span>
-<span class="n">Successfully</span><span class="w"> </span><span class="n">installed</span><span class="w"> </span><span class="n">seaborn</span><span class="o">-</span><span class="mf">0.13</span><span class="o">.</span><span class="mi">2</span>
-</code></pre></div>
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bluetooth Earphones</td>
+      <td>1599</td>
+      <td>4.2</td>
+      <td>1532</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Smartphone Cover</td>
+      <td>299</td>
+      <td>4.0</td>
+      <td>412</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wireless Mouse</td>
+      <td>649</td>
+      <td>4.4</td>
+      <td>845</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LED Monitor</td>
+      <td>10499</td>
+      <td>4.5</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Keyboard</td>
+      <td>999</td>
+      <td>4.1</td>
+      <td>675</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Phone Tripod</td>
+      <td>749</td>
+      <td>4.3</td>
+      <td>238</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Portable SSD</td>
+      <td>5499</td>
+      <td>4.7</td>
+      <td>324</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>USB Hub</td>
+      <td>799</td>
+      <td>4.2</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Webcam</td>
+      <td>2399</td>
+      <td>4.1</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Laptop Stand</td>
+      <td>1499</td>
+      <td>4.3</td>
+      <td>289</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </code></pre></div>
 
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="kd">class</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">pandas</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">frame</span><span class="p">.</span><span class="nx">DataFrame</span><span class="err">&#39;</span><span class="p">&gt;</span>
+<span class="nx">RangeIndex</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="nx">entries</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="mi">9</span>
+<span class="nx">Data</span><span class="w"> </span><span class="nx">columns</span><span class="w"> </span><span class="p">(</span><span class="nx">total</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="nx">columns</span><span class="p">):</span>
+<span class="w"> </span><span class="err">#</span><span class="w">   </span><span class="nx">Column</span><span class="w">   </span><span class="nx">Non</span><span class="o">-</span><span class="nx">Null</span><span class="w"> </span><span class="nx">Count</span><span class="w">  </span><span class="nx">Dtype</span><span class="w">  </span>
+<span class="o">---</span><span class="w">  </span><span class="o">------</span><span class="w">   </span><span class="o">--------------</span><span class="w">  </span><span class="o">-----</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">0</span><span class="w">   </span><span class="nx">Product</span><span class="w">  </span><span class="mi">10</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">     </span><span class="nx">object</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">1</span><span class="w">   </span><span class="nx">Price</span><span class="w">    </span><span class="mi">10</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">     </span><span class="nx">int64</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">2</span><span class="w">   </span><span class="nx">Rating</span><span class="w">   </span><span class="mi">10</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">     </span><span class="nx">float64</span>
+<span class="w"> </span><span class="mi">3</span><span class="w">   </span><span class="nx">Reviews</span><span class="w">  </span><span class="mi">10</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">     </span><span class="nx">int64</span><span class="w">  </span>
+<span class="nx">dtypes</span><span class="p">:</span><span class="w"> </span><span class="nx">float64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="nx">int64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="nx">object</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nx">memory</span><span class="w"> </span><span class="nx">usage</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">452.0</span><span class="o">+</span><span class="w"> </span><span class="nx">bytes</span>
+</code></pre></div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>10.000000</td>
+      <td>10.000000</td>
+      <td>10.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2499.000000</td>
+      <td>4.280000</td>
+      <td>510.700000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3184.772798</td>
+      <td>0.209762</td>
+      <td>424.702262</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>299.000000</td>
+      <td>4.000000</td>
+      <td>135.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>761.500000</td>
+      <td>4.125000</td>
+      <td>250.750000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1249.000000</td>
+      <td>4.250000</td>
+      <td>368.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2199.000000</td>
+      <td>4.375000</td>
+      <td>633.750000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>10499.000000</td>
+      <td>4.700000</td>
+      <td>1532.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <div class="highlight"><pre><span></span><code><span class="n">deals</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">1000</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">)</span>
 <span class="n">deals</span>
 </code></pre></div>
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Smartphone Cover</td>
+      <td>299</td>
+      <td>4.0</td>
+      <td>412</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wireless Mouse</td>
+      <td>649</td>
+      <td>4.4</td>
+      <td>845</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Phone Tripod</td>
+      <td>749</td>
+      <td>4.3</td>
+      <td>238</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>USB Hub</td>
+      <td>799</td>
+      <td>4.2</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Keyboard</td>
+      <td>999</td>
+      <td>4.1</td>
+      <td>675</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <div class="highlight"><pre><span></span><code><span class="n">top_reviews</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">top_reviews</span>
 </code></pre></div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Bluetooth Earphones</td>
+      <td>1599</td>
+      <td>4.2</td>
+      <td>1532</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wireless Mouse</td>
+      <td>649</td>
+      <td>4.4</td>
+      <td>845</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Keyboard</td>
+      <td>999</td>
+      <td>4.1</td>
+      <td>675</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Webcam</td>
+      <td>2399</td>
+      <td>4.1</td>
+      <td>510</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Smartphone Cover</td>
+      <td>299</td>
+      <td>4.0</td>
+      <td>412</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Rating&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -175,6 +396,10 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="/pynotes/images/Amazon_Price_Tracker_5_0.png"></p>
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <hr>
