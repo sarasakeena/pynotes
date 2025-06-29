@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Strings</title>
+
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://sarasakeena.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://sarasakeena.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://sarasakeena.github.io/pynotes/strings.html" rel="bookmark"
+        title="Permalink to Strings">Strings</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString1&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Upper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Original</span><span class="o">:</span><span class="w"> </span><span class="n">PythonString1</span>
+<span class="n">Upper</span><span class="o">:</span><span class="w"> </span><span class="n">PYTHONSTRING1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString1&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Upper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Original</span><span class="o">:</span><span class="w"> </span><span class="n">PythonString1</span>
+<span class="n">Upper</span><span class="o">:</span><span class="w"> </span><span class="n">PYTHONSTRING1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString2&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lower:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Lower</span><span class="o">:</span><span class="w"> </span><span class="n">pythonstring2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString4&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reversed:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Reversed</span><span class="o">:</span><span class="w"> </span><span class="mi">4</span><span class="n">gnirtSnohtyP</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 5</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString5&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice 2–6:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Slice 2–6: thon
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString6&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Replace &#39;o&#39; with &#39;@&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;@&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nf">Replace</span><span class="w"> </span><span class="s1">&#39;o&#39;</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="s1">&#39;@&#39;</span><span class="err">:</span><span class="w"> </span><span class="n">Pyth</span><span class="nv">@nString6</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString7&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count &#39;n&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count &#39;n&#39;: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString8&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ends with &#39;g&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;g&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Ends with &#39;g&#39;: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString9&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Starts with &#39;P&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;P&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>  Cell In[9], line 2
+    print(&quot;Starts with &#39;P&#39;:&quot;, sample.startswith(&#39;P&#39;)
+                                                    ^
+SyntaxError: incomplete input
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString10&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Title:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span><span class="w"> </span><span class="n">Pythonstring10</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString11&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Swapcase:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">swapcase</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Swapcase</span><span class="o">:</span><span class="w"> </span><span class="n">pYTHONsTRING11</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString12&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Center (20):&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Center (20): ---PythonString12---
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString13&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Find &#39;t&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Find &#39;t&#39;: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString14&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zfill (20):&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Zfill (20): 000000PythonString14
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 15</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString15&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Encode:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Encode</span><span class="o">:</span><span class="w"> </span><span class="n">b</span><span class="s1">&#39;PythonString15&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString16&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IsUpper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">IsUpper</span><span class="o">:</span><span class="w"> </span><span class="n">False</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString16&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IsUpper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isupper</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">IsUpper</span><span class="o">:</span><span class="w"> </span><span class="n">False</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString17&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IsLower:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">islower</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">IsLower</span><span class="o">:</span><span class="w"> </span><span class="n">False</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString20&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Index of &#39;h&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;h&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Index of &#39;h&#39;: 3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString21&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Partition:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Partition: (&#39;Pytho&#39;, &#39;n&#39;, &#39;String21&#39;)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString23&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ljust (20):&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Ljust (20): PythonString23******
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString22&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rjust (20):&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Rjust (20): ******PythonString22
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString22&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rjust (20):&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Rjust (20): ******PythonString22
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString26&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Isdecimal:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isdecimal</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Isdecimal</span><span class="o">:</span><span class="w"> </span><span class="n">False</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString27&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Isidentifier:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isidentifier</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Isidentifier</span><span class="o">:</span><span class="w"> </span><span class="n">True</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString28&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Isidentifier:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isidentifier</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Isidentifier</span><span class="o">:</span><span class="w"> </span><span class="n">True</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString29&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Expandtabs:&quot;</span><span class="p">,</span> <span class="s2">&quot;Python</span><span class="se">\t</span><span class="s2">String&quot;</span><span class="o">.</span><span class="n">expandtabs</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Expandtabs</span><span class="o">:</span><span class="w"> </span><span class="n">Python</span><span class="w">  </span><span class="n">String</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString30&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Translate (remove &#39;o&#39;):&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">)))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Translate (remove &#39;o&#39;): PythnString30
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString31&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Replace &#39;P&#39; with &#39;X&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;P&quot;</span><span class="p">,</span> <span class="s2">&quot;X&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Replace &#39;P&#39; with &#39;X&#39;: XythonString31
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 32</span>
+<span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString32&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Strip:&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">   &quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Strip</span><span class="o">:</span><span class="w"> </span><span class="n">PythonString32</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString33&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rstrip:&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">   &quot;</span><span class="o">.</span><span class="n">rstrip</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Rstrip</span><span class="o">:</span><span class="w">    </span><span class="n">PythonString33</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString34&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lstrip:&quot;</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;   </span><span class="si">{</span><span class="n">sample</span><span class="si">}</span><span class="s2">   &quot;</span><span class="o">.</span><span class="n">lstrip</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Lstrip</span><span class="o">:</span><span class="w"> </span><span class="n">PythonString34</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString35&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Casefold:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">casefold</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Casefold</span><span class="o">:</span><span class="w"> </span><span class="n">pythonstring35</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString36&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count &#39;t&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count &#39;t&#39;: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString37&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Find &#39;S&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;S&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Find &#39;S&#39;: 6
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString38&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rfind &#39;n&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s2">&quot;n&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Rfind &#39;n&#39;: 10
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString39&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IsSpace:&quot;</span><span class="p">,</span> <span class="s2">&quot;   &quot;</span><span class="o">.</span><span class="n">isspace</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">IsSpace</span><span class="o">:</span><span class="w"> </span><span class="n">True</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString40&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;IsTitle:&quot;</span><span class="p">,</span> <span class="s2">&quot;Python Is Cool&quot;</span><span class="o">.</span><span class="n">istitle</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">IsTitle</span><span class="o">:</span><span class="w"> </span><span class="n">True</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString41&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Startswith &#39;Py&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Py&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Startswith &#39;Py&#39;: True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString42&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Endswith &#39;42&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;42&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Endswith &#39;42&#39;: True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString43&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Length:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Length</span><span class="o">:</span><span class="w"> </span><span class="mi">14</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString44&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Multiply * 2:&quot;</span><span class="p">,</span> <span class="n">sample</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Multiply * 2: PythonString44PythonString44
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString45&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;In Operator (&#39;on&#39; in str):&quot;</span><span class="p">,</span> <span class="s2">&quot;on&quot;</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>In Operator (&#39;on&#39; in str): True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString46&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Convert to List:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Convert to List: [&#39;P&#39;, &#39;y&#39;, &#39;t&#39;, &#39;h&#39;, &#39;o&#39;, &#39;n&#39;, &#39;S&#39;, &#39;t&#39;, &#39;r&#39;, &#39;i&#39;, &#39;n&#39;, &#39;g&#39;, &#39;4&#39;, &#39;6&#39;]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString46&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Convert to List:&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Convert to List: [&#39;P&#39;, &#39;y&#39;, &#39;t&#39;, &#39;h&#39;, &#39;o&#39;, &#39;n&#39;, &#39;S&#39;, &#39;t&#39;, &#39;r&#39;, &#39;i&#39;, &#39;n&#39;, &#39;g&#39;, &#39;4&#39;, &#39;6&#39;]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString47&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count &#39;i&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;i&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count &#39;i&#39;: 1
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString48&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count &#39;g&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;g&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count &#39;g&#39;: 1
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString50&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count &#39;z&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count &#39;z&#39;: 0
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString50&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count &#39;z&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count &#39;z&#39;: 0
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString51&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All Upper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span> <span class="o">==</span> <span class="n">sample</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>All Upper: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString52&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All Lower:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">sample</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>All Lower: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString53&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Only alphabets:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isalpha</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Only alphabets: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString54&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Only digits:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isdigit</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Only digits: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString55&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Only alnum:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isalnum</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Only alnum: True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString56&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Replace &#39;t&#39; with &#39;*&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;t&quot;</span><span class="p">,</span> <span class="s2">&quot;*&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Replace &#39;t&#39; with &#39;*&#39;: Py*honS*ring56
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString57&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count of vowels:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="s2">&quot;aeiouAEIOU&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count of vowels: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString58&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ASCII sum:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>ASCII sum: 1382
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString59&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Check &#39;String&#39; in value:&quot;</span><span class="p">,</span> <span class="s2">&quot;String&quot;</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Check &#39;String&#39; in value: True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString61&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Max char:&quot;</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Max char: y
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString62&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Min char:&quot;</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">sample</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Min char: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString63&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;String multiplied:&quot;</span><span class="p">,</span> <span class="n">sample</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>String multiplied: PythonString63PythonString63PythonString63
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString64&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;First char:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>First char: P
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString65&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Last char:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Last char: 5
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString66&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice last 3:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Slice last 3: g66
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString67&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice middle:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">8</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Slice middle: honSt
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString68&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice even index:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[::</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Slice even index: PtoSrn6
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString69&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice odd index:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Slice odd index: yhntig9
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString70&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Replace &#39;n&#39; with &#39;Z&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Replace &#39;n&#39; with &#39;Z&#39;: PythoZStriZg70
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString71&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Make binary of each char:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="nb">bin</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sample</span><span class="p">])</span>
+
+<span class="c1"># Cell 72</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Make binary of each char: [&#39;0b1010000&#39;, &#39;0b1111001&#39;, &#39;0b1110100&#39;, &#39;0b1101000&#39;, &#39;0b1101111&#39;, &#39;0b1101110&#39;, &#39;0b1010011&#39;, &#39;0b1110100&#39;, &#39;0b1110010&#39;, &#39;0b1101001&#39;, &#39;0b1101110&#39;, &#39;0b1100111&#39;, &#39;0b110111&#39;, &#39;0b110001&#39;]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">ample</span> <span class="o">=</span> <span class="s2">&quot;PythonString72&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Find index of first vowel:&quot;</span><span class="p">,</span> <span class="nb">next</span><span class="p">((</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Find index of first vowel: 4
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString73&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;String after removing vowels:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s1">&#39;aeiou&#39;</span><span class="p">]))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>String after removing vowels: PythnStrng73
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString74&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reverse using loop:&quot;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">sample</span><span class="p">)))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nv">Reverse</span><span class="w"> </span><span class="nv">using</span><span class="w"> </span><span class="k">loop</span>:<span class="w"> </span><span class="mi">47</span><span class="nv">gnirtSnohtyP</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString75&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;String repeated with newlines:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">sample</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>String repeated with newlines:
+ PythonString75
+PythonString75
+PythonString75
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString76&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Is numeric:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Is numeric: False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString77&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;String in Title Case:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>String in Title Case: Pythonstring77
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString78&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count of &#39;Py&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;Py&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count of &#39;Py&#39;: 1
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString78&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Count of &#39;Py&#39;:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;Py&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Count of &#39;Py&#39;: 1
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString80&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of uppercase letters:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">isupper</span><span class="p">()))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Number of uppercase letters: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString80&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of uppercase letters:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">isupper</span><span class="p">()))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Number of uppercase letters: 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString81&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of lowercase letters:&quot;</span><span class="p">,</span> <span class="nb">sum</span><span class="p">(</span><span class="mi">1</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">sample</span> <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">islower</span><span class="p">()))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Number of lowercase letters: 10
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 85</strong></p>
+<p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://sarasakeena.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://sarasakeena.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/sarasakeena/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by SARA SAKEENA</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
