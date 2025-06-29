@@ -2,8 +2,8 @@
 title: Email Spam Detection
 date: 2025-06-30
 author: Your Name
-cell_count: 19
-score: 15
+cell_count: 24
+score: 20
 ---
 
 ```python
@@ -23,10 +23,17 @@ data = pd.read_csv('C:/Users/HP/Desktop/OIB-SIP/emailspam/dataset-mail/spam.csv'
 
 ```python
 print("Original Shape:", data.shape)
-print(data.head())
+
 ```
 
     Original Shape: (5572, 5)
+    
+
+
+```python
+print(data.head())
+```
+
          v1                                                 v2 Unnamed: 2  \
     0   ham  Go until jurong point, crazy.. Available only ...        NaN   
     1   ham                      Ok lar... Joking wif u oni...        NaN   
@@ -51,7 +58,16 @@ data = data[['v1', 'v2']]
 
 ```python
 data.drop_duplicates(inplace=True)
+
+```
+
+
+```python
 data.dropna(inplace=True)
+```
+
+
+```python
 print("\nCleaned Shape:", data.shape)
 ```
 
@@ -62,6 +78,11 @@ print("\nCleaned Shape:", data.shape)
 
 ```python
 data['v1'] = data['v1'].replace(['ham', 'spam'], ['Not Spam', 'Spam'])
+
+```
+
+
+```python
 data.rename(columns={'v1': 'Category', 'v2': 'Message'}, inplace=True)
 ```
 
@@ -95,9 +116,14 @@ mess_train, mess_test, cat_train, cat_test = train_test_split(mess, cat, test_si
 
 ```python
 cv = CountVectorizer(stop_words='english')
+
+
+```
+
+
+```python
 features_train = cv.fit_transform(mess_train)
 features_test = cv.transform(mess_test)
-
 ```
 
 
@@ -109,7 +135,7 @@ model.fit(features_train, cat_train)
 
 
 
-<style>#sk-container-id-3 {
+<style>#sk-container-id-1 {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
   --sklearn-color-text-muted: #666;
@@ -140,15 +166,15 @@ model.fit(features_train, cat_train)
   }
 }
 
-#sk-container-id-3 {
+#sk-container-id-1 {
   color: var(--sklearn-color-text);
 }
 
-#sk-container-id-3 pre {
+#sk-container-id-1 pre {
   padding: 0;
 }
 
-#sk-container-id-3 input.sk-hidden--visually {
+#sk-container-id-1 input.sk-hidden--visually {
   border: 0;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -160,7 +186,7 @@ model.fit(features_train, cat_train)
   width: 1px;
 }
 
-#sk-container-id-3 div.sk-dashed-wrapped {
+#sk-container-id-1 div.sk-dashed-wrapped {
   border: 1px dashed var(--sklearn-color-line);
   margin: 0 0.4em 0.5em 0.4em;
   box-sizing: border-box;
@@ -168,7 +194,7 @@ model.fit(features_train, cat_train)
   background-color: var(--sklearn-color-background);
 }
 
-#sk-container-id-3 div.sk-container {
+#sk-container-id-1 div.sk-container {
   /* jupyter's `normalize.less` sets `[hidden] { display: none; }`
      but bootstrap.min.css set `[hidden] { display: none !important; }`
      so we also need the `!important` here to be able to override the
@@ -178,7 +204,7 @@ model.fit(features_train, cat_train)
   position: relative;
 }
 
-#sk-container-id-3 div.sk-text-repr-fallback {
+#sk-container-id-1 div.sk-text-repr-fallback {
   display: none;
 }
 
@@ -194,14 +220,14 @@ div.sk-item {
 
 /* Parallel-specific style estimator block */
 
-#sk-container-id-3 div.sk-parallel-item::after {
+#sk-container-id-1 div.sk-parallel-item::after {
   content: "";
   width: 100%;
   border-bottom: 2px solid var(--sklearn-color-text-on-default-background);
   flex-grow: 1;
 }
 
-#sk-container-id-3 div.sk-parallel {
+#sk-container-id-1 div.sk-parallel {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -209,28 +235,28 @@ div.sk-item {
   position: relative;
 }
 
-#sk-container-id-3 div.sk-parallel-item {
+#sk-container-id-1 div.sk-parallel-item {
   display: flex;
   flex-direction: column;
 }
 
-#sk-container-id-3 div.sk-parallel-item:first-child::after {
+#sk-container-id-1 div.sk-parallel-item:first-child::after {
   align-self: flex-end;
   width: 50%;
 }
 
-#sk-container-id-3 div.sk-parallel-item:last-child::after {
+#sk-container-id-1 div.sk-parallel-item:last-child::after {
   align-self: flex-start;
   width: 50%;
 }
 
-#sk-container-id-3 div.sk-parallel-item:only-child::after {
+#sk-container-id-1 div.sk-parallel-item:only-child::after {
   width: 0;
 }
 
 /* Serial-specific style estimator block */
 
-#sk-container-id-3 div.sk-serial {
+#sk-container-id-1 div.sk-serial {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,14 +274,14 @@ clickable and can be expanded/collapsed.
 
 /* Pipeline and ColumnTransformer style (default) */
 
-#sk-container-id-3 div.sk-toggleable {
+#sk-container-id-1 div.sk-toggleable {
   /* Default theme specific background. It is overwritten whether we have a
   specific estimator or a Pipeline/ColumnTransformer */
   background-color: var(--sklearn-color-background);
 }
 
 /* Toggleable label */
-#sk-container-id-3 label.sk-toggleable__label {
+#sk-container-id-1 label.sk-toggleable__label {
   cursor: pointer;
   display: flex;
   width: 100%;
@@ -268,13 +294,13 @@ clickable and can be expanded/collapsed.
   gap: 0.5em;
 }
 
-#sk-container-id-3 label.sk-toggleable__label .caption {
+#sk-container-id-1 label.sk-toggleable__label .caption {
   font-size: 0.6rem;
   font-weight: lighter;
   color: var(--sklearn-color-text-muted);
 }
 
-#sk-container-id-3 label.sk-toggleable__label-arrow:before {
+#sk-container-id-1 label.sk-toggleable__label-arrow:before {
   /* Arrow on the left of the label */
   content: "▸";
   float: left;
@@ -282,13 +308,13 @@ clickable and can be expanded/collapsed.
   color: var(--sklearn-color-icon);
 }
 
-#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {
+#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {
   color: var(--sklearn-color-text);
 }
 
 /* Toggleable content - dropdown */
 
-#sk-container-id-3 div.sk-toggleable__content {
+#sk-container-id-1 div.sk-toggleable__content {
   max-height: 0;
   max-width: 0;
   overflow: hidden;
@@ -297,12 +323,12 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-3 div.sk-toggleable__content.fitted {
+#sk-container-id-1 div.sk-toggleable__content.fitted {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
-#sk-container-id-3 div.sk-toggleable__content pre {
+#sk-container-id-1 div.sk-toggleable__content pre {
   margin: 0.2em;
   border-radius: 0.25em;
   color: var(--sklearn-color-text);
@@ -310,79 +336,79 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-3 div.sk-toggleable__content.fitted pre {
+#sk-container-id-1 div.sk-toggleable__content.fitted pre {
   /* unfitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
-#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {
+#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {
   /* Expand drop-down */
   max-height: 200px;
   max-width: 100%;
   overflow: auto;
 }
 
-#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
+#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {
   content: "▾";
 }
 
 /* Pipeline/ColumnTransformer-specific style */
 
-#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
+#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-3 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+#sk-container-id-1 div.sk-label.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
 /* Estimator-specific style */
 
 /* Colorize estimator box */
-#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
+#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-3 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
+#sk-container-id-1 div.sk-estimator.fitted input.sk-toggleable__control:checked~label.sk-toggleable__label {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
-#sk-container-id-3 div.sk-label label.sk-toggleable__label,
-#sk-container-id-3 div.sk-label label {
+#sk-container-id-1 div.sk-label label.sk-toggleable__label,
+#sk-container-id-1 div.sk-label label {
   /* The background is the default theme color */
   color: var(--sklearn-color-text-on-default-background);
 }
 
 /* On hover, darken the color of the background */
-#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {
+#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
 /* Label box, darken color on hover, fitted */
-#sk-container-id-3 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
+#sk-container-id-1 div.sk-label.fitted:hover label.sk-toggleable__label.fitted {
   color: var(--sklearn-color-text);
   background-color: var(--sklearn-color-fitted-level-2);
 }
 
 /* Estimator label */
 
-#sk-container-id-3 div.sk-label label {
+#sk-container-id-1 div.sk-label label {
   font-family: monospace;
   font-weight: bold;
   display: inline-block;
   line-height: 1.2em;
 }
 
-#sk-container-id-3 div.sk-label-container {
+#sk-container-id-1 div.sk-label-container {
   text-align: center;
 }
 
 /* Estimator-specific */
-#sk-container-id-3 div.sk-estimator {
+#sk-container-id-1 div.sk-estimator {
   font-family: monospace;
   border: 1px dotted var(--sklearn-color-border-box);
   border-radius: 0.25em;
@@ -392,18 +418,18 @@ clickable and can be expanded/collapsed.
   background-color: var(--sklearn-color-unfitted-level-0);
 }
 
-#sk-container-id-3 div.sk-estimator.fitted {
+#sk-container-id-1 div.sk-estimator.fitted {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-0);
 }
 
 /* on hover */
-#sk-container-id-3 div.sk-estimator:hover {
+#sk-container-id-1 div.sk-estimator:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-2);
 }
 
-#sk-container-id-3 div.sk-estimator.fitted:hover {
+#sk-container-id-1 div.sk-estimator.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-2);
 }
@@ -491,7 +517,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 
 /* "?"-specific style due to the `<a>` HTML tag */
 
-#sk-container-id-3 a.estimator_doc_link {
+#sk-container-id-1 a.estimator_doc_link {
   float: right;
   font-size: 1rem;
   line-height: 1em;
@@ -506,25 +532,25 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   border: var(--sklearn-color-unfitted-level-1) 1pt solid;
 }
 
-#sk-container-id-3 a.estimator_doc_link.fitted {
+#sk-container-id-1 a.estimator_doc_link.fitted {
   /* fitted */
   border: var(--sklearn-color-fitted-level-1) 1pt solid;
   color: var(--sklearn-color-fitted-level-1);
 }
 
 /* On hover */
-#sk-container-id-3 a.estimator_doc_link:hover {
+#sk-container-id-1 a.estimator_doc_link:hover {
   /* unfitted */
   background-color: var(--sklearn-color-unfitted-level-3);
   color: var(--sklearn-color-background);
   text-decoration: none;
 }
 
-#sk-container-id-3 a.estimator_doc_link.fitted:hover {
+#sk-container-id-1 a.estimator_doc_link.fitted:hover {
   /* fitted */
   background-color: var(--sklearn-color-fitted-level-3);
 }
-</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>MultinomialNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked><label for="sk-estimator-id-3" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>MultinomialNB</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.naive_bayes.MultinomialNB.html">?<span>Documentation for MultinomialNB</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>MultinomialNB()</pre></div> </div></div></div></div>
+</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>MultinomialNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>MultinomialNB</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.naive_bayes.MultinomialNB.html">?<span>Documentation for MultinomialNB</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>MultinomialNB()</pre></div> </div></div></div></div>
 
 
 
@@ -551,14 +577,14 @@ def predict(message):
 st.header("Email Spam Detector")
 ```
 
-    2025-06-29 17:42:32.959 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:33.633 
+    2025-06-30 02:04:29.811 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.274 
       [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
       command:
     
         streamlit run C:\Users\HP\miniconda3\envs\py312\Lib\site-packages\ipykernel_launcher.py [ARGUMENTS]
-    2025-06-29 17:42:33.634 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:33.635 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.276 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.277 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
     
 
 
@@ -582,14 +608,14 @@ print(output)
 input_message=st.text_input("Enter a message")
 ```
 
-    2025-06-29 17:42:36.310 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:36.311 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:36.312 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:36.314 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:36.315 Session state does not function when running a script without `streamlit run`
-    2025-06-29 17:42:36.316 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:36.317 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:36.318 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.306 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.310 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.311 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.314 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.317 Session state does not function when running a script without `streamlit run`
+    2025-06-30 02:04:30.318 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.320 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.321 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
     
 
 
@@ -602,12 +628,12 @@ else:
     
 ```
 
-    2025-06-29 17:42:38.083 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:38.084 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:38.085 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:38.086 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:38.086 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
-    2025-06-29 17:42:38.087 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.333 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.335 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.335 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.336 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.337 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-30 02:04:30.339 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
     
 
 
@@ -622,4 +648,4 @@ else:
 
 
 ---
-**Score: 15**
+**Score: 20**

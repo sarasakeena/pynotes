@@ -2,7 +2,7 @@
 title: Youtube Stats Analysis
 date: 2025-06-30
 author: Your Name
-cell_count: 8
+cell_count: 9
 score: 5
 ---
 
@@ -122,7 +122,7 @@ df
 
 ```python
 df.info()
-df.describe()
+
 
 ```
 
@@ -220,6 +220,11 @@ df.describe()
 </div>
 
 
+
+
+```python
+df.describe()
+```
 
 
 ```python
@@ -375,7 +380,7 @@ plt.show()
 
 
     
-![png](/pynotes/images/YouTube_Stats_Analysis_5_1.png)
+![png](/pynotes/images/YouTube_Stats_Analysis_6_1.png)
     
 
 
@@ -395,7 +400,7 @@ plt.title("Likes vs Comments Relationship")
 
 
     
-![png](/pynotes/images/YouTube_Stats_Analysis_6_1.png)
+![png](/pynotes/images/YouTube_Stats_Analysis_7_1.png)
     
 
 

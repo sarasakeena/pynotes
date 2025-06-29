@@ -2,7 +2,7 @@
 title: Amazon Price Tracker
 date: 2025-06-30
 author: Your Name
-cell_count: 10
+cell_count: 11
 score: 10
 ---
 
@@ -126,7 +126,7 @@ df
 
 ```python
 df.info()
-df.describe()
+
 ```
 
     <class 'pandas.core.frame.DataFrame'>
@@ -141,6 +141,11 @@ df.describe()
     dtypes: float64(1), int64(2), object(1)
     memory usage: 452.0+ bytes
     
+
+
+```python
+df.describe()
+```
 
 
 
@@ -386,17 +391,25 @@ plt.show()
 
 
     
-![png](/pynotes/images/Amazon_Price_Tracker_5_0.png)
+![png](/pynotes/images/Amazon_Price_Tracker_6_0.png)
     
 
 
 
 ```python
-## ⭐ Product Ratings Summary
-
-We now analyze the overall product rating distribution.
-
+sns.scatterplot(data=df, x="Rating", y="Price", size="Reviews", hue="Product", legend=False)
+plt.title("Product Price vs Rating")
+plt.xlabel("Rating")
+plt.ylabel("Price")
+plt.grid(True)
+plt.show()
 ```
+
+
+    
+![png](/pynotes/images/Amazon_Price_Tracker_7_0.png)
+    
+
 
 
 ```python
@@ -411,17 +424,135 @@ plt.show()
 ```
 
 
-```python
-## 💸 Price Per Rating Point
+    
+![png](/pynotes/images/Amazon_Price_Tracker_8_0.png)
+    
 
-Helps identify cost-effective products based on value-for-rating.
-
-```
 
 
 ```python
 df["Price_per_rating"] = df["Price"] / df["Rating"]
 df.sort_values("Price_per_rating")
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+      <th>Price_per_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Smartphone Cover</td>
+      <td>299</td>
+      <td>4.0</td>
+      <td>412</td>
+      <td>74.750000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wireless Mouse</td>
+      <td>649</td>
+      <td>4.4</td>
+      <td>845</td>
+      <td>147.500000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Phone Tripod</td>
+      <td>749</td>
+      <td>4.3</td>
+      <td>238</td>
+      <td>174.186047</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>USB Hub</td>
+      <td>799</td>
+      <td>4.2</td>
+      <td>147</td>
+      <td>190.238095</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Keyboard</td>
+      <td>999</td>
+      <td>4.1</td>
+      <td>675</td>
+      <td>243.658537</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Laptop Stand</td>
+      <td>1499</td>
+      <td>4.3</td>
+      <td>289</td>
+      <td>348.604651</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Bluetooth Earphones</td>
+      <td>1599</td>
+      <td>4.2</td>
+      <td>1532</td>
+      <td>380.714286</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Webcam</td>
+      <td>2399</td>
+      <td>4.1</td>
+      <td>510</td>
+      <td>585.121951</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Portable SSD</td>
+      <td>5499</td>
+      <td>4.7</td>
+      <td>324</td>
+      <td>1170.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LED Monitor</td>
+      <td>10499</td>
+      <td>4.5</td>
+      <td>135</td>
+      <td>2333.111111</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
 
 ```
 

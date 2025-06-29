@@ -161,7 +161,6 @@
 </div>
 
 <div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="kd">class</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">pandas</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">frame</span><span class="p">.</span><span class="nx">DataFrame</span><span class="err">&#39;</span><span class="p">&gt;</span>
@@ -175,6 +174,9 @@
 <span class="w"> </span><span class="mi">3</span><span class="w">   </span><span class="nx">Reviews</span><span class="w">  </span><span class="mi">10</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">     </span><span class="nx">int64</span><span class="w">  </span>
 <span class="nx">dtypes</span><span class="p">:</span><span class="w"> </span><span class="nx">float64</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="nx">int64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="nx">object</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 <span class="nx">memory</span><span class="w"> </span><span class="nx">usage</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">452.0</span><span class="o">+</span><span class="w"> </span><span class="nx">bytes</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </code></pre></div>
 
 <div>
@@ -398,12 +400,16 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<p><img alt="png" src="/pynotes/images/Amazon_Price_Tracker_5_0.png"></p>
-<div class="highlight"><pre><span></span><code><span class="c1">## ⭐ Product Ratings Summary</span>
-
-<span class="n">We</span> <span class="n">now</span> <span class="n">analyze</span> <span class="n">the</span> <span class="n">overall</span> <span class="n">product</span> <span class="n">rating</span> <span class="n">distribution</span><span class="o">.</span>
+<p><img alt="png" src="/pynotes/images/Amazon_Price_Tracker_6_0.png"></p>
+<div class="highlight"><pre><span></span><code><span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Rating&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Price&quot;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="s2">&quot;Reviews&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Product&quot;</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Product Price vs Rating&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Rating&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Price&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+<p><img alt="png" src="/pynotes/images/Amazon_Price_Tracker_7_0.png"></p>
 <div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Rating&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribution of Product Ratings&quot;</span><span class="p">)</span>
@@ -413,13 +419,122 @@
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">## 💸 Price Per Rating Point</span>
-
-<span class="n">Helps</span> <span class="n">identify</span> <span class="n">cost</span><span class="o">-</span><span class="n">effective</span> <span class="n">products</span> <span class="n">based</span> <span class="n">on</span> <span class="n">value</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">rating</span><span class="o">.</span>
-</code></pre></div>
-
+<p><img alt="png" src="/pynotes/images/Amazon_Price_Tracker_8_0.png"></p>
 <div class="highlight"><pre><span></span><code><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Price_per_rating&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Rating&quot;</span><span class="p">]</span>
 <span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Price_per_rating&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Rating</th>
+      <th>Reviews</th>
+      <th>Price_per_rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>Smartphone Cover</td>
+      <td>299</td>
+      <td>4.0</td>
+      <td>412</td>
+      <td>74.750000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wireless Mouse</td>
+      <td>649</td>
+      <td>4.4</td>
+      <td>845</td>
+      <td>147.500000</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Phone Tripod</td>
+      <td>749</td>
+      <td>4.3</td>
+      <td>238</td>
+      <td>174.186047</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>USB Hub</td>
+      <td>799</td>
+      <td>4.2</td>
+      <td>147</td>
+      <td>190.238095</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Keyboard</td>
+      <td>999</td>
+      <td>4.1</td>
+      <td>675</td>
+      <td>243.658537</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Laptop Stand</td>
+      <td>1499</td>
+      <td>4.3</td>
+      <td>289</td>
+      <td>348.604651</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Bluetooth Earphones</td>
+      <td>1599</td>
+      <td>4.2</td>
+      <td>1532</td>
+      <td>380.714286</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Webcam</td>
+      <td>2399</td>
+      <td>4.1</td>
+      <td>510</td>
+      <td>585.121951</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Portable SSD</td>
+      <td>5499</td>
+      <td>4.7</td>
+      <td>324</td>
+      <td>1170.000000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>LED Monitor</td>
+      <td>10499</td>
+      <td>4.5</td>
+      <td>135</td>
+      <td>2333.111111</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
 <hr>

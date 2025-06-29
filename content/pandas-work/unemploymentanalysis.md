@@ -2,7 +2,7 @@
 title: Unemploymentanalysis
 date: 2025-06-30
 author: Your Name
-cell_count: 17
+cell_count: 18
 score: 15
 ---
 
@@ -80,7 +80,7 @@ print("\nMissing Values:\n", data.isnull().sum())
 
 ```python
 print("\nInfo:\n")
-print(data.info())
+
 ```
 
     
@@ -102,6 +102,11 @@ print(data.info())
     memory usage: 42.1+ KB
     None
     
+
+
+```python
+print(data.info())
+```
 
 
 ```python
@@ -166,7 +171,7 @@ plt.show()
 
 
     
-![png](/pynotes/images/unemploymentanalysis_11_0.png)
+![png](/pynotes/images/unemploymentanalysis_12_0.png)
     
 
 
@@ -192,7 +197,7 @@ plt.show()
 
 
     
-![png](/pynotes/images/unemploymentanalysis_12_1.png)
+![png](/pynotes/images/unemploymentanalysis_13_1.png)
     
 
 
@@ -213,7 +218,7 @@ plt.show()
 
 
     
-![png](/pynotes/images/unemploymentanalysis_13_1.png)
+![png](/pynotes/images/unemploymentanalysis_14_1.png)
     
 
 

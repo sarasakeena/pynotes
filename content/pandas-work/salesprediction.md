@@ -2,8 +2,8 @@
 title: Salesprediction
 date: 2025-06-30
 author: Your Name
-cell_count: 13
-score: 10
+cell_count: 15
+score: 15
 ---
 
 ```python
@@ -25,7 +25,7 @@ data = pd.read_csv(r'C:\Users\HP\Desktop\OIB-SIP\salesprediction\dataset\Adverti
 
 ```python
 print("First 5 rows of the dataset:")
-print(data.head())
+
 ```
 
     First 5 rows of the dataset:
@@ -39,8 +39,13 @@ print(data.head())
 
 
 ```python
+print(data.head())
+```
+
+
+```python
 print("\nChecking for missing values:")
-print(data.isnull().sum())
+
 ```
 
     
@@ -55,13 +60,18 @@ print(data.isnull().sum())
 
 
 ```python
+print(data.isnull().sum())
+```
+
+
+```python
 sns.pairplot(data)
 plt.show()
 ```
 
 
     
-![png](/pynotes/images/salesprediction_4_0.png)
+![png](/pynotes/images/salesprediction_6_0.png)
     
 
 
@@ -541,7 +551,7 @@ plt.show()
 
 
     
-![png](/pynotes/images/salesprediction_11_0.png)
+![png](/pynotes/images/salesprediction_13_0.png)
     
 
 
@@ -552,4 +562,4 @@ plt.show()
 
 
 ---
-**Score: 10**
+**Score: 15**
