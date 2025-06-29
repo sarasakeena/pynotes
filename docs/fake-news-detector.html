@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Fake News Detector</title>
+
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://sarasakeena.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://sarasakeena.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://sarasakeena.github.io/pynotes/fake-news-detector.html" rel="bookmark"
+        title="Permalink to Fake News Detector">Fake News Detector</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_extraction.text</span><span class="w"> </span><span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;NASA confirms water on Mars&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;You won&#39;t believe what this actor did!&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Government passes new education bill&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Scientists find cure for cancer in lemons&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;President addresses the nation&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Shocking! Aliens spotted in Delhi&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Stock market hits all-time high&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Celebrity marries alien in secret ceremony&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;real&quot;</span><span class="p">,</span> <span class="s2">&quot;fake&quot;</span><span class="p">,</span> <span class="s2">&quot;real&quot;</span><span class="p">,</span> <span class="s2">&quot;fake&quot;</span><span class="p">,</span> <span class="s2">&quot;real&quot;</span><span class="p">,</span> <span class="s2">&quot;fake&quot;</span><span class="p">,</span> <span class="s2">&quot;real&quot;</span><span class="p">,</span> <span class="s2">&quot;fake&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">df</span>
+</code></pre></div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>text</th>
+      <th>label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>NASA confirms water on Mars</td>
+      <td>real</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>You won't believe what this actor did!</td>
+      <td>fake</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Government passes new education bill</td>
+      <td>real</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Scientists find cure for cancer in lemons</td>
+      <td>fake</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>President addresses the nation</td>
+      <td>real</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Shocking! Aliens spotted in Delhi</td>
+      <td>fake</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Stock market hits all-time high</td>
+      <td>real</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Celebrity marries alien in secret ceremony</td>
+      <td>fake</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span>
+
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">()</span>
+<span class="n">X_vec</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X_vec</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Accuracy</span><span class="o">:</span><span class="w"> </span><span class="mf">0.0</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Aliens built the pyramids&quot;</span><span class="p">]</span>
+<span class="n">sample_vec</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">sample</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Prediction:&quot;</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">sample_vec</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Prediction</span><span class="o">:</span><span class="w"> </span><span class="n">real</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p>
+<p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://sarasakeena.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://sarasakeena.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/sarasakeena/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by SARA SAKEENA</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
