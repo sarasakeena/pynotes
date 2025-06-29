@@ -6,7 +6,7 @@ cell_count: 200
 score: 200
 ---
 
-```
+```python
 # Cell 1 - Data Abstraction Example
 class Example1:
     def __init__(self, value):
@@ -19,8 +19,11 @@ obj1 = Example1(1)
 print(obj1.get_value())
 ```
 
+    1
+    
 
-```
+
+```python
 # Cell 2 - Data Abstraction Example
 class Example2:
     def __init__(self, value):
@@ -33,8 +36,11 @@ obj2 = Example2(2)
 print(obj2.get_value())
 ```
 
+    4
+    
 
-```
+
+```python
 # Cell 3 - Data Abstraction Example
 class Example3:
     def __init__(self, value):
@@ -47,8 +53,11 @@ obj3 = Example3(3)
 print(obj3.get_value())
 ```
 
+    9
+    
 
-```
+
+```python
 # Cell 4 - Data Abstraction Example
 class Example4:
     def __init__(self, value):
@@ -61,8 +70,11 @@ obj4 = Example4(4)
 print(obj4.get_value())
 ```
 
+    16
+    
 
-```
+
+```python
 # Cell 5 - Data Abstraction Example
 class Example5:
     def __init__(self, value):
@@ -75,8 +87,11 @@ obj5 = Example5(5)
 print(obj5.get_value())
 ```
 
+    25
+    
 
-```
+
+```python
 # Cell 6 - Data Abstraction Example
 class Example6:
     def __init__(self, value):
@@ -89,8 +104,11 @@ obj6 = Example6(6)
 print(obj6.get_value())
 ```
 
+    36
+    
 
-```
+
+```python
 # Cell 7 - Data Abstraction Example
 class Example7:
     def __init__(self, value):
@@ -103,8 +121,11 @@ obj7 = Example7(7)
 print(obj7.get_value())
 ```
 
+    49
+    
 
-```
+
+```python
 # Cell 8 - Data Abstraction Example
 class Example8:
     def __init__(self, value):
@@ -117,8 +138,11 @@ obj8 = Example8(8)
 print(obj8.get_value())
 ```
 
+    64
+    
 
-```
+
+```python
 # Cell 9 - Data Abstraction Example
 class Example9:
     def __init__(self, value):
@@ -131,8 +155,11 @@ obj9 = Example9(9)
 print(obj9.get_value())
 ```
 
+    81
+    
 
-```
+
+```python
 # Cell 10 - Data Abstraction Example
 class Example10:
     def __init__(self, value):
@@ -145,8 +172,11 @@ obj10 = Example10(10)
 print(obj10.get_value())
 ```
 
+    100
+    
 
-```
+
+```python
 # Cell 11 - Data Abstraction Example
 class Example11:
     def __init__(self, value):
@@ -159,8 +189,11 @@ obj11 = Example11(11)
 print(obj11.get_value())
 ```
 
+    121
+    
 
-```
+
+```python
 # Cell 12 - Data Abstraction Example
 class Example12:
     def __init__(self, value):
@@ -173,8 +206,11 @@ obj12 = Example12(12)
 print(obj12.get_value())
 ```
 
+    144
+    
 
-```
+
+```python
 # Cell 13 - Data Abstraction Example
 class Example13:
     def __init__(self, value):
@@ -187,8 +223,11 @@ obj13 = Example13(13)
 print(obj13.get_value())
 ```
 
+    169
+    
 
-```
+
+```python
 # Cell 14 - Data Abstraction Example
 class Example14:
     def __init__(self, value):
@@ -201,8 +240,11 @@ obj14 = Example14(14)
 print(obj14.get_value())
 ```
 
+    196
+    
 
-```
+
+```python
 # Cell 15 - Data Abstraction Example
 class Example15:
     def __init__(self, value):
@@ -215,8 +257,11 @@ obj15 = Example15(15)
 print(obj15.get_value())
 ```
 
+    225
+    
 
-```
+
+```python
 # Cell 16 - Data Abstraction Example
 class Example16:
     def __init__(self, value):
@@ -229,8 +274,11 @@ obj16 = Example16(16)
 print(obj16.get_value())
 ```
 
+    256
+    
 
-```
+
+```python
 # Cell 17 - Data Abstraction Example
 class Example17:
     def __init__(self, value):
@@ -243,8 +291,11 @@ obj17 = Example17(17)
 print(obj17.get_value())
 ```
 
+    289
+    
 
-```
+
+```python
 # Cell 18 - Data Abstraction Example
 class Example18:
     def __init__(self, value):
@@ -257,8 +308,11 @@ obj18 = Example18(18)
 print(obj18.get_value())
 ```
 
+    324
+    
 
-```
+
+```python
 # Cell 19 - Data Abstraction Example
 class Example19:
     def __init__(self, value):
@@ -271,8 +325,11 @@ obj19 = Example19(19)
 print(obj19.get_value())
 ```
 
+    361
+    
 
-```
+
+```python
 # Cell 20 - Data Abstraction Example
 class Example20:
     def __init__(self, value):
@@ -285,8 +342,11 @@ obj20 = Example20(20)
 print(obj20.get_value())
 ```
 
+    400
+    
 
-```
+
+```python
 # Cell 21 - Data Abstraction Example
 class Example21:
     def __init__(self, value):
@@ -299,8 +359,11 @@ obj21 = Example21(21)
 print(obj21.get_value())
 ```
 
+    441
+    
 
-```
+
+```python
 # Cell 22 - Data Abstraction Example
 class Example22:
     def __init__(self, value):
@@ -313,8 +376,11 @@ obj22 = Example22(22)
 print(obj22.get_value())
 ```
 
+    484
+    
 
-```
+
+```python
 # Cell 23 - Data Abstraction Example
 class Example23:
     def __init__(self, value):
@@ -327,8 +393,11 @@ obj23 = Example23(23)
 print(obj23.get_value())
 ```
 
+    529
+    
 
-```
+
+```python
 # Cell 24 - Data Abstraction Example
 class Example24:
     def __init__(self, value):
@@ -341,8 +410,11 @@ obj24 = Example24(24)
 print(obj24.get_value())
 ```
 
+    576
+    
 
-```
+
+```python
 # Cell 25 - Data Abstraction Example
 class Example25:
     def __init__(self, value):
@@ -355,8 +427,11 @@ obj25 = Example25(25)
 print(obj25.get_value())
 ```
 
+    625
+    
 
-```
+
+```python
 # Cell 26 - Data Abstraction Example
 class Example26:
     def __init__(self, value):
@@ -369,8 +444,11 @@ obj26 = Example26(26)
 print(obj26.get_value())
 ```
 
+    676
+    
 
-```
+
+```python
 # Cell 27 - Data Abstraction Example
 class Example27:
     def __init__(self, value):
@@ -383,8 +461,11 @@ obj27 = Example27(27)
 print(obj27.get_value())
 ```
 
+    729
+    
 
-```
+
+```python
 # Cell 28 - Data Abstraction Example
 class Example28:
     def __init__(self, value):
@@ -397,8 +478,11 @@ obj28 = Example28(28)
 print(obj28.get_value())
 ```
 
+    784
+    
 
-```
+
+```python
 # Cell 29 - Data Abstraction Example
 class Example29:
     def __init__(self, value):
@@ -411,8 +495,11 @@ obj29 = Example29(29)
 print(obj29.get_value())
 ```
 
+    841
+    
 
-```
+
+```python
 # Cell 30 - Data Abstraction Example
 class Example30:
     def __init__(self, value):
@@ -425,8 +512,11 @@ obj30 = Example30(30)
 print(obj30.get_value())
 ```
 
+    900
+    
 
-```
+
+```python
 # Cell 31 - Data Abstraction Example
 class Example31:
     def __init__(self, value):
@@ -439,8 +529,11 @@ obj31 = Example31(31)
 print(obj31.get_value())
 ```
 
+    961
+    
 
-```
+
+```python
 # Cell 32 - Data Abstraction Example
 class Example32:
     def __init__(self, value):
@@ -453,8 +546,11 @@ obj32 = Example32(32)
 print(obj32.get_value())
 ```
 
+    1024
+    
 
-```
+
+```python
 # Cell 33 - Data Abstraction Example
 class Example33:
     def __init__(self, value):
@@ -467,8 +563,11 @@ obj33 = Example33(33)
 print(obj33.get_value())
 ```
 
+    1089
+    
 
-```
+
+```python
 # Cell 34 - Data Abstraction Example
 class Example34:
     def __init__(self, value):
@@ -481,8 +580,11 @@ obj34 = Example34(34)
 print(obj34.get_value())
 ```
 
+    1156
+    
 
-```
+
+```python
 # Cell 35 - Data Abstraction Example
 class Example35:
     def __init__(self, value):
@@ -495,8 +597,11 @@ obj35 = Example35(35)
 print(obj35.get_value())
 ```
 
+    1225
+    
 
-```
+
+```python
 # Cell 36 - Data Abstraction Example
 class Example36:
     def __init__(self, value):
@@ -509,8 +614,11 @@ obj36 = Example36(36)
 print(obj36.get_value())
 ```
 
+    1296
+    
 
-```
+
+```python
 # Cell 37 - Data Abstraction Example
 class Example37:
     def __init__(self, value):
@@ -523,8 +631,11 @@ obj37 = Example37(37)
 print(obj37.get_value())
 ```
 
+    1369
+    
 
-```
+
+```python
 # Cell 38 - Data Abstraction Example
 class Example38:
     def __init__(self, value):
@@ -537,8 +648,11 @@ obj38 = Example38(38)
 print(obj38.get_value())
 ```
 
+    1444
+    
 
-```
+
+```python
 # Cell 39 - Data Abstraction Example
 class Example39:
     def __init__(self, value):
@@ -551,8 +665,11 @@ obj39 = Example39(39)
 print(obj39.get_value())
 ```
 
+    1521
+    
 
-```
+
+```python
 # Cell 40 - Data Abstraction Example
 class Example40:
     def __init__(self, value):
@@ -565,8 +682,11 @@ obj40 = Example40(40)
 print(obj40.get_value())
 ```
 
+    1600
+    
 
-```
+
+```python
 # Cell 41 - Data Abstraction Example
 class Example41:
     def __init__(self, value):
@@ -579,8 +699,11 @@ obj41 = Example41(41)
 print(obj41.get_value())
 ```
 
+    1681
+    
 
-```
+
+```python
 # Cell 42 - Data Abstraction Example
 class Example42:
     def __init__(self, value):
@@ -593,8 +716,11 @@ obj42 = Example42(42)
 print(obj42.get_value())
 ```
 
+    1764
+    
 
-```
+
+```python
 # Cell 43 - Data Abstraction Example
 class Example43:
     def __init__(self, value):
@@ -607,8 +733,11 @@ obj43 = Example43(43)
 print(obj43.get_value())
 ```
 
+    1849
+    
 
-```
+
+```python
 # Cell 44 - Data Abstraction Example
 class Example44:
     def __init__(self, value):
@@ -621,8 +750,11 @@ obj44 = Example44(44)
 print(obj44.get_value())
 ```
 
+    1936
+    
 
-```
+
+```python
 # Cell 45 - Data Abstraction Example
 class Example45:
     def __init__(self, value):
@@ -635,8 +767,11 @@ obj45 = Example45(45)
 print(obj45.get_value())
 ```
 
+    2025
+    
 
-```
+
+```python
 # Cell 46 - Data Abstraction Example
 class Example46:
     def __init__(self, value):
@@ -649,8 +784,11 @@ obj46 = Example46(46)
 print(obj46.get_value())
 ```
 
+    2116
+    
 
-```
+
+```python
 # Cell 47 - Data Abstraction Example
 class Example47:
     def __init__(self, value):
@@ -663,8 +801,11 @@ obj47 = Example47(47)
 print(obj47.get_value())
 ```
 
+    2209
+    
 
-```
+
+```python
 # Cell 48 - Data Abstraction Example
 class Example48:
     def __init__(self, value):
@@ -677,8 +818,11 @@ obj48 = Example48(48)
 print(obj48.get_value())
 ```
 
+    2304
+    
 
-```
+
+```python
 # Cell 49 - Data Abstraction Example
 class Example49:
     def __init__(self, value):
@@ -691,8 +835,11 @@ obj49 = Example49(49)
 print(obj49.get_value())
 ```
 
+    2401
+    
 
-```
+
+```python
 # Cell 50 - Data Abstraction Example
 class Example50:
     def __init__(self, value):
@@ -705,8 +852,11 @@ obj50 = Example50(50)
 print(obj50.get_value())
 ```
 
+    2500
+    
 
-```
+
+```python
 # Cell 51 - Data Abstraction Example
 class Example51:
     def __init__(self, value):
@@ -719,8 +869,11 @@ obj51 = Example51(51)
 print(obj51.get_value())
 ```
 
+    2601
+    
 
-```
+
+```python
 # Cell 52 - Data Abstraction Example
 class Example52:
     def __init__(self, value):
@@ -733,8 +886,11 @@ obj52 = Example52(52)
 print(obj52.get_value())
 ```
 
+    2704
+    
 
-```
+
+```python
 # Cell 53 - Data Abstraction Example
 class Example53:
     def __init__(self, value):
@@ -747,8 +903,11 @@ obj53 = Example53(53)
 print(obj53.get_value())
 ```
 
+    2809
+    
 
-```
+
+```python
 # Cell 54 - Data Abstraction Example
 class Example54:
     def __init__(self, value):
@@ -761,8 +920,11 @@ obj54 = Example54(54)
 print(obj54.get_value())
 ```
 
+    2916
+    
 
-```
+
+```python
 # Cell 55 - Data Abstraction Example
 class Example55:
     def __init__(self, value):
@@ -775,8 +937,11 @@ obj55 = Example55(55)
 print(obj55.get_value())
 ```
 
+    3025
+    
 
-```
+
+```python
 # Cell 56 - Data Abstraction Example
 class Example56:
     def __init__(self, value):
@@ -789,8 +954,11 @@ obj56 = Example56(56)
 print(obj56.get_value())
 ```
 
+    3136
+    
 
-```
+
+```python
 # Cell 57 - Data Abstraction Example
 class Example57:
     def __init__(self, value):
@@ -803,8 +971,11 @@ obj57 = Example57(57)
 print(obj57.get_value())
 ```
 
+    3249
+    
 
-```
+
+```python
 # Cell 58 - Data Abstraction Example
 class Example58:
     def __init__(self, value):
@@ -817,8 +988,11 @@ obj58 = Example58(58)
 print(obj58.get_value())
 ```
 
+    3364
+    
 
-```
+
+```python
 # Cell 59 - Data Abstraction Example
 class Example59:
     def __init__(self, value):
@@ -831,8 +1005,11 @@ obj59 = Example59(59)
 print(obj59.get_value())
 ```
 
+    3481
+    
 
-```
+
+```python
 # Cell 60 - Data Abstraction Example
 class Example60:
     def __init__(self, value):
@@ -845,8 +1022,11 @@ obj60 = Example60(60)
 print(obj60.get_value())
 ```
 
+    3600
+    
 
-```
+
+```python
 # Cell 61 - Data Abstraction Example
 class Example61:
     def __init__(self, value):
@@ -859,8 +1039,11 @@ obj61 = Example61(61)
 print(obj61.get_value())
 ```
 
+    3721
+    
 
-```
+
+```python
 # Cell 62 - Data Abstraction Example
 class Example62:
     def __init__(self, value):
@@ -873,8 +1056,11 @@ obj62 = Example62(62)
 print(obj62.get_value())
 ```
 
+    3844
+    
 
-```
+
+```python
 # Cell 63 - Data Abstraction Example
 class Example63:
     def __init__(self, value):
@@ -887,8 +1073,11 @@ obj63 = Example63(63)
 print(obj63.get_value())
 ```
 
+    3969
+    
 
-```
+
+```python
 # Cell 64 - Data Abstraction Example
 class Example64:
     def __init__(self, value):
@@ -901,8 +1090,11 @@ obj64 = Example64(64)
 print(obj64.get_value())
 ```
 
+    4096
+    
 
-```
+
+```python
 # Cell 65 - Data Abstraction Example
 class Example65:
     def __init__(self, value):
@@ -915,8 +1107,11 @@ obj65 = Example65(65)
 print(obj65.get_value())
 ```
 
+    4225
+    
 
-```
+
+```python
 # Cell 66 - Data Abstraction Example
 class Example66:
     def __init__(self, value):
@@ -929,8 +1124,11 @@ obj66 = Example66(66)
 print(obj66.get_value())
 ```
 
+    4356
+    
 
-```
+
+```python
 # Cell 67 - Data Abstraction Example
 class Example67:
     def __init__(self, value):
@@ -943,8 +1141,11 @@ obj67 = Example67(67)
 print(obj67.get_value())
 ```
 
+    4489
+    
 
-```
+
+```python
 # Cell 68 - Data Abstraction Example
 class Example68:
     def __init__(self, value):
@@ -957,8 +1158,11 @@ obj68 = Example68(68)
 print(obj68.get_value())
 ```
 
+    4624
+    
 
-```
+
+```python
 # Cell 69 - Data Abstraction Example
 class Example69:
     def __init__(self, value):
@@ -971,8 +1175,11 @@ obj69 = Example69(69)
 print(obj69.get_value())
 ```
 
+    4761
+    
 
-```
+
+```python
 # Cell 70 - Data Abstraction Example
 class Example70:
     def __init__(self, value):
@@ -985,8 +1192,11 @@ obj70 = Example70(70)
 print(obj70.get_value())
 ```
 
+    4900
+    
 
-```
+
+```python
 # Cell 71 - Data Abstraction Example
 class Example71:
     def __init__(self, value):
@@ -999,8 +1209,11 @@ obj71 = Example71(71)
 print(obj71.get_value())
 ```
 
+    5041
+    
 
-```
+
+```python
 # Cell 72 - Data Abstraction Example
 class Example72:
     def __init__(self, value):
@@ -1013,8 +1226,11 @@ obj72 = Example72(72)
 print(obj72.get_value())
 ```
 
+    5184
+    
 
-```
+
+```python
 # Cell 73 - Data Abstraction Example
 class Example73:
     def __init__(self, value):
@@ -1027,8 +1243,11 @@ obj73 = Example73(73)
 print(obj73.get_value())
 ```
 
+    5329
+    
 
-```
+
+```python
 # Cell 74 - Data Abstraction Example
 class Example74:
     def __init__(self, value):
@@ -1041,8 +1260,11 @@ obj74 = Example74(74)
 print(obj74.get_value())
 ```
 
+    5476
+    
 
-```
+
+```python
 # Cell 75 - Data Abstraction Example
 class Example75:
     def __init__(self, value):
@@ -1055,8 +1277,11 @@ obj75 = Example75(75)
 print(obj75.get_value())
 ```
 
+    5625
+    
 
-```
+
+```python
 # Cell 76 - Data Abstraction Example
 class Example76:
     def __init__(self, value):
@@ -1069,8 +1294,11 @@ obj76 = Example76(76)
 print(obj76.get_value())
 ```
 
+    5776
+    
 
-```
+
+```python
 # Cell 77 - Data Abstraction Example
 class Example77:
     def __init__(self, value):
@@ -1083,8 +1311,11 @@ obj77 = Example77(77)
 print(obj77.get_value())
 ```
 
+    5929
+    
 
-```
+
+```python
 # Cell 78 - Data Abstraction Example
 class Example78:
     def __init__(self, value):
@@ -1097,8 +1328,11 @@ obj78 = Example78(78)
 print(obj78.get_value())
 ```
 
+    6084
+    
 
-```
+
+```python
 # Cell 79 - Data Abstraction Example
 class Example79:
     def __init__(self, value):
@@ -1111,8 +1345,11 @@ obj79 = Example79(79)
 print(obj79.get_value())
 ```
 
+    6241
+    
 
-```
+
+```python
 # Cell 80 - Data Abstraction Example
 class Example80:
     def __init__(self, value):
@@ -1125,8 +1362,11 @@ obj80 = Example80(80)
 print(obj80.get_value())
 ```
 
+    6400
+    
 
-```
+
+```python
 # Cell 81 - Data Abstraction Example
 class Example81:
     def __init__(self, value):
@@ -1139,8 +1379,11 @@ obj81 = Example81(81)
 print(obj81.get_value())
 ```
 
+    6561
+    
 
-```
+
+```python
 # Cell 82 - Data Abstraction Example
 class Example82:
     def __init__(self, value):
@@ -1153,8 +1396,11 @@ obj82 = Example82(82)
 print(obj82.get_value())
 ```
 
+    6724
+    
 
-```
+
+```python
 # Cell 83 - Data Abstraction Example
 class Example83:
     def __init__(self, value):
@@ -1167,8 +1413,11 @@ obj83 = Example83(83)
 print(obj83.get_value())
 ```
 
+    6889
+    
 
-```
+
+```python
 # Cell 84 - Data Abstraction Example
 class Example84:
     def __init__(self, value):
@@ -1181,8 +1430,11 @@ obj84 = Example84(84)
 print(obj84.get_value())
 ```
 
+    7056
+    
 
-```
+
+```python
 # Cell 85 - Data Abstraction Example
 class Example85:
     def __init__(self, value):
@@ -1195,8 +1447,11 @@ obj85 = Example85(85)
 print(obj85.get_value())
 ```
 
+    7225
+    
 
-```
+
+```python
 # Cell 86 - Data Abstraction Example
 class Example86:
     def __init__(self, value):
@@ -1209,8 +1464,11 @@ obj86 = Example86(86)
 print(obj86.get_value())
 ```
 
+    7396
+    
 
-```
+
+```python
 # Cell 87 - Data Abstraction Example
 class Example87:
     def __init__(self, value):
@@ -1223,8 +1481,11 @@ obj87 = Example87(87)
 print(obj87.get_value())
 ```
 
+    7569
+    
 
-```
+
+```python
 # Cell 88 - Data Abstraction Example
 class Example88:
     def __init__(self, value):
@@ -1237,8 +1498,11 @@ obj88 = Example88(88)
 print(obj88.get_value())
 ```
 
+    7744
+    
 
-```
+
+```python
 # Cell 89 - Data Abstraction Example
 class Example89:
     def __init__(self, value):
@@ -1251,8 +1515,11 @@ obj89 = Example89(89)
 print(obj89.get_value())
 ```
 
+    7921
+    
 
-```
+
+```python
 # Cell 90 - Data Abstraction Example
 class Example90:
     def __init__(self, value):
@@ -1265,8 +1532,11 @@ obj90 = Example90(90)
 print(obj90.get_value())
 ```
 
+    8100
+    
 
-```
+
+```python
 # Cell 91 - Data Abstraction Example
 class Example91:
     def __init__(self, value):
@@ -1279,8 +1549,11 @@ obj91 = Example91(91)
 print(obj91.get_value())
 ```
 
+    8281
+    
 
-```
+
+```python
 # Cell 92 - Data Abstraction Example
 class Example92:
     def __init__(self, value):
@@ -1293,8 +1566,11 @@ obj92 = Example92(92)
 print(obj92.get_value())
 ```
 
+    8464
+    
 
-```
+
+```python
 # Cell 93 - Data Abstraction Example
 class Example93:
     def __init__(self, value):
@@ -1307,8 +1583,11 @@ obj93 = Example93(93)
 print(obj93.get_value())
 ```
 
+    8649
+    
 
-```
+
+```python
 # Cell 94 - Data Abstraction Example
 class Example94:
     def __init__(self, value):
@@ -1321,8 +1600,11 @@ obj94 = Example94(94)
 print(obj94.get_value())
 ```
 
+    8836
+    
 
-```
+
+```python
 # Cell 95 - Data Abstraction Example
 class Example95:
     def __init__(self, value):
@@ -1335,8 +1617,11 @@ obj95 = Example95(95)
 print(obj95.get_value())
 ```
 
+    9025
+    
 
-```
+
+```python
 # Cell 96 - Data Abstraction Example
 class Example96:
     def __init__(self, value):
@@ -1349,8 +1634,11 @@ obj96 = Example96(96)
 print(obj96.get_value())
 ```
 
+    9216
+    
 
-```
+
+```python
 # Cell 97 - Data Abstraction Example
 class Example97:
     def __init__(self, value):
@@ -1363,8 +1651,11 @@ obj97 = Example97(97)
 print(obj97.get_value())
 ```
 
+    9409
+    
 
-```
+
+```python
 # Cell 98 - Data Abstraction Example
 class Example98:
     def __init__(self, value):
@@ -1377,8 +1668,11 @@ obj98 = Example98(98)
 print(obj98.get_value())
 ```
 
+    9604
+    
 
-```
+
+```python
 # Cell 99 - Data Abstraction Example
 class Example99:
     def __init__(self, value):
@@ -1391,8 +1685,11 @@ obj99 = Example99(99)
 print(obj99.get_value())
 ```
 
+    9801
+    
 
-```
+
+```python
 # Cell 100 - Data Abstraction Example
 class Example100:
     def __init__(self, value):
@@ -1405,8 +1702,11 @@ obj100 = Example100(100)
 print(obj100.get_value())
 ```
 
+    10000
+    
 
-```
+
+```python
 # Cell 101 - Operator Overloading Example
 class Overload101:
     def __init__(self, num):
@@ -1424,8 +1724,11 @@ result101 = objA101 + objB101
 print(result101)
 ```
 
+    Value: 304
+    
 
-```
+
+```python
 # Cell 102 - Operator Overloading Example
 class Overload102:
     def __init__(self, num):
@@ -1443,8 +1746,11 @@ result102 = objA102 + objB102
 print(result102)
 ```
 
+    Value: 307
+    
 
-```
+
+```python
 # Cell 103 - Operator Overloading Example
 class Overload103:
     def __init__(self, num):
@@ -1462,8 +1768,11 @@ result103 = objA103 + objB103
 print(result103)
 ```
 
+    Value: 310
+    
 
-```
+
+```python
 # Cell 104 - Operator Overloading Example
 class Overload104:
     def __init__(self, num):
@@ -1481,8 +1790,11 @@ result104 = objA104 + objB104
 print(result104)
 ```
 
+    Value: 313
+    
 
-```
+
+```python
 # Cell 105 - Operator Overloading Example
 class Overload105:
     def __init__(self, num):
@@ -1500,8 +1812,11 @@ result105 = objA105 + objB105
 print(result105)
 ```
 
+    Value: 316
+    
 
-```
+
+```python
 # Cell 106 - Operator Overloading Example
 class Overload106:
     def __init__(self, num):
@@ -1519,8 +1834,11 @@ result106 = objA106 + objB106
 print(result106)
 ```
 
+    Value: 319
+    
 
-```
+
+```python
 # Cell 107 - Operator Overloading Example
 class Overload107:
     def __init__(self, num):
@@ -1538,8 +1856,11 @@ result107 = objA107 + objB107
 print(result107)
 ```
 
+    Value: 322
+    
 
-```
+
+```python
 # Cell 108 - Operator Overloading Example
 class Overload108:
     def __init__(self, num):
@@ -1557,8 +1878,11 @@ result108 = objA108 + objB108
 print(result108)
 ```
 
+    Value: 325
+    
 
-```
+
+```python
 # Cell 109 - Operator Overloading Example
 class Overload109:
     def __init__(self, num):
@@ -1576,8 +1900,11 @@ result109 = objA109 + objB109
 print(result109)
 ```
 
+    Value: 328
+    
 
-```
+
+```python
 # Cell 110 - Operator Overloading Example
 class Overload110:
     def __init__(self, num):
@@ -1595,8 +1922,11 @@ result110 = objA110 + objB110
 print(result110)
 ```
 
+    Value: 331
+    
 
-```
+
+```python
 # Cell 111 - Operator Overloading Example
 class Overload111:
     def __init__(self, num):
@@ -1614,8 +1944,11 @@ result111 = objA111 + objB111
 print(result111)
 ```
 
+    Value: 334
+    
 
-```
+
+```python
 # Cell 112 - Operator Overloading Example
 class Overload112:
     def __init__(self, num):
@@ -1633,8 +1966,11 @@ result112 = objA112 + objB112
 print(result112)
 ```
 
+    Value: 337
+    
 
-```
+
+```python
 # Cell 113 - Operator Overloading Example
 class Overload113:
     def __init__(self, num):
@@ -1652,8 +1988,11 @@ result113 = objA113 + objB113
 print(result113)
 ```
 
+    Value: 340
+    
 
-```
+
+```python
 # Cell 114 - Operator Overloading Example
 class Overload114:
     def __init__(self, num):
@@ -1671,8 +2010,11 @@ result114 = objA114 + objB114
 print(result114)
 ```
 
+    Value: 343
+    
 
-```
+
+```python
 # Cell 115 - Operator Overloading Example
 class Overload115:
     def __init__(self, num):
@@ -1690,8 +2032,11 @@ result115 = objA115 + objB115
 print(result115)
 ```
 
+    Value: 346
+    
 
-```
+
+```python
 # Cell 116 - Operator Overloading Example
 class Overload116:
     def __init__(self, num):
@@ -1709,8 +2054,11 @@ result116 = objA116 + objB116
 print(result116)
 ```
 
+    Value: 349
+    
 
-```
+
+```python
 # Cell 117 - Operator Overloading Example
 class Overload117:
     def __init__(self, num):
@@ -1728,8 +2076,11 @@ result117 = objA117 + objB117
 print(result117)
 ```
 
+    Value: 352
+    
 
-```
+
+```python
 # Cell 118 - Operator Overloading Example
 class Overload118:
     def __init__(self, num):
@@ -1747,8 +2098,11 @@ result118 = objA118 + objB118
 print(result118)
 ```
 
+    Value: 355
+    
 
-```
+
+```python
 # Cell 119 - Operator Overloading Example
 class Overload119:
     def __init__(self, num):
@@ -1766,8 +2120,11 @@ result119 = objA119 + objB119
 print(result119)
 ```
 
+    Value: 358
+    
 
-```
+
+```python
 # Cell 120 - Operator Overloading Example
 class Overload120:
     def __init__(self, num):
@@ -1785,8 +2142,11 @@ result120 = objA120 + objB120
 print(result120)
 ```
 
+    Value: 361
+    
 
-```
+
+```python
 # Cell 121 - Operator Overloading Example
 class Overload121:
     def __init__(self, num):
@@ -1804,8 +2164,11 @@ result121 = objA121 + objB121
 print(result121)
 ```
 
+    Value: 364
+    
 
-```
+
+```python
 # Cell 122 - Operator Overloading Example
 class Overload122:
     def __init__(self, num):
@@ -1823,8 +2186,11 @@ result122 = objA122 + objB122
 print(result122)
 ```
 
+    Value: 367
+    
 
-```
+
+```python
 # Cell 123 - Operator Overloading Example
 class Overload123:
     def __init__(self, num):
@@ -1842,8 +2208,11 @@ result123 = objA123 + objB123
 print(result123)
 ```
 
+    Value: 370
+    
 
-```
+
+```python
 # Cell 124 - Operator Overloading Example
 class Overload124:
     def __init__(self, num):
@@ -1861,8 +2230,11 @@ result124 = objA124 + objB124
 print(result124)
 ```
 
+    Value: 373
+    
 
-```
+
+```python
 # Cell 125 - Operator Overloading Example
 class Overload125:
     def __init__(self, num):
@@ -1880,8 +2252,11 @@ result125 = objA125 + objB125
 print(result125)
 ```
 
+    Value: 376
+    
 
-```
+
+```python
 # Cell 126 - Operator Overloading Example
 class Overload126:
     def __init__(self, num):
@@ -1899,8 +2274,11 @@ result126 = objA126 + objB126
 print(result126)
 ```
 
+    Value: 379
+    
 
-```
+
+```python
 # Cell 127 - Operator Overloading Example
 class Overload127:
     def __init__(self, num):
@@ -1918,8 +2296,11 @@ result127 = objA127 + objB127
 print(result127)
 ```
 
+    Value: 382
+    
 
-```
+
+```python
 # Cell 128 - Operator Overloading Example
 class Overload128:
     def __init__(self, num):
@@ -1937,8 +2318,11 @@ result128 = objA128 + objB128
 print(result128)
 ```
 
+    Value: 385
+    
 
-```
+
+```python
 # Cell 129 - Operator Overloading Example
 class Overload129:
     def __init__(self, num):
@@ -1956,8 +2340,11 @@ result129 = objA129 + objB129
 print(result129)
 ```
 
+    Value: 388
+    
 
-```
+
+```python
 # Cell 130 - Operator Overloading Example
 class Overload130:
     def __init__(self, num):
@@ -1975,8 +2362,11 @@ result130 = objA130 + objB130
 print(result130)
 ```
 
+    Value: 391
+    
 
-```
+
+```python
 # Cell 131 - Operator Overloading Example
 class Overload131:
     def __init__(self, num):
@@ -1994,8 +2384,11 @@ result131 = objA131 + objB131
 print(result131)
 ```
 
+    Value: 394
+    
 
-```
+
+```python
 # Cell 132 - Operator Overloading Example
 class Overload132:
     def __init__(self, num):
@@ -2013,8 +2406,11 @@ result132 = objA132 + objB132
 print(result132)
 ```
 
+    Value: 397
+    
 
-```
+
+```python
 # Cell 133 - Operator Overloading Example
 class Overload133:
     def __init__(self, num):
@@ -2032,8 +2428,11 @@ result133 = objA133 + objB133
 print(result133)
 ```
 
+    Value: 400
+    
 
-```
+
+```python
 # Cell 134 - Operator Overloading Example
 class Overload134:
     def __init__(self, num):
@@ -2051,8 +2450,11 @@ result134 = objA134 + objB134
 print(result134)
 ```
 
+    Value: 403
+    
 
-```
+
+```python
 # Cell 135 - Operator Overloading Example
 class Overload135:
     def __init__(self, num):
@@ -2070,8 +2472,11 @@ result135 = objA135 + objB135
 print(result135)
 ```
 
+    Value: 406
+    
 
-```
+
+```python
 # Cell 136 - Operator Overloading Example
 class Overload136:
     def __init__(self, num):
@@ -2089,8 +2494,11 @@ result136 = objA136 + objB136
 print(result136)
 ```
 
+    Value: 409
+    
 
-```
+
+```python
 # Cell 137 - Operator Overloading Example
 class Overload137:
     def __init__(self, num):
@@ -2108,8 +2516,11 @@ result137 = objA137 + objB137
 print(result137)
 ```
 
+    Value: 412
+    
 
-```
+
+```python
 # Cell 138 - Operator Overloading Example
 class Overload138:
     def __init__(self, num):
@@ -2127,8 +2538,11 @@ result138 = objA138 + objB138
 print(result138)
 ```
 
+    Value: 415
+    
 
-```
+
+```python
 # Cell 139 - Operator Overloading Example
 class Overload139:
     def __init__(self, num):
@@ -2146,8 +2560,11 @@ result139 = objA139 + objB139
 print(result139)
 ```
 
+    Value: 418
+    
 
-```
+
+```python
 # Cell 140 - Operator Overloading Example
 class Overload140:
     def __init__(self, num):
@@ -2165,8 +2582,11 @@ result140 = objA140 + objB140
 print(result140)
 ```
 
+    Value: 421
+    
 
-```
+
+```python
 # Cell 141 - Operator Overloading Example
 class Overload141:
     def __init__(self, num):
@@ -2184,8 +2604,11 @@ result141 = objA141 + objB141
 print(result141)
 ```
 
+    Value: 424
+    
 
-```
+
+```python
 # Cell 142 - Operator Overloading Example
 class Overload142:
     def __init__(self, num):
@@ -2203,8 +2626,11 @@ result142 = objA142 + objB142
 print(result142)
 ```
 
+    Value: 427
+    
 
-```
+
+```python
 # Cell 143 - Operator Overloading Example
 class Overload143:
     def __init__(self, num):
@@ -2222,8 +2648,11 @@ result143 = objA143 + objB143
 print(result143)
 ```
 
+    Value: 430
+    
 
-```
+
+```python
 # Cell 144 - Operator Overloading Example
 class Overload144:
     def __init__(self, num):
@@ -2241,8 +2670,11 @@ result144 = objA144 + objB144
 print(result144)
 ```
 
+    Value: 433
+    
 
-```
+
+```python
 # Cell 145 - Operator Overloading Example
 class Overload145:
     def __init__(self, num):
@@ -2260,8 +2692,11 @@ result145 = objA145 + objB145
 print(result145)
 ```
 
+    Value: 436
+    
 
-```
+
+```python
 # Cell 146 - Operator Overloading Example
 class Overload146:
     def __init__(self, num):
@@ -2279,8 +2714,11 @@ result146 = objA146 + objB146
 print(result146)
 ```
 
+    Value: 439
+    
 
-```
+
+```python
 # Cell 147 - Operator Overloading Example
 class Overload147:
     def __init__(self, num):
@@ -2298,8 +2736,11 @@ result147 = objA147 + objB147
 print(result147)
 ```
 
+    Value: 442
+    
 
-```
+
+```python
 # Cell 148 - Operator Overloading Example
 class Overload148:
     def __init__(self, num):
@@ -2317,8 +2758,11 @@ result148 = objA148 + objB148
 print(result148)
 ```
 
+    Value: 445
+    
 
-```
+
+```python
 # Cell 149 - Operator Overloading Example
 class Overload149:
     def __init__(self, num):
@@ -2336,8 +2780,11 @@ result149 = objA149 + objB149
 print(result149)
 ```
 
+    Value: 448
+    
 
-```
+
+```python
 # Cell 150 - Operator Overloading Example
 class Overload150:
     def __init__(self, num):
@@ -2355,8 +2802,11 @@ result150 = objA150 + objB150
 print(result150)
 ```
 
+    Value: 451
+    
 
-```
+
+```python
 # Cell 151 - Operator Overloading Example
 class Overload151:
     def __init__(self, num):
@@ -2374,8 +2824,11 @@ result151 = objA151 + objB151
 print(result151)
 ```
 
+    Value: 454
+    
 
-```
+
+```python
 # Cell 152 - Operator Overloading Example
 class Overload152:
     def __init__(self, num):
@@ -2393,8 +2846,11 @@ result152 = objA152 + objB152
 print(result152)
 ```
 
+    Value: 457
+    
 
-```
+
+```python
 # Cell 153 - Operator Overloading Example
 class Overload153:
     def __init__(self, num):
@@ -2412,8 +2868,11 @@ result153 = objA153 + objB153
 print(result153)
 ```
 
+    Value: 460
+    
 
-```
+
+```python
 # Cell 154 - Operator Overloading Example
 class Overload154:
     def __init__(self, num):
@@ -2431,8 +2890,11 @@ result154 = objA154 + objB154
 print(result154)
 ```
 
+    Value: 463
+    
 
-```
+
+```python
 # Cell 155 - Operator Overloading Example
 class Overload155:
     def __init__(self, num):
@@ -2450,8 +2912,11 @@ result155 = objA155 + objB155
 print(result155)
 ```
 
+    Value: 466
+    
 
-```
+
+```python
 # Cell 156 - Operator Overloading Example
 class Overload156:
     def __init__(self, num):
@@ -2469,8 +2934,11 @@ result156 = objA156 + objB156
 print(result156)
 ```
 
+    Value: 469
+    
 
-```
+
+```python
 # Cell 157 - Operator Overloading Example
 class Overload157:
     def __init__(self, num):
@@ -2488,8 +2956,11 @@ result157 = objA157 + objB157
 print(result157)
 ```
 
+    Value: 472
+    
 
-```
+
+```python
 # Cell 158 - Operator Overloading Example
 class Overload158:
     def __init__(self, num):
@@ -2507,8 +2978,11 @@ result158 = objA158 + objB158
 print(result158)
 ```
 
+    Value: 475
+    
 
-```
+
+```python
 # Cell 159 - Operator Overloading Example
 class Overload159:
     def __init__(self, num):
@@ -2526,8 +3000,11 @@ result159 = objA159 + objB159
 print(result159)
 ```
 
+    Value: 478
+    
 
-```
+
+```python
 # Cell 160 - Operator Overloading Example
 class Overload160:
     def __init__(self, num):
@@ -2545,8 +3022,11 @@ result160 = objA160 + objB160
 print(result160)
 ```
 
+    Value: 481
+    
 
-```
+
+```python
 # Cell 161 - Operator Overloading Example
 class Overload161:
     def __init__(self, num):
@@ -2564,8 +3044,11 @@ result161 = objA161 + objB161
 print(result161)
 ```
 
+    Value: 484
+    
 
-```
+
+```python
 # Cell 162 - Operator Overloading Example
 class Overload162:
     def __init__(self, num):
@@ -2583,8 +3066,11 @@ result162 = objA162 + objB162
 print(result162)
 ```
 
+    Value: 487
+    
 
-```
+
+```python
 # Cell 163 - Operator Overloading Example
 class Overload163:
     def __init__(self, num):
@@ -2602,8 +3088,11 @@ result163 = objA163 + objB163
 print(result163)
 ```
 
+    Value: 490
+    
 
-```
+
+```python
 # Cell 164 - Operator Overloading Example
 class Overload164:
     def __init__(self, num):
@@ -2621,8 +3110,11 @@ result164 = objA164 + objB164
 print(result164)
 ```
 
+    Value: 493
+    
 
-```
+
+```python
 # Cell 165 - Operator Overloading Example
 class Overload165:
     def __init__(self, num):
@@ -2640,8 +3132,11 @@ result165 = objA165 + objB165
 print(result165)
 ```
 
+    Value: 496
+    
 
-```
+
+```python
 # Cell 166 - Operator Overloading Example
 class Overload166:
     def __init__(self, num):
@@ -2659,8 +3154,11 @@ result166 = objA166 + objB166
 print(result166)
 ```
 
+    Value: 499
+    
 
-```
+
+```python
 # Cell 167 - Operator Overloading Example
 class Overload167:
     def __init__(self, num):
@@ -2678,8 +3176,11 @@ result167 = objA167 + objB167
 print(result167)
 ```
 
+    Value: 502
+    
 
-```
+
+```python
 # Cell 168 - Operator Overloading Example
 class Overload168:
     def __init__(self, num):
@@ -2697,8 +3198,11 @@ result168 = objA168 + objB168
 print(result168)
 ```
 
+    Value: 505
+    
 
-```
+
+```python
 # Cell 169 - Operator Overloading Example
 class Overload169:
     def __init__(self, num):
@@ -2716,8 +3220,11 @@ result169 = objA169 + objB169
 print(result169)
 ```
 
+    Value: 508
+    
 
-```
+
+```python
 # Cell 170 - Operator Overloading Example
 class Overload170:
     def __init__(self, num):
@@ -2735,8 +3242,11 @@ result170 = objA170 + objB170
 print(result170)
 ```
 
+    Value: 511
+    
 
-```
+
+```python
 # Cell 171 - Operator Overloading Example
 class Overload171:
     def __init__(self, num):
@@ -2754,8 +3264,11 @@ result171 = objA171 + objB171
 print(result171)
 ```
 
+    Value: 514
+    
 
-```
+
+```python
 # Cell 172 - Operator Overloading Example
 class Overload172:
     def __init__(self, num):
@@ -2773,8 +3286,11 @@ result172 = objA172 + objB172
 print(result172)
 ```
 
+    Value: 517
+    
 
-```
+
+```python
 # Cell 173 - Operator Overloading Example
 class Overload173:
     def __init__(self, num):
@@ -2792,8 +3308,11 @@ result173 = objA173 + objB173
 print(result173)
 ```
 
+    Value: 520
+    
 
-```
+
+```python
 # Cell 174 - Operator Overloading Example
 class Overload174:
     def __init__(self, num):
@@ -2811,8 +3330,11 @@ result174 = objA174 + objB174
 print(result174)
 ```
 
+    Value: 523
+    
 
-```
+
+```python
 # Cell 175 - Operator Overloading Example
 class Overload175:
     def __init__(self, num):
@@ -2830,8 +3352,11 @@ result175 = objA175 + objB175
 print(result175)
 ```
 
+    Value: 526
+    
 
-```
+
+```python
 # Cell 176 - Operator Overloading Example
 class Overload176:
     def __init__(self, num):
@@ -2849,8 +3374,11 @@ result176 = objA176 + objB176
 print(result176)
 ```
 
+    Value: 529
+    
 
-```
+
+```python
 # Cell 177 - Operator Overloading Example
 class Overload177:
     def __init__(self, num):
@@ -2868,8 +3396,11 @@ result177 = objA177 + objB177
 print(result177)
 ```
 
+    Value: 532
+    
 
-```
+
+```python
 # Cell 178 - Operator Overloading Example
 class Overload178:
     def __init__(self, num):
@@ -2887,8 +3418,11 @@ result178 = objA178 + objB178
 print(result178)
 ```
 
+    Value: 535
+    
 
-```
+
+```python
 # Cell 179 - Operator Overloading Example
 class Overload179:
     def __init__(self, num):
@@ -2906,8 +3440,11 @@ result179 = objA179 + objB179
 print(result179)
 ```
 
+    Value: 538
+    
 
-```
+
+```python
 # Cell 180 - Operator Overloading Example
 class Overload180:
     def __init__(self, num):
@@ -2925,8 +3462,11 @@ result180 = objA180 + objB180
 print(result180)
 ```
 
+    Value: 541
+    
 
-```
+
+```python
 # Cell 181 - Operator Overloading Example
 class Overload181:
     def __init__(self, num):
@@ -2944,8 +3484,11 @@ result181 = objA181 + objB181
 print(result181)
 ```
 
+    Value: 544
+    
 
-```
+
+```python
 # Cell 182 - Operator Overloading Example
 class Overload182:
     def __init__(self, num):
@@ -2963,8 +3506,11 @@ result182 = objA182 + objB182
 print(result182)
 ```
 
+    Value: 547
+    
 
-```
+
+```python
 # Cell 183 - Operator Overloading Example
 class Overload183:
     def __init__(self, num):
@@ -2982,8 +3528,11 @@ result183 = objA183 + objB183
 print(result183)
 ```
 
+    Value: 550
+    
 
-```
+
+```python
 # Cell 184 - Operator Overloading Example
 class Overload184:
     def __init__(self, num):
@@ -3001,8 +3550,11 @@ result184 = objA184 + objB184
 print(result184)
 ```
 
+    Value: 553
+    
 
-```
+
+```python
 # Cell 185 - Operator Overloading Example
 class Overload185:
     def __init__(self, num):
@@ -3020,8 +3572,11 @@ result185 = objA185 + objB185
 print(result185)
 ```
 
+    Value: 556
+    
 
-```
+
+```python
 # Cell 186 - Operator Overloading Example
 class Overload186:
     def __init__(self, num):
@@ -3039,8 +3594,11 @@ result186 = objA186 + objB186
 print(result186)
 ```
 
+    Value: 559
+    
 
-```
+
+```python
 # Cell 187 - Operator Overloading Example
 class Overload187:
     def __init__(self, num):
@@ -3058,8 +3616,11 @@ result187 = objA187 + objB187
 print(result187)
 ```
 
+    Value: 562
+    
 
-```
+
+```python
 # Cell 188 - Operator Overloading Example
 class Overload188:
     def __init__(self, num):
@@ -3077,8 +3638,11 @@ result188 = objA188 + objB188
 print(result188)
 ```
 
+    Value: 565
+    
 
-```
+
+```python
 # Cell 189 - Operator Overloading Example
 class Overload189:
     def __init__(self, num):
@@ -3096,8 +3660,11 @@ result189 = objA189 + objB189
 print(result189)
 ```
 
+    Value: 568
+    
 
-```
+
+```python
 # Cell 190 - Operator Overloading Example
 class Overload190:
     def __init__(self, num):
@@ -3115,8 +3682,11 @@ result190 = objA190 + objB190
 print(result190)
 ```
 
+    Value: 571
+    
 
-```
+
+```python
 # Cell 191 - Operator Overloading Example
 class Overload191:
     def __init__(self, num):
@@ -3134,8 +3704,11 @@ result191 = objA191 + objB191
 print(result191)
 ```
 
+    Value: 574
+    
 
-```
+
+```python
 # Cell 192 - Operator Overloading Example
 class Overload192:
     def __init__(self, num):
@@ -3153,8 +3726,11 @@ result192 = objA192 + objB192
 print(result192)
 ```
 
+    Value: 577
+    
 
-```
+
+```python
 # Cell 193 - Operator Overloading Example
 class Overload193:
     def __init__(self, num):
@@ -3172,8 +3748,11 @@ result193 = objA193 + objB193
 print(result193)
 ```
 
+    Value: 580
+    
 
-```
+
+```python
 # Cell 194 - Operator Overloading Example
 class Overload194:
     def __init__(self, num):
@@ -3191,8 +3770,11 @@ result194 = objA194 + objB194
 print(result194)
 ```
 
+    Value: 583
+    
 
-```
+
+```python
 # Cell 195 - Operator Overloading Example
 class Overload195:
     def __init__(self, num):
@@ -3210,8 +3792,11 @@ result195 = objA195 + objB195
 print(result195)
 ```
 
+    Value: 586
+    
 
-```
+
+```python
 # Cell 196 - Operator Overloading Example
 class Overload196:
     def __init__(self, num):
@@ -3229,8 +3814,11 @@ result196 = objA196 + objB196
 print(result196)
 ```
 
+    Value: 589
+    
 
-```
+
+```python
 # Cell 197 - Operator Overloading Example
 class Overload197:
     def __init__(self, num):
@@ -3248,8 +3836,11 @@ result197 = objA197 + objB197
 print(result197)
 ```
 
+    Value: 592
+    
 
-```
+
+```python
 # Cell 198 - Operator Overloading Example
 class Overload198:
     def __init__(self, num):
@@ -3267,8 +3858,11 @@ result198 = objA198 + objB198
 print(result198)
 ```
 
+    Value: 595
+    
 
-```
+
+```python
 # Cell 199 - Operator Overloading Example
 class Overload199:
     def __init__(self, num):
@@ -3286,8 +3880,11 @@ result199 = objA199 + objB199
 print(result199)
 ```
 
+    Value: 598
+    
 
-```
+
+```python
 # Cell 200 - Operator Overloading Example
 class Overload200:
     def __init__(self, num):
@@ -3304,6 +3901,9 @@ objB200 = Overload200(201)
 result200 = objA200 + objB200
 print(result200)
 ```
+
+    Value: 601
+    
 
 
 ---
