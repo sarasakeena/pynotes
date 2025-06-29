@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Unemploymentanalysis</title>
+
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://sarasakeena.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://sarasakeena.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://sarasakeena.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://sarasakeena.github.io/pynotes/unemploymentanalysis.html" rel="bookmark"
+        title="Permalink to Unemploymentanalysis">Unemploymentanalysis</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\HP\Desktop\OIB-SIP\unemploymentanalysis\unemployment\Unemployment in India.csv&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Data Shape:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Data Shape: (768, 7)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">First 5 Rows:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>First 5 Rows:
+            Region         Date  Frequency   Estimated Unemployment Rate (%)  \
+0  Andhra Pradesh   31-05-2019    Monthly                              3.65   
+1  Andhra Pradesh   30-06-2019    Monthly                              3.05   
+2  Andhra Pradesh   31-07-2019    Monthly                              3.75   
+3  Andhra Pradesh   31-08-2019    Monthly                              3.32   
+4  Andhra Pradesh   30-09-2019    Monthly                              5.17
+
+    Estimated Employed   Estimated Labour Participation Rate (%)   Area  
+0           11999139.0                                     43.24  Rural  
+1           11755881.0                                     42.05  Rural  
+2           12086707.0                                     43.50  Rural  
+3           12285693.0                                     43.97  Rural  
+4           12256762.0                                     44.68  Rural
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Column Names:&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nx">Column</span><span class="w"> </span><span class="nx">Names</span><span class="p">:</span><span class="w"> </span><span class="nx">Index</span><span class="p">([</span><span class="err">&#39;</span><span class="nx">Region</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="w"> </span><span class="nx">Date</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="w"> </span><span class="nx">Frequency</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="w"> </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Unemployment</span><span class="w"> </span><span class="nx">Rate</span><span class="w"> </span><span class="p">(</span><span class="o">%</span><span class="p">)</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">       </span><span class="err">&#39;</span><span class="w"> </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Employed</span><span class="err">&#39;</span><span class="p">,</span><span class="w"> </span><span class="err">&#39;</span><span class="w"> </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Labour</span><span class="w"> </span><span class="nx">Participation</span><span class="w"> </span><span class="nx">Rate</span><span class="w"> </span><span class="p">(</span><span class="o">%</span><span class="p">)</span><span class="err">&#39;</span><span class="p">,</span>
+<span class="w">       </span><span class="err">&#39;</span><span class="nx">Area</span><span class="err">&#39;</span><span class="p">],</span>
+<span class="w">      </span><span class="nx">dtype</span><span class="p">=</span><span class="err">&#39;</span><span class="nx">object</span><span class="err">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Missing Values:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nx">Missing</span><span class="w"> </span><span class="nx">Values</span><span class="p">:</span>
+<span class="w"> </span><span class="nx">Region</span><span class="w">                                      </span><span class="mi">28</span>
+<span class="w"> </span><span class="nx">Date</span><span class="w">                                       </span><span class="mi">28</span>
+<span class="w"> </span><span class="nx">Frequency</span><span class="w">                                  </span><span class="mi">28</span>
+<span class="w"> </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Unemployment</span><span class="w"> </span><span class="nx">Rate</span><span class="w"> </span><span class="p">(</span><span class="o">%</span><span class="p">)</span><span class="w">            </span><span class="mi">28</span>
+<span class="w"> </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Employed</span><span class="w">                         </span><span class="mi">28</span>
+<span class="w"> </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Labour</span><span class="w"> </span><span class="nx">Participation</span><span class="w"> </span><span class="nx">Rate</span><span class="w"> </span><span class="p">(</span><span class="o">%</span><span class="p">)</span><span class="w">    </span><span class="mi">28</span>
+<span class="nx">Area</span><span class="w">                                        </span><span class="mi">28</span>
+<span class="nx">dtype</span><span class="p">:</span><span class="w"> </span><span class="nx">int64</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Info:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nx">Info</span><span class="p">:</span>
+
+<span class="p">&lt;</span><span class="kd">class</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">pandas</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">frame</span><span class="p">.</span><span class="nx">DataFrame</span><span class="err">&#39;</span><span class="p">&gt;</span>
+<span class="nx">RangeIndex</span><span class="p">:</span><span class="w"> </span><span class="mi">768</span><span class="w"> </span><span class="nx">entries</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="mi">767</span>
+<span class="nx">Data</span><span class="w"> </span><span class="nx">columns</span><span class="w"> </span><span class="p">(</span><span class="nx">total</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="nx">columns</span><span class="p">):</span>
+<span class="w"> </span><span class="err">#</span><span class="w">   </span><span class="nx">Column</span><span class="w">                                    </span><span class="nx">Non</span><span class="o">-</span><span class="nx">Null</span><span class="w"> </span><span class="nx">Count</span><span class="w">  </span><span class="nx">Dtype</span><span class="w">  </span>
+<span class="o">---</span><span class="w">  </span><span class="o">------</span><span class="w">                                    </span><span class="o">--------------</span><span class="w">  </span><span class="o">-----</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">0</span><span class="w">   </span><span class="nx">Region</span><span class="w">                                    </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">object</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">1</span><span class="w">    </span><span class="nx">Date</span><span class="w">                                     </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">object</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">2</span><span class="w">    </span><span class="nx">Frequency</span><span class="w">                                </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">object</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">3</span><span class="w">    </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Unemployment</span><span class="w"> </span><span class="nx">Rate</span><span class="w"> </span><span class="p">(</span><span class="o">%</span><span class="p">)</span><span class="w">          </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">float64</span>
+<span class="w"> </span><span class="mi">4</span><span class="w">    </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Employed</span><span class="w">                       </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">float64</span>
+<span class="w"> </span><span class="mi">5</span><span class="w">    </span><span class="nx">Estimated</span><span class="w"> </span><span class="nx">Labour</span><span class="w"> </span><span class="nx">Participation</span><span class="w"> </span><span class="nx">Rate</span><span class="w"> </span><span class="p">(</span><span class="o">%</span><span class="p">)</span><span class="w">  </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">float64</span>
+<span class="w"> </span><span class="mi">6</span><span class="w">   </span><span class="nx">Area</span><span class="w">                                      </span><span class="mi">740</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">    </span><span class="nx">object</span><span class="w"> </span>
+<span class="nx">dtypes</span><span class="p">:</span><span class="w"> </span><span class="nx">float64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="nx">object</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nx">memory</span><span class="w"> </span><span class="nx">usage</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">42.1</span><span class="o">+</span><span class="w"> </span><span class="nx">KB</span>
+<span class="nx">None</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Description:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Description</span><span class="o">:</span>
+<span class="w">        </span><span class="n">Estimated</span><span class="w"> </span><span class="n">Unemployment</span><span class="w"> </span><span class="n">Rate</span><span class="w"> </span><span class="o">(%)</span><span class="w">  </span><span class="n">Estimated</span><span class="w"> </span><span class="n">Employed</span><span class="w">  </span><span class="o">\</span>
+<span class="n">count</span><span class="w">                       </span><span class="mf">740.000000</span><span class="w">        </span><span class="mf">7.400000</span><span class="n">e</span><span class="o">+</span><span class="mi">02</span><span class="w">   </span>
+<span class="n">mean</span><span class="w">                         </span><span class="mf">11.787946</span><span class="w">        </span><span class="mf">7.204460</span><span class="n">e</span><span class="o">+</span><span class="mi">06</span><span class="w">   </span>
+<span class="n">std</span><span class="w">                          </span><span class="mf">10.721298</span><span class="w">        </span><span class="mf">8.087988</span><span class="n">e</span><span class="o">+</span><span class="mi">06</span><span class="w">   </span>
+<span class="n">min</span><span class="w">                           </span><span class="mf">0.000000</span><span class="w">        </span><span class="mf">4.942000</span><span class="n">e</span><span class="o">+</span><span class="mi">04</span><span class="w">   </span>
+<span class="mi">25</span><span class="o">%</span><span class="w">                           </span><span class="mf">4.657500</span><span class="w">        </span><span class="mf">1.190404</span><span class="n">e</span><span class="o">+</span><span class="mi">06</span><span class="w">   </span>
+<span class="mi">50</span><span class="o">%</span><span class="w">                           </span><span class="mf">8.350000</span><span class="w">        </span><span class="mf">4.744178</span><span class="n">e</span><span class="o">+</span><span class="mi">06</span><span class="w">   </span>
+<span class="mi">75</span><span class="o">%</span><span class="w">                          </span><span class="mf">15.887500</span><span class="w">        </span><span class="mf">1.127549</span><span class="n">e</span><span class="o">+</span><span class="mi">07</span><span class="w">   </span>
+<span class="n">max</span><span class="w">                          </span><span class="mf">76.740000</span><span class="w">        </span><span class="mf">4.577751</span><span class="n">e</span><span class="o">+</span><span class="mi">07</span>
+
+<span class="w">       </span><span class="n">Estimated</span><span class="w"> </span><span class="n">Labour</span><span class="w"> </span><span class="n">Participation</span><span class="w"> </span><span class="n">Rate</span><span class="w"> </span><span class="o">(%)</span><span class="w">  </span>
+<span class="n">count</span><span class="w">                               </span><span class="mf">740.000000</span><span class="w">  </span>
+<span class="n">mean</span><span class="w">                                 </span><span class="mf">42.630122</span><span class="w">  </span>
+<span class="n">std</span><span class="w">                                   </span><span class="mf">8.111094</span><span class="w">  </span>
+<span class="n">min</span><span class="w">                                  </span><span class="mf">13.330000</span><span class="w">  </span>
+<span class="mi">25</span><span class="o">%</span><span class="w">                                  </span><span class="mf">38.062500</span><span class="w">  </span>
+<span class="mi">50</span><span class="o">%</span><span class="w">                                  </span><span class="mf">41.160000</span><span class="w">  </span>
+<span class="mi">75</span><span class="o">%</span><span class="w">                                  </span><span class="mf">45.505000</span><span class="w">  </span>
+<span class="n">max</span><span class="w">                                  </span><span class="mf">72.570000</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="s1">&#39;Frequency&#39;</span><span class="p">,</span> <span class="s1">&#39;Estimated Unemployment Rate&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Estimated Employed&#39;</span><span class="p">,</span> <span class="s1">&#39;Estimated Labour Participation Rate&#39;</span><span class="p">,</span> <span class="s1">&#39;Area&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>C:\Users\HP\AppData\Local\Temp\ipykernel_21812\1453708669.py:1: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass <span class="sb">`dayfirst=True`</span> or specify a format to silence this warning.
+  data[&#39;Date&#39;] = pd.to_datetime(data[&#39;Date&#39;])
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;darkgrid&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Estimated Unemployment Rate&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Unemployment Rate Over Time in India&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Estimated Unemployment Rate (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="/pynotes/images/unemploymentanalysis_11_0.png"></p>
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">region_avg</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Region&#39;</span><span class="p">)[</span><span class="s1">&#39;Estimated Unemployment Rate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">region_avg</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">region_avg</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Average Unemployment Rate by Region&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Region&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Average Unemployment Rate (%)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="o">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">HP</span><span class="err">\</span><span class="n">AppData</span><span class="err">\</span><span class="k">Local</span><span class="err">\</span><span class="n">Temp</span><span class="err">\</span><span class="n">ipykernel_21812</span><span class="err">\</span><span class="mf">2984665358.</span><span class="n">py</span><span class="o">:</span><span class="mi">3</span><span class="o">:</span><span class="w"> </span><span class="n">FutureWarning</span><span class="o">:</span>
+
+<span class="n">Passing</span><span class="w"> </span><span class="n n-Quoted">`palette`</span><span class="w"> </span><span class="k">without</span><span class="w"> </span><span class="n">assigning</span><span class="w"> </span><span class="n n-Quoted">`hue`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">removed</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">v0</span><span class="mf">.14.0</span><span class="p">.</span><span class="w"> </span><span class="n">Assign</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n n-Quoted">`x`</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n n-Quoted">`hue`</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n n-Quoted">`legend=False`</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="n">effect</span><span class="p">.</span>
+
+<span class="w">  </span><span class="n">sns</span><span class="p">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">region_avg</span><span class="p">.</span><span class="k">index</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">region_avg</span><span class="p">.</span><span class="k">values</span><span class="p">,</span><span class="w"> </span><span class="n">palette</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="png" src="/pynotes/images/unemploymentanalysis_12_1.png"></p>
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Estimated Unemployment Rate&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Unemployment Rate by Area&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="o">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">HP</span><span class="err">\</span><span class="n">AppData</span><span class="err">\</span><span class="k">Local</span><span class="err">\</span><span class="n">Temp</span><span class="err">\</span><span class="n">ipykernel_21812</span><span class="err">\</span><span class="mf">1027203389.</span><span class="n">py</span><span class="o">:</span><span class="mi">2</span><span class="o">:</span><span class="w"> </span><span class="n">FutureWarning</span><span class="o">:</span>
+
+<span class="n">Passing</span><span class="w"> </span><span class="n n-Quoted">`palette`</span><span class="w"> </span><span class="k">without</span><span class="w"> </span><span class="n">assigning</span><span class="w"> </span><span class="n n-Quoted">`hue`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">removed</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">v0</span><span class="mf">.14.0</span><span class="p">.</span><span class="w"> </span><span class="n">Assign</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n n-Quoted">`x`</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n n-Quoted">`hue`</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n n-Quoted">`legend=False`</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="n">effect</span><span class="p">.</span>
+
+<span class="w">  </span><span class="n">sns</span><span class="p">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Area&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="s1">&#39;Estimated Unemployment Rate&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">data</span><span class="o">=</span><span class="k">data</span><span class="p">,</span><span class="w"> </span><span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="png" src="/pynotes/images/unemploymentanalysis_13_1.png"></p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 15</strong></p>
+<p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://sarasakeena.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://sarasakeena.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/sarasakeena/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by SARA SAKEENA</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>
