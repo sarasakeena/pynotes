@@ -52,8 +52,285 @@
 </h6>
 
 
-    <hr>
-<p><strong>Score: 0</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\datasets\ipl_2023_batting.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span>
+</code></pre></div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Player</th>
+      <th>Runs</th>
+      <th>Matches</th>
+      <th>Balls</th>
+      <th>Strike Rate</th>
+      <th>Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Shubman Gill</td>
+      <td>890</td>
+      <td>17</td>
+      <td>550</td>
+      <td>162.0</td>
+      <td>59.3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Faf du Plessis</td>
+      <td>730</td>
+      <td>14</td>
+      <td>475</td>
+      <td>153.7</td>
+      <td>56.1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Devdutt Padikkal</td>
+      <td>421</td>
+      <td>15</td>
+      <td>360</td>
+      <td>117.0</td>
+      <td>35.1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Virat Kohli</td>
+      <td>639</td>
+      <td>14</td>
+      <td>432</td>
+      <td>147.9</td>
+      <td>53.3</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ruturaj Gaikwad</td>
+      <td>590</td>
+      <td>13</td>
+      <td>405</td>
+      <td>145.6</td>
+      <td>49.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>David Warner</td>
+      <td>516</td>
+      <td>14</td>
+      <td>378</td>
+      <td>136.5</td>
+      <td>44.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Suryakumar Yadav</td>
+      <td>605</td>
+      <td>13</td>
+      <td>370</td>
+      <td>163.5</td>
+      <td>50.4</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MS Dhoni</td>
+      <td>105</td>
+      <td>10</td>
+      <td>72</td>
+      <td>145.8</td>
+      <td>26.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="kd">class</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">pandas</span><span class="p">.</span><span class="nx">core</span><span class="p">.</span><span class="nx">frame</span><span class="p">.</span><span class="nx">DataFrame</span><span class="err">&#39;</span><span class="p">&gt;</span>
+<span class="nx">RangeIndex</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="nx">entries</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="mi">7</span>
+<span class="nx">Data</span><span class="w"> </span><span class="nx">columns</span><span class="w"> </span><span class="p">(</span><span class="nx">total</span><span class="w"> </span><span class="mi">6</span><span class="w"> </span><span class="nx">columns</span><span class="p">):</span>
+<span class="w"> </span><span class="err">#</span><span class="w">   </span><span class="nx">Column</span><span class="w">       </span><span class="nx">Non</span><span class="o">-</span><span class="nx">Null</span><span class="w"> </span><span class="nx">Count</span><span class="w">  </span><span class="nx">Dtype</span><span class="w">  </span>
+<span class="o">---</span><span class="w">  </span><span class="o">------</span><span class="w">       </span><span class="o">--------------</span><span class="w">  </span><span class="o">-----</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">0</span><span class="w">   </span><span class="nx">Player</span><span class="w">       </span><span class="mi">8</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">      </span><span class="nx">object</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">1</span><span class="w">   </span><span class="nx">Runs</span><span class="w">         </span><span class="mi">8</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">      </span><span class="nx">int64</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">2</span><span class="w">   </span><span class="nx">Matches</span><span class="w">      </span><span class="mi">8</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">      </span><span class="nx">int64</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">3</span><span class="w">   </span><span class="nx">Balls</span><span class="w">        </span><span class="mi">8</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">      </span><span class="nx">int64</span><span class="w">  </span>
+<span class="w"> </span><span class="mi">4</span><span class="w">   </span><span class="nx">Strike</span><span class="w"> </span><span class="nx">Rate</span><span class="w">  </span><span class="mi">8</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">      </span><span class="nx">float64</span>
+<span class="w"> </span><span class="mi">5</span><span class="w">   </span><span class="nx">Average</span><span class="w">      </span><span class="mi">8</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">null</span><span class="w">      </span><span class="nx">float64</span>
+<span class="nx">dtypes</span><span class="p">:</span><span class="w"> </span><span class="nx">float64</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="nx">int64</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="nx">object</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nx">memory</span><span class="w"> </span><span class="nx">usage</span><span class="p">:</span><span class="w"> </span><span class="m m-Double">516.0</span><span class="o">+</span><span class="w"> </span><span class="nx">bytes</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Runs&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Player</th>
+      <th>Runs</th>
+      <th>Matches</th>
+      <th>Balls</th>
+      <th>Strike Rate</th>
+      <th>Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Shubman Gill</td>
+      <td>890</td>
+      <td>17</td>
+      <td>550</td>
+      <td>162.0</td>
+      <td>59.3</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Faf du Plessis</td>
+      <td>730</td>
+      <td>14</td>
+      <td>475</td>
+      <td>153.7</td>
+      <td>56.1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Virat Kohli</td>
+      <td>639</td>
+      <td>14</td>
+      <td>432</td>
+      <td>147.9</td>
+      <td>53.3</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Suryakumar Yadav</td>
+      <td>605</td>
+      <td>13</td>
+      <td>370</td>
+      <td>163.5</td>
+      <td>50.4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ruturaj Gaikwad</td>
+      <td>590</td>
+      <td>13</td>
+      <td>405</td>
+      <td>145.6</td>
+      <td>49.2</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>David Warner</td>
+      <td>516</td>
+      <td>14</td>
+      <td>378</td>
+      <td>136.5</td>
+      <td>44.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Devdutt Padikkal</td>
+      <td>421</td>
+      <td>15</td>
+      <td>360</td>
+      <td>117.0</td>
+      <td>35.1</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>MS Dhoni</td>
+      <td>105</td>
+      <td>10</td>
+      <td>72</td>
+      <td>145.8</td>
+      <td>26.2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;Runs&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Player&quot;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Runs&quot;</span><span class="p">),</span> <span class="n">palette</span><span class="o">=</span><span class="s2">&quot;crest&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Top Run Scorers - IPL 2023&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Runs&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Player&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="o">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">HP</span><span class="err">\</span><span class="n">AppData</span><span class="err">\</span><span class="k">Local</span><span class="err">\</span><span class="n">Temp</span><span class="err">\</span><span class="n">ipykernel_12800</span><span class="err">\</span><span class="mf">3938584462.</span><span class="n">py</span><span class="o">:</span><span class="mi">2</span><span class="o">:</span><span class="w"> </span><span class="n">FutureWarning</span><span class="o">:</span>
+
+<span class="n">Passing</span><span class="w"> </span><span class="n n-Quoted">`palette`</span><span class="w"> </span><span class="k">without</span><span class="w"> </span><span class="n">assigning</span><span class="w"> </span><span class="n n-Quoted">`hue`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">deprecated</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">will</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">removed</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">v0</span><span class="mf">.14.0</span><span class="p">.</span><span class="w"> </span><span class="n">Assign</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n n-Quoted">`y`</span><span class="w"> </span><span class="n">variable</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n n-Quoted">`hue`</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n n-Quoted">`legend=False`</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">same</span><span class="w"> </span><span class="n">effect</span><span class="p">.</span>
+
+<span class="w">  </span><span class="n">sns</span><span class="p">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s2">&quot;Runs&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="s2">&quot;Player&quot;</span><span class="p">,</span><span class="w"> </span><span class="k">data</span><span class="o">=</span><span class="n">df</span><span class="p">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Runs&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">palette</span><span class="o">=</span><span class="s2">&quot;crest&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p><img alt="png" src="/pynotes/images/IPL_2023_Batting_Analysis_4_1.png"></p>
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Strike Rate&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nx">Player</span><span class="w">         </span><span class="nx">Suryakumar</span><span class="w"> </span><span class="nx">Yadav</span>
+<span class="nx">Runs</span><span class="w">                        </span><span class="mi">605</span>
+<span class="nx">Matches</span><span class="w">                      </span><span class="mi">13</span>
+<span class="nx">Balls</span><span class="w">                       </span><span class="mi">370</span>
+<span class="nx">Strike</span><span class="w"> </span><span class="nx">Rate</span><span class="w">               </span><span class="m m-Double">163.5</span>
+<span class="nx">Average</span><span class="w">                    </span><span class="m m-Double">50.4</span>
+<span class="nx">Name</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w"> </span><span class="nx">dtype</span><span class="p">:</span><span class="w"> </span><span class="nx">object</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s2">&quot;Strike Rate&quot;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s2">&quot;Average&quot;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s2">&quot;Player&quot;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Strike Rate vs Batting Average&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<p><img alt="png" src="/pynotes/images/IPL_2023_Batting_Analysis_6_0.png"></p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p>
 <p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a>
 
 </p>
