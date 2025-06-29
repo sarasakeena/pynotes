@@ -2,11 +2,11 @@
 title: Pytest Pytorch Scipy Tensorflow
 date: 2025-06-30
 author: Your Name
-cell_count: 600
+cell_count: 601
 score: 600
 ---
 
-```
+```python
 # Cell 1 - Pytest Example
 def add_1(a, b):
     return a + b + 1
@@ -18,8 +18,11 @@ test_add_1()
 print("Pytest Cell 1 Passed")
 ```
 
+    Pytest Cell 1 Passed
+    
 
-```
+
+```python
 # Cell 2 - Pytest Example
 def add_2(a, b):
     return a + b + 2
@@ -31,8 +34,11 @@ test_add_2()
 print("Pytest Cell 2 Passed")
 ```
 
+    Pytest Cell 2 Passed
+    
 
-```
+
+```python
 # Cell 3 - Pytest Example
 def add_3(a, b):
     return a + b + 3
@@ -44,8 +50,11 @@ test_add_3()
 print("Pytest Cell 3 Passed")
 ```
 
+    Pytest Cell 3 Passed
+    
 
-```
+
+```python
 # Cell 4 - Pytest Example
 def add_4(a, b):
     return a + b + 4
@@ -57,8 +66,11 @@ test_add_4()
 print("Pytest Cell 4 Passed")
 ```
 
+    Pytest Cell 4 Passed
+    
 
-```
+
+```python
 # Cell 5 - Pytest Example
 def add_5(a, b):
     return a + b + 5
@@ -70,8 +82,11 @@ test_add_5()
 print("Pytest Cell 5 Passed")
 ```
 
+    Pytest Cell 5 Passed
+    
 
-```
+
+```python
 # Cell 6 - Pytest Example
 def add_6(a, b):
     return a + b + 6
@@ -83,8 +98,11 @@ test_add_6()
 print("Pytest Cell 6 Passed")
 ```
 
+    Pytest Cell 6 Passed
+    
 
-```
+
+```python
 # Cell 7 - Pytest Example
 def add_7(a, b):
     return a + b + 7
@@ -96,8 +114,11 @@ test_add_7()
 print("Pytest Cell 7 Passed")
 ```
 
+    Pytest Cell 7 Passed
+    
 
-```
+
+```python
 # Cell 8 - Pytest Example
 def add_8(a, b):
     return a + b + 8
@@ -109,8 +130,11 @@ test_add_8()
 print("Pytest Cell 8 Passed")
 ```
 
+    Pytest Cell 8 Passed
+    
 
-```
+
+```python
 # Cell 9 - Pytest Example
 def add_9(a, b):
     return a + b + 9
@@ -122,8 +146,11 @@ test_add_9()
 print("Pytest Cell 9 Passed")
 ```
 
+    Pytest Cell 9 Passed
+    
 
-```
+
+```python
 # Cell 10 - Pytest Example
 def add_10(a, b):
     return a + b + 10
@@ -135,8 +162,11 @@ test_add_10()
 print("Pytest Cell 10 Passed")
 ```
 
+    Pytest Cell 10 Passed
+    
 
-```
+
+```python
 # Cell 11 - Pytest Example
 def add_11(a, b):
     return a + b + 11
@@ -148,8 +178,11 @@ test_add_11()
 print("Pytest Cell 11 Passed")
 ```
 
+    Pytest Cell 11 Passed
+    
 
-```
+
+```python
 # Cell 12 - Pytest Example
 def add_12(a, b):
     return a + b + 12
@@ -161,8 +194,11 @@ test_add_12()
 print("Pytest Cell 12 Passed")
 ```
 
+    Pytest Cell 12 Passed
+    
 
-```
+
+```python
 # Cell 13 - Pytest Example
 def add_13(a, b):
     return a + b + 13
@@ -174,8 +210,11 @@ test_add_13()
 print("Pytest Cell 13 Passed")
 ```
 
+    Pytest Cell 13 Passed
+    
 
-```
+
+```python
 # Cell 14 - Pytest Example
 def add_14(a, b):
     return a + b + 14
@@ -187,8 +226,11 @@ test_add_14()
 print("Pytest Cell 14 Passed")
 ```
 
+    Pytest Cell 14 Passed
+    
 
-```
+
+```python
 # Cell 15 - Pytest Example
 def add_15(a, b):
     return a + b + 15
@@ -200,8 +242,11 @@ test_add_15()
 print("Pytest Cell 15 Passed")
 ```
 
+    Pytest Cell 15 Passed
+    
 
-```
+
+```python
 # Cell 16 - Pytest Example
 def add_16(a, b):
     return a + b + 16
@@ -213,8 +258,11 @@ test_add_16()
 print("Pytest Cell 16 Passed")
 ```
 
+    Pytest Cell 16 Passed
+    
 
-```
+
+```python
 # Cell 17 - Pytest Example
 def add_17(a, b):
     return a + b + 17
@@ -226,8 +274,11 @@ test_add_17()
 print("Pytest Cell 17 Passed")
 ```
 
+    Pytest Cell 17 Passed
+    
 
-```
+
+```python
 # Cell 18 - Pytest Example
 def add_18(a, b):
     return a + b + 18
@@ -239,8 +290,11 @@ test_add_18()
 print("Pytest Cell 18 Passed")
 ```
 
+    Pytest Cell 18 Passed
+    
 
-```
+
+```python
 # Cell 19 - Pytest Example
 def add_19(a, b):
     return a + b + 19
@@ -252,8 +306,11 @@ test_add_19()
 print("Pytest Cell 19 Passed")
 ```
 
+    Pytest Cell 19 Passed
+    
 
-```
+
+```python
 # Cell 20 - Pytest Example
 def add_20(a, b):
     return a + b + 20
@@ -265,8 +322,11 @@ test_add_20()
 print("Pytest Cell 20 Passed")
 ```
 
+    Pytest Cell 20 Passed
+    
 
-```
+
+```python
 # Cell 21 - Pytest Example
 def add_21(a, b):
     return a + b + 21
@@ -278,8 +338,11 @@ test_add_21()
 print("Pytest Cell 21 Passed")
 ```
 
+    Pytest Cell 21 Passed
+    
 
-```
+
+```python
 # Cell 22 - Pytest Example
 def add_22(a, b):
     return a + b + 22
@@ -291,8 +354,11 @@ test_add_22()
 print("Pytest Cell 22 Passed")
 ```
 
+    Pytest Cell 22 Passed
+    
 
-```
+
+```python
 # Cell 23 - Pytest Example
 def add_23(a, b):
     return a + b + 23
@@ -304,8 +370,11 @@ test_add_23()
 print("Pytest Cell 23 Passed")
 ```
 
+    Pytest Cell 23 Passed
+    
 
-```
+
+```python
 # Cell 24 - Pytest Example
 def add_24(a, b):
     return a + b + 24
@@ -317,8 +386,11 @@ test_add_24()
 print("Pytest Cell 24 Passed")
 ```
 
+    Pytest Cell 24 Passed
+    
 
-```
+
+```python
 # Cell 25 - Pytest Example
 def add_25(a, b):
     return a + b + 25
@@ -330,8 +402,11 @@ test_add_25()
 print("Pytest Cell 25 Passed")
 ```
 
+    Pytest Cell 25 Passed
+    
 
-```
+
+```python
 # Cell 26 - Pytest Example
 def add_26(a, b):
     return a + b + 26
@@ -343,8 +418,11 @@ test_add_26()
 print("Pytest Cell 26 Passed")
 ```
 
+    Pytest Cell 26 Passed
+    
 
-```
+
+```python
 # Cell 27 - Pytest Example
 def add_27(a, b):
     return a + b + 27
@@ -356,8 +434,11 @@ test_add_27()
 print("Pytest Cell 27 Passed")
 ```
 
+    Pytest Cell 27 Passed
+    
 
-```
+
+```python
 # Cell 28 - Pytest Example
 def add_28(a, b):
     return a + b + 28
@@ -369,8 +450,11 @@ test_add_28()
 print("Pytest Cell 28 Passed")
 ```
 
+    Pytest Cell 28 Passed
+    
 
-```
+
+```python
 # Cell 29 - Pytest Example
 def add_29(a, b):
     return a + b + 29
@@ -382,8 +466,11 @@ test_add_29()
 print("Pytest Cell 29 Passed")
 ```
 
+    Pytest Cell 29 Passed
+    
 
-```
+
+```python
 # Cell 30 - Pytest Example
 def add_30(a, b):
     return a + b + 30
@@ -395,8 +482,11 @@ test_add_30()
 print("Pytest Cell 30 Passed")
 ```
 
+    Pytest Cell 30 Passed
+    
 
-```
+
+```python
 # Cell 31 - Pytest Example
 def add_31(a, b):
     return a + b + 31
@@ -408,8 +498,11 @@ test_add_31()
 print("Pytest Cell 31 Passed")
 ```
 
+    Pytest Cell 31 Passed
+    
 
-```
+
+```python
 # Cell 32 - Pytest Example
 def add_32(a, b):
     return a + b + 32
@@ -421,8 +514,11 @@ test_add_32()
 print("Pytest Cell 32 Passed")
 ```
 
+    Pytest Cell 32 Passed
+    
 
-```
+
+```python
 # Cell 33 - Pytest Example
 def add_33(a, b):
     return a + b + 33
@@ -434,8 +530,11 @@ test_add_33()
 print("Pytest Cell 33 Passed")
 ```
 
+    Pytest Cell 33 Passed
+    
 
-```
+
+```python
 # Cell 34 - Pytest Example
 def add_34(a, b):
     return a + b + 34
@@ -447,8 +546,11 @@ test_add_34()
 print("Pytest Cell 34 Passed")
 ```
 
+    Pytest Cell 34 Passed
+    
 
-```
+
+```python
 # Cell 35 - Pytest Example
 def add_35(a, b):
     return a + b + 35
@@ -460,8 +562,11 @@ test_add_35()
 print("Pytest Cell 35 Passed")
 ```
 
+    Pytest Cell 35 Passed
+    
 
-```
+
+```python
 # Cell 36 - Pytest Example
 def add_36(a, b):
     return a + b + 36
@@ -473,8 +578,11 @@ test_add_36()
 print("Pytest Cell 36 Passed")
 ```
 
+    Pytest Cell 36 Passed
+    
 
-```
+
+```python
 # Cell 37 - Pytest Example
 def add_37(a, b):
     return a + b + 37
@@ -486,8 +594,11 @@ test_add_37()
 print("Pytest Cell 37 Passed")
 ```
 
+    Pytest Cell 37 Passed
+    
 
-```
+
+```python
 # Cell 38 - Pytest Example
 def add_38(a, b):
     return a + b + 38
@@ -499,8 +610,11 @@ test_add_38()
 print("Pytest Cell 38 Passed")
 ```
 
+    Pytest Cell 38 Passed
+    
 
-```
+
+```python
 # Cell 39 - Pytest Example
 def add_39(a, b):
     return a + b + 39
@@ -512,8 +626,11 @@ test_add_39()
 print("Pytest Cell 39 Passed")
 ```
 
+    Pytest Cell 39 Passed
+    
 
-```
+
+```python
 # Cell 40 - Pytest Example
 def add_40(a, b):
     return a + b + 40
@@ -525,8 +642,11 @@ test_add_40()
 print("Pytest Cell 40 Passed")
 ```
 
+    Pytest Cell 40 Passed
+    
 
-```
+
+```python
 # Cell 41 - Pytest Example
 def add_41(a, b):
     return a + b + 41
@@ -538,8 +658,11 @@ test_add_41()
 print("Pytest Cell 41 Passed")
 ```
 
+    Pytest Cell 41 Passed
+    
 
-```
+
+```python
 # Cell 42 - Pytest Example
 def add_42(a, b):
     return a + b + 42
@@ -551,8 +674,11 @@ test_add_42()
 print("Pytest Cell 42 Passed")
 ```
 
+    Pytest Cell 42 Passed
+    
 
-```
+
+```python
 # Cell 43 - Pytest Example
 def add_43(a, b):
     return a + b + 43
@@ -564,8 +690,11 @@ test_add_43()
 print("Pytest Cell 43 Passed")
 ```
 
+    Pytest Cell 43 Passed
+    
 
-```
+
+```python
 # Cell 44 - Pytest Example
 def add_44(a, b):
     return a + b + 44
@@ -577,8 +706,11 @@ test_add_44()
 print("Pytest Cell 44 Passed")
 ```
 
+    Pytest Cell 44 Passed
+    
 
-```
+
+```python
 # Cell 45 - Pytest Example
 def add_45(a, b):
     return a + b + 45
@@ -590,8 +722,11 @@ test_add_45()
 print("Pytest Cell 45 Passed")
 ```
 
+    Pytest Cell 45 Passed
+    
 
-```
+
+```python
 # Cell 46 - Pytest Example
 def add_46(a, b):
     return a + b + 46
@@ -603,8 +738,11 @@ test_add_46()
 print("Pytest Cell 46 Passed")
 ```
 
+    Pytest Cell 46 Passed
+    
 
-```
+
+```python
 # Cell 47 - Pytest Example
 def add_47(a, b):
     return a + b + 47
@@ -616,8 +754,11 @@ test_add_47()
 print("Pytest Cell 47 Passed")
 ```
 
+    Pytest Cell 47 Passed
+    
 
-```
+
+```python
 # Cell 48 - Pytest Example
 def add_48(a, b):
     return a + b + 48
@@ -629,8 +770,11 @@ test_add_48()
 print("Pytest Cell 48 Passed")
 ```
 
+    Pytest Cell 48 Passed
+    
 
-```
+
+```python
 # Cell 49 - Pytest Example
 def add_49(a, b):
     return a + b + 49
@@ -642,8 +786,11 @@ test_add_49()
 print("Pytest Cell 49 Passed")
 ```
 
+    Pytest Cell 49 Passed
+    
 
-```
+
+```python
 # Cell 50 - Pytest Example
 def add_50(a, b):
     return a + b + 50
@@ -655,8 +802,11 @@ test_add_50()
 print("Pytest Cell 50 Passed")
 ```
 
+    Pytest Cell 50 Passed
+    
 
-```
+
+```python
 # Cell 51 - Pytest Example
 def add_51(a, b):
     return a + b + 51
@@ -668,8 +818,11 @@ test_add_51()
 print("Pytest Cell 51 Passed")
 ```
 
+    Pytest Cell 51 Passed
+    
 
-```
+
+```python
 # Cell 52 - Pytest Example
 def add_52(a, b):
     return a + b + 52
@@ -681,8 +834,11 @@ test_add_52()
 print("Pytest Cell 52 Passed")
 ```
 
+    Pytest Cell 52 Passed
+    
 
-```
+
+```python
 # Cell 53 - Pytest Example
 def add_53(a, b):
     return a + b + 53
@@ -694,8 +850,11 @@ test_add_53()
 print("Pytest Cell 53 Passed")
 ```
 
+    Pytest Cell 53 Passed
+    
 
-```
+
+```python
 # Cell 54 - Pytest Example
 def add_54(a, b):
     return a + b + 54
@@ -707,8 +866,11 @@ test_add_54()
 print("Pytest Cell 54 Passed")
 ```
 
+    Pytest Cell 54 Passed
+    
 
-```
+
+```python
 # Cell 55 - Pytest Example
 def add_55(a, b):
     return a + b + 55
@@ -720,8 +882,11 @@ test_add_55()
 print("Pytest Cell 55 Passed")
 ```
 
+    Pytest Cell 55 Passed
+    
 
-```
+
+```python
 # Cell 56 - Pytest Example
 def add_56(a, b):
     return a + b + 56
@@ -733,8 +898,11 @@ test_add_56()
 print("Pytest Cell 56 Passed")
 ```
 
+    Pytest Cell 56 Passed
+    
 
-```
+
+```python
 # Cell 57 - Pytest Example
 def add_57(a, b):
     return a + b + 57
@@ -746,8 +914,11 @@ test_add_57()
 print("Pytest Cell 57 Passed")
 ```
 
+    Pytest Cell 57 Passed
+    
 
-```
+
+```python
 # Cell 58 - Pytest Example
 def add_58(a, b):
     return a + b + 58
@@ -759,8 +930,11 @@ test_add_58()
 print("Pytest Cell 58 Passed")
 ```
 
+    Pytest Cell 58 Passed
+    
 
-```
+
+```python
 # Cell 59 - Pytest Example
 def add_59(a, b):
     return a + b + 59
@@ -772,8 +946,11 @@ test_add_59()
 print("Pytest Cell 59 Passed")
 ```
 
+    Pytest Cell 59 Passed
+    
 
-```
+
+```python
 # Cell 60 - Pytest Example
 def add_60(a, b):
     return a + b + 60
@@ -785,8 +962,11 @@ test_add_60()
 print("Pytest Cell 60 Passed")
 ```
 
+    Pytest Cell 60 Passed
+    
 
-```
+
+```python
 # Cell 61 - Pytest Example
 def add_61(a, b):
     return a + b + 61
@@ -798,8 +978,11 @@ test_add_61()
 print("Pytest Cell 61 Passed")
 ```
 
+    Pytest Cell 61 Passed
+    
 
-```
+
+```python
 # Cell 62 - Pytest Example
 def add_62(a, b):
     return a + b + 62
@@ -811,8 +994,11 @@ test_add_62()
 print("Pytest Cell 62 Passed")
 ```
 
+    Pytest Cell 62 Passed
+    
 
-```
+
+```python
 # Cell 63 - Pytest Example
 def add_63(a, b):
     return a + b + 63
@@ -824,8 +1010,11 @@ test_add_63()
 print("Pytest Cell 63 Passed")
 ```
 
+    Pytest Cell 63 Passed
+    
 
-```
+
+```python
 # Cell 64 - Pytest Example
 def add_64(a, b):
     return a + b + 64
@@ -837,8 +1026,11 @@ test_add_64()
 print("Pytest Cell 64 Passed")
 ```
 
+    Pytest Cell 64 Passed
+    
 
-```
+
+```python
 # Cell 65 - Pytest Example
 def add_65(a, b):
     return a + b + 65
@@ -850,8 +1042,11 @@ test_add_65()
 print("Pytest Cell 65 Passed")
 ```
 
+    Pytest Cell 65 Passed
+    
 
-```
+
+```python
 # Cell 66 - Pytest Example
 def add_66(a, b):
     return a + b + 66
@@ -863,8 +1058,11 @@ test_add_66()
 print("Pytest Cell 66 Passed")
 ```
 
+    Pytest Cell 66 Passed
+    
 
-```
+
+```python
 # Cell 67 - Pytest Example
 def add_67(a, b):
     return a + b + 67
@@ -876,8 +1074,11 @@ test_add_67()
 print("Pytest Cell 67 Passed")
 ```
 
+    Pytest Cell 67 Passed
+    
 
-```
+
+```python
 # Cell 68 - Pytest Example
 def add_68(a, b):
     return a + b + 68
@@ -889,8 +1090,11 @@ test_add_68()
 print("Pytest Cell 68 Passed")
 ```
 
+    Pytest Cell 68 Passed
+    
 
-```
+
+```python
 # Cell 69 - Pytest Example
 def add_69(a, b):
     return a + b + 69
@@ -902,8 +1106,11 @@ test_add_69()
 print("Pytest Cell 69 Passed")
 ```
 
+    Pytest Cell 69 Passed
+    
 
-```
+
+```python
 # Cell 70 - Pytest Example
 def add_70(a, b):
     return a + b + 70
@@ -915,8 +1122,11 @@ test_add_70()
 print("Pytest Cell 70 Passed")
 ```
 
+    Pytest Cell 70 Passed
+    
 
-```
+
+```python
 # Cell 71 - Pytest Example
 def add_71(a, b):
     return a + b + 71
@@ -928,8 +1138,11 @@ test_add_71()
 print("Pytest Cell 71 Passed")
 ```
 
+    Pytest Cell 71 Passed
+    
 
-```
+
+```python
 # Cell 72 - Pytest Example
 def add_72(a, b):
     return a + b + 72
@@ -941,8 +1154,11 @@ test_add_72()
 print("Pytest Cell 72 Passed")
 ```
 
+    Pytest Cell 72 Passed
+    
 
-```
+
+```python
 # Cell 73 - Pytest Example
 def add_73(a, b):
     return a + b + 73
@@ -954,8 +1170,11 @@ test_add_73()
 print("Pytest Cell 73 Passed")
 ```
 
+    Pytest Cell 73 Passed
+    
 
-```
+
+```python
 # Cell 74 - Pytest Example
 def add_74(a, b):
     return a + b + 74
@@ -967,8 +1186,11 @@ test_add_74()
 print("Pytest Cell 74 Passed")
 ```
 
+    Pytest Cell 74 Passed
+    
 
-```
+
+```python
 # Cell 75 - Pytest Example
 def add_75(a, b):
     return a + b + 75
@@ -980,8 +1202,11 @@ test_add_75()
 print("Pytest Cell 75 Passed")
 ```
 
+    Pytest Cell 75 Passed
+    
 
-```
+
+```python
 # Cell 76 - Pytest Example
 def add_76(a, b):
     return a + b + 76
@@ -993,8 +1218,11 @@ test_add_76()
 print("Pytest Cell 76 Passed")
 ```
 
+    Pytest Cell 76 Passed
+    
 
-```
+
+```python
 # Cell 77 - Pytest Example
 def add_77(a, b):
     return a + b + 77
@@ -1006,8 +1234,11 @@ test_add_77()
 print("Pytest Cell 77 Passed")
 ```
 
+    Pytest Cell 77 Passed
+    
 
-```
+
+```python
 # Cell 78 - Pytest Example
 def add_78(a, b):
     return a + b + 78
@@ -1019,8 +1250,11 @@ test_add_78()
 print("Pytest Cell 78 Passed")
 ```
 
+    Pytest Cell 78 Passed
+    
 
-```
+
+```python
 # Cell 79 - Pytest Example
 def add_79(a, b):
     return a + b + 79
@@ -1032,8 +1266,11 @@ test_add_79()
 print("Pytest Cell 79 Passed")
 ```
 
+    Pytest Cell 79 Passed
+    
 
-```
+
+```python
 # Cell 80 - Pytest Example
 def add_80(a, b):
     return a + b + 80
@@ -1045,8 +1282,11 @@ test_add_80()
 print("Pytest Cell 80 Passed")
 ```
 
+    Pytest Cell 80 Passed
+    
 
-```
+
+```python
 # Cell 81 - Pytest Example
 def add_81(a, b):
     return a + b + 81
@@ -1058,8 +1298,11 @@ test_add_81()
 print("Pytest Cell 81 Passed")
 ```
 
+    Pytest Cell 81 Passed
+    
 
-```
+
+```python
 # Cell 82 - Pytest Example
 def add_82(a, b):
     return a + b + 82
@@ -1071,8 +1314,11 @@ test_add_82()
 print("Pytest Cell 82 Passed")
 ```
 
+    Pytest Cell 82 Passed
+    
 
-```
+
+```python
 # Cell 83 - Pytest Example
 def add_83(a, b):
     return a + b + 83
@@ -1084,8 +1330,11 @@ test_add_83()
 print("Pytest Cell 83 Passed")
 ```
 
+    Pytest Cell 83 Passed
+    
 
-```
+
+```python
 # Cell 84 - Pytest Example
 def add_84(a, b):
     return a + b + 84
@@ -1097,8 +1346,11 @@ test_add_84()
 print("Pytest Cell 84 Passed")
 ```
 
+    Pytest Cell 84 Passed
+    
 
-```
+
+```python
 # Cell 85 - Pytest Example
 def add_85(a, b):
     return a + b + 85
@@ -1110,8 +1362,11 @@ test_add_85()
 print("Pytest Cell 85 Passed")
 ```
 
+    Pytest Cell 85 Passed
+    
 
-```
+
+```python
 # Cell 86 - Pytest Example
 def add_86(a, b):
     return a + b + 86
@@ -1123,8 +1378,11 @@ test_add_86()
 print("Pytest Cell 86 Passed")
 ```
 
+    Pytest Cell 86 Passed
+    
 
-```
+
+```python
 # Cell 87 - Pytest Example
 def add_87(a, b):
     return a + b + 87
@@ -1136,8 +1394,11 @@ test_add_87()
 print("Pytest Cell 87 Passed")
 ```
 
+    Pytest Cell 87 Passed
+    
 
-```
+
+```python
 # Cell 88 - Pytest Example
 def add_88(a, b):
     return a + b + 88
@@ -1149,8 +1410,11 @@ test_add_88()
 print("Pytest Cell 88 Passed")
 ```
 
+    Pytest Cell 88 Passed
+    
 
-```
+
+```python
 # Cell 89 - Pytest Example
 def add_89(a, b):
     return a + b + 89
@@ -1162,8 +1426,11 @@ test_add_89()
 print("Pytest Cell 89 Passed")
 ```
 
+    Pytest Cell 89 Passed
+    
 
-```
+
+```python
 # Cell 90 - Pytest Example
 def add_90(a, b):
     return a + b + 90
@@ -1175,8 +1442,11 @@ test_add_90()
 print("Pytest Cell 90 Passed")
 ```
 
+    Pytest Cell 90 Passed
+    
 
-```
+
+```python
 # Cell 91 - Pytest Example
 def add_91(a, b):
     return a + b + 91
@@ -1188,8 +1458,11 @@ test_add_91()
 print("Pytest Cell 91 Passed")
 ```
 
+    Pytest Cell 91 Passed
+    
 
-```
+
+```python
 # Cell 92 - Pytest Example
 def add_92(a, b):
     return a + b + 92
@@ -1201,8 +1474,11 @@ test_add_92()
 print("Pytest Cell 92 Passed")
 ```
 
+    Pytest Cell 92 Passed
+    
 
-```
+
+```python
 # Cell 93 - Pytest Example
 def add_93(a, b):
     return a + b + 93
@@ -1214,8 +1490,11 @@ test_add_93()
 print("Pytest Cell 93 Passed")
 ```
 
+    Pytest Cell 93 Passed
+    
 
-```
+
+```python
 # Cell 94 - Pytest Example
 def add_94(a, b):
     return a + b + 94
@@ -1227,8 +1506,11 @@ test_add_94()
 print("Pytest Cell 94 Passed")
 ```
 
+    Pytest Cell 94 Passed
+    
 
-```
+
+```python
 # Cell 95 - Pytest Example
 def add_95(a, b):
     return a + b + 95
@@ -1240,8 +1522,11 @@ test_add_95()
 print("Pytest Cell 95 Passed")
 ```
 
+    Pytest Cell 95 Passed
+    
 
-```
+
+```python
 # Cell 96 - Pytest Example
 def add_96(a, b):
     return a + b + 96
@@ -1253,8 +1538,11 @@ test_add_96()
 print("Pytest Cell 96 Passed")
 ```
 
+    Pytest Cell 96 Passed
+    
 
-```
+
+```python
 # Cell 97 - Pytest Example
 def add_97(a, b):
     return a + b + 97
@@ -1266,8 +1554,11 @@ test_add_97()
 print("Pytest Cell 97 Passed")
 ```
 
+    Pytest Cell 97 Passed
+    
 
-```
+
+```python
 # Cell 98 - Pytest Example
 def add_98(a, b):
     return a + b + 98
@@ -1279,8 +1570,11 @@ test_add_98()
 print("Pytest Cell 98 Passed")
 ```
 
+    Pytest Cell 98 Passed
+    
 
-```
+
+```python
 # Cell 99 - Pytest Example
 def add_99(a, b):
     return a + b + 99
@@ -1292,8 +1586,11 @@ test_add_99()
 print("Pytest Cell 99 Passed")
 ```
 
+    Pytest Cell 99 Passed
+    
 
-```
+
+```python
 # Cell 100 - Pytest Example
 def add_100(a, b):
     return a + b + 100
@@ -1305,8 +1602,11 @@ test_add_100()
 print("Pytest Cell 100 Passed")
 ```
 
+    Pytest Cell 100 Passed
+    
 
-```
+
+```python
 # Cell 101 - Pytest Example
 def add_101(a, b):
     return a + b + 101
@@ -1318,8 +1618,11 @@ test_add_101()
 print("Pytest Cell 101 Passed")
 ```
 
+    Pytest Cell 101 Passed
+    
 
-```
+
+```python
 # Cell 102 - Pytest Example
 def add_102(a, b):
     return a + b + 102
@@ -1331,8 +1634,11 @@ test_add_102()
 print("Pytest Cell 102 Passed")
 ```
 
+    Pytest Cell 102 Passed
+    
 
-```
+
+```python
 # Cell 103 - Pytest Example
 def add_103(a, b):
     return a + b + 103
@@ -1344,8 +1650,11 @@ test_add_103()
 print("Pytest Cell 103 Passed")
 ```
 
+    Pytest Cell 103 Passed
+    
 
-```
+
+```python
 # Cell 104 - Pytest Example
 def add_104(a, b):
     return a + b + 104
@@ -1357,8 +1666,11 @@ test_add_104()
 print("Pytest Cell 104 Passed")
 ```
 
+    Pytest Cell 104 Passed
+    
 
-```
+
+```python
 # Cell 105 - Pytest Example
 def add_105(a, b):
     return a + b + 105
@@ -1370,8 +1682,11 @@ test_add_105()
 print("Pytest Cell 105 Passed")
 ```
 
+    Pytest Cell 105 Passed
+    
 
-```
+
+```python
 # Cell 106 - Pytest Example
 def add_106(a, b):
     return a + b + 106
@@ -1383,8 +1698,11 @@ test_add_106()
 print("Pytest Cell 106 Passed")
 ```
 
+    Pytest Cell 106 Passed
+    
 
-```
+
+```python
 # Cell 107 - Pytest Example
 def add_107(a, b):
     return a + b + 107
@@ -1396,8 +1714,11 @@ test_add_107()
 print("Pytest Cell 107 Passed")
 ```
 
+    Pytest Cell 107 Passed
+    
 
-```
+
+```python
 # Cell 108 - Pytest Example
 def add_108(a, b):
     return a + b + 108
@@ -1409,8 +1730,11 @@ test_add_108()
 print("Pytest Cell 108 Passed")
 ```
 
+    Pytest Cell 108 Passed
+    
 
-```
+
+```python
 # Cell 109 - Pytest Example
 def add_109(a, b):
     return a + b + 109
@@ -1422,8 +1746,11 @@ test_add_109()
 print("Pytest Cell 109 Passed")
 ```
 
+    Pytest Cell 109 Passed
+    
 
-```
+
+```python
 # Cell 110 - Pytest Example
 def add_110(a, b):
     return a + b + 110
@@ -1435,8 +1762,11 @@ test_add_110()
 print("Pytest Cell 110 Passed")
 ```
 
+    Pytest Cell 110 Passed
+    
 
-```
+
+```python
 # Cell 111 - Pytest Example
 def add_111(a, b):
     return a + b + 111
@@ -1448,8 +1778,11 @@ test_add_111()
 print("Pytest Cell 111 Passed")
 ```
 
+    Pytest Cell 111 Passed
+    
 
-```
+
+```python
 # Cell 112 - Pytest Example
 def add_112(a, b):
     return a + b + 112
@@ -1461,8 +1794,11 @@ test_add_112()
 print("Pytest Cell 112 Passed")
 ```
 
+    Pytest Cell 112 Passed
+    
 
-```
+
+```python
 # Cell 113 - Pytest Example
 def add_113(a, b):
     return a + b + 113
@@ -1474,8 +1810,11 @@ test_add_113()
 print("Pytest Cell 113 Passed")
 ```
 
+    Pytest Cell 113 Passed
+    
 
-```
+
+```python
 # Cell 114 - Pytest Example
 def add_114(a, b):
     return a + b + 114
@@ -1487,8 +1826,11 @@ test_add_114()
 print("Pytest Cell 114 Passed")
 ```
 
+    Pytest Cell 114 Passed
+    
 
-```
+
+```python
 # Cell 115 - Pytest Example
 def add_115(a, b):
     return a + b + 115
@@ -1500,8 +1842,11 @@ test_add_115()
 print("Pytest Cell 115 Passed")
 ```
 
+    Pytest Cell 115 Passed
+    
 
-```
+
+```python
 # Cell 116 - Pytest Example
 def add_116(a, b):
     return a + b + 116
@@ -1513,8 +1858,11 @@ test_add_116()
 print("Pytest Cell 116 Passed")
 ```
 
+    Pytest Cell 116 Passed
+    
 
-```
+
+```python
 # Cell 117 - Pytest Example
 def add_117(a, b):
     return a + b + 117
@@ -1526,8 +1874,11 @@ test_add_117()
 print("Pytest Cell 117 Passed")
 ```
 
+    Pytest Cell 117 Passed
+    
 
-```
+
+```python
 # Cell 118 - Pytest Example
 def add_118(a, b):
     return a + b + 118
@@ -1539,8 +1890,11 @@ test_add_118()
 print("Pytest Cell 118 Passed")
 ```
 
+    Pytest Cell 118 Passed
+    
 
-```
+
+```python
 # Cell 119 - Pytest Example
 def add_119(a, b):
     return a + b + 119
@@ -1552,8 +1906,11 @@ test_add_119()
 print("Pytest Cell 119 Passed")
 ```
 
+    Pytest Cell 119 Passed
+    
 
-```
+
+```python
 # Cell 120 - Pytest Example
 def add_120(a, b):
     return a + b + 120
@@ -1565,8 +1922,11 @@ test_add_120()
 print("Pytest Cell 120 Passed")
 ```
 
+    Pytest Cell 120 Passed
+    
 
-```
+
+```python
 # Cell 121 - Pytest Example
 def add_121(a, b):
     return a + b + 121
@@ -1578,8 +1938,11 @@ test_add_121()
 print("Pytest Cell 121 Passed")
 ```
 
+    Pytest Cell 121 Passed
+    
 
-```
+
+```python
 # Cell 122 - Pytest Example
 def add_122(a, b):
     return a + b + 122
@@ -1591,8 +1954,11 @@ test_add_122()
 print("Pytest Cell 122 Passed")
 ```
 
+    Pytest Cell 122 Passed
+    
 
-```
+
+```python
 # Cell 123 - Pytest Example
 def add_123(a, b):
     return a + b + 123
@@ -1604,8 +1970,11 @@ test_add_123()
 print("Pytest Cell 123 Passed")
 ```
 
+    Pytest Cell 123 Passed
+    
 
-```
+
+```python
 # Cell 124 - Pytest Example
 def add_124(a, b):
     return a + b + 124
@@ -1617,8 +1986,11 @@ test_add_124()
 print("Pytest Cell 124 Passed")
 ```
 
+    Pytest Cell 124 Passed
+    
 
-```
+
+```python
 # Cell 125 - Pytest Example
 def add_125(a, b):
     return a + b + 125
@@ -1630,8 +2002,11 @@ test_add_125()
 print("Pytest Cell 125 Passed")
 ```
 
+    Pytest Cell 125 Passed
+    
 
-```
+
+```python
 # Cell 126 - Pytest Example
 def add_126(a, b):
     return a + b + 126
@@ -1643,8 +2018,11 @@ test_add_126()
 print("Pytest Cell 126 Passed")
 ```
 
+    Pytest Cell 126 Passed
+    
 
-```
+
+```python
 # Cell 127 - Pytest Example
 def add_127(a, b):
     return a + b + 127
@@ -1656,8 +2034,11 @@ test_add_127()
 print("Pytest Cell 127 Passed")
 ```
 
+    Pytest Cell 127 Passed
+    
 
-```
+
+```python
 # Cell 128 - Pytest Example
 def add_128(a, b):
     return a + b + 128
@@ -1669,8 +2050,11 @@ test_add_128()
 print("Pytest Cell 128 Passed")
 ```
 
+    Pytest Cell 128 Passed
+    
 
-```
+
+```python
 # Cell 129 - Pytest Example
 def add_129(a, b):
     return a + b + 129
@@ -1682,8 +2066,11 @@ test_add_129()
 print("Pytest Cell 129 Passed")
 ```
 
+    Pytest Cell 129 Passed
+    
 
-```
+
+```python
 # Cell 130 - Pytest Example
 def add_130(a, b):
     return a + b + 130
@@ -1695,8 +2082,11 @@ test_add_130()
 print("Pytest Cell 130 Passed")
 ```
 
+    Pytest Cell 130 Passed
+    
 
-```
+
+```python
 # Cell 131 - Pytest Example
 def add_131(a, b):
     return a + b + 131
@@ -1708,8 +2098,11 @@ test_add_131()
 print("Pytest Cell 131 Passed")
 ```
 
+    Pytest Cell 131 Passed
+    
 
-```
+
+```python
 # Cell 132 - Pytest Example
 def add_132(a, b):
     return a + b + 132
@@ -1721,8 +2114,11 @@ test_add_132()
 print("Pytest Cell 132 Passed")
 ```
 
+    Pytest Cell 132 Passed
+    
 
-```
+
+```python
 # Cell 133 - Pytest Example
 def add_133(a, b):
     return a + b + 133
@@ -1734,8 +2130,11 @@ test_add_133()
 print("Pytest Cell 133 Passed")
 ```
 
+    Pytest Cell 133 Passed
+    
 
-```
+
+```python
 # Cell 134 - Pytest Example
 def add_134(a, b):
     return a + b + 134
@@ -1747,8 +2146,11 @@ test_add_134()
 print("Pytest Cell 134 Passed")
 ```
 
+    Pytest Cell 134 Passed
+    
 
-```
+
+```python
 # Cell 135 - Pytest Example
 def add_135(a, b):
     return a + b + 135
@@ -1760,8 +2162,11 @@ test_add_135()
 print("Pytest Cell 135 Passed")
 ```
 
+    Pytest Cell 135 Passed
+    
 
-```
+
+```python
 # Cell 136 - Pytest Example
 def add_136(a, b):
     return a + b + 136
@@ -1773,8 +2178,11 @@ test_add_136()
 print("Pytest Cell 136 Passed")
 ```
 
+    Pytest Cell 136 Passed
+    
 
-```
+
+```python
 # Cell 137 - Pytest Example
 def add_137(a, b):
     return a + b + 137
@@ -1786,8 +2194,11 @@ test_add_137()
 print("Pytest Cell 137 Passed")
 ```
 
+    Pytest Cell 137 Passed
+    
 
-```
+
+```python
 # Cell 138 - Pytest Example
 def add_138(a, b):
     return a + b + 138
@@ -1799,8 +2210,11 @@ test_add_138()
 print("Pytest Cell 138 Passed")
 ```
 
+    Pytest Cell 138 Passed
+    
 
-```
+
+```python
 # Cell 139 - Pytest Example
 def add_139(a, b):
     return a + b + 139
@@ -1812,8 +2226,11 @@ test_add_139()
 print("Pytest Cell 139 Passed")
 ```
 
+    Pytest Cell 139 Passed
+    
 
-```
+
+```python
 # Cell 140 - Pytest Example
 def add_140(a, b):
     return a + b + 140
@@ -1825,8 +2242,11 @@ test_add_140()
 print("Pytest Cell 140 Passed")
 ```
 
+    Pytest Cell 140 Passed
+    
 
-```
+
+```python
 # Cell 141 - Pytest Example
 def add_141(a, b):
     return a + b + 141
@@ -1838,8 +2258,11 @@ test_add_141()
 print("Pytest Cell 141 Passed")
 ```
 
+    Pytest Cell 141 Passed
+    
 
-```
+
+```python
 # Cell 142 - Pytest Example
 def add_142(a, b):
     return a + b + 142
@@ -1851,8 +2274,11 @@ test_add_142()
 print("Pytest Cell 142 Passed")
 ```
 
+    Pytest Cell 142 Passed
+    
 
-```
+
+```python
 # Cell 143 - Pytest Example
 def add_143(a, b):
     return a + b + 143
@@ -1864,8 +2290,11 @@ test_add_143()
 print("Pytest Cell 143 Passed")
 ```
 
+    Pytest Cell 143 Passed
+    
 
-```
+
+```python
 # Cell 144 - Pytest Example
 def add_144(a, b):
     return a + b + 144
@@ -1877,8 +2306,11 @@ test_add_144()
 print("Pytest Cell 144 Passed")
 ```
 
+    Pytest Cell 144 Passed
+    
 
-```
+
+```python
 # Cell 145 - Pytest Example
 def add_145(a, b):
     return a + b + 145
@@ -1890,8 +2322,11 @@ test_add_145()
 print("Pytest Cell 145 Passed")
 ```
 
+    Pytest Cell 145 Passed
+    
 
-```
+
+```python
 # Cell 146 - Pytest Example
 def add_146(a, b):
     return a + b + 146
@@ -1903,8 +2338,11 @@ test_add_146()
 print("Pytest Cell 146 Passed")
 ```
 
+    Pytest Cell 146 Passed
+    
 
-```
+
+```python
 # Cell 147 - Pytest Example
 def add_147(a, b):
     return a + b + 147
@@ -1916,8 +2354,11 @@ test_add_147()
 print("Pytest Cell 147 Passed")
 ```
 
+    Pytest Cell 147 Passed
+    
 
-```
+
+```python
 # Cell 148 - Pytest Example
 def add_148(a, b):
     return a + b + 148
@@ -1929,8 +2370,11 @@ test_add_148()
 print("Pytest Cell 148 Passed")
 ```
 
+    Pytest Cell 148 Passed
+    
 
-```
+
+```python
 # Cell 149 - Pytest Example
 def add_149(a, b):
     return a + b + 149
@@ -1942,8 +2386,11 @@ test_add_149()
 print("Pytest Cell 149 Passed")
 ```
 
+    Pytest Cell 149 Passed
+    
 
-```
+
+```python
 # Cell 150 - Pytest Example
 def add_150(a, b):
     return a + b + 150
@@ -1955,8 +2402,11 @@ test_add_150()
 print("Pytest Cell 150 Passed")
 ```
 
+    Pytest Cell 150 Passed
+    
 
-```
+
+```python
 # Cell 151 - PyTorch Example
 import torch
 
@@ -1967,7 +2417,22 @@ print(f"PyTorch Cell 151: ", z151)
 ```
 
 
-```
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    Cell In[454], line 2
+          1 # Cell 151 - PyTorch Example
+    ----> 2 import torch
+          4 x151 = torch.tensor([151.0, 152.0])
+          5 y151 = torch.tensor([153.0, 154.0])
+    
+
+    ModuleNotFoundError: No module named 'torch'
+
+
+
+```python
 # Cell 152 - PyTorch Example
 import torch
 
@@ -1978,7 +2443,7 @@ print(f"PyTorch Cell 152: ", z152)
 ```
 
 
-```
+```python
 # Cell 153 - PyTorch Example
 import torch
 
@@ -1989,7 +2454,7 @@ print(f"PyTorch Cell 153: ", z153)
 ```
 
 
-```
+```python
 # Cell 154 - PyTorch Example
 import torch
 
@@ -2000,7 +2465,7 @@ print(f"PyTorch Cell 154: ", z154)
 ```
 
 
-```
+```python
 # Cell 155 - PyTorch Example
 import torch
 
@@ -2011,7 +2476,7 @@ print(f"PyTorch Cell 155: ", z155)
 ```
 
 
-```
+```python
 # Cell 156 - PyTorch Example
 import torch
 
@@ -2022,7 +2487,7 @@ print(f"PyTorch Cell 156: ", z156)
 ```
 
 
-```
+```python
 # Cell 157 - PyTorch Example
 import torch
 
@@ -2033,7 +2498,7 @@ print(f"PyTorch Cell 157: ", z157)
 ```
 
 
-```
+```python
 # Cell 158 - PyTorch Example
 import torch
 
@@ -2044,7 +2509,7 @@ print(f"PyTorch Cell 158: ", z158)
 ```
 
 
-```
+```python
 # Cell 159 - PyTorch Example
 import torch
 
@@ -2055,7 +2520,7 @@ print(f"PyTorch Cell 159: ", z159)
 ```
 
 
-```
+```python
 # Cell 160 - PyTorch Example
 import torch
 
@@ -2066,7 +2531,7 @@ print(f"PyTorch Cell 160: ", z160)
 ```
 
 
-```
+```python
 # Cell 161 - PyTorch Example
 import torch
 
@@ -2077,7 +2542,7 @@ print(f"PyTorch Cell 161: ", z161)
 ```
 
 
-```
+```python
 # Cell 162 - PyTorch Example
 import torch
 
@@ -2088,7 +2553,7 @@ print(f"PyTorch Cell 162: ", z162)
 ```
 
 
-```
+```python
 # Cell 163 - PyTorch Example
 import torch
 
@@ -2099,7 +2564,7 @@ print(f"PyTorch Cell 163: ", z163)
 ```
 
 
-```
+```python
 # Cell 164 - PyTorch Example
 import torch
 
@@ -2110,7 +2575,7 @@ print(f"PyTorch Cell 164: ", z164)
 ```
 
 
-```
+```python
 # Cell 165 - PyTorch Example
 import torch
 
@@ -2121,7 +2586,7 @@ print(f"PyTorch Cell 165: ", z165)
 ```
 
 
-```
+```python
 # Cell 166 - PyTorch Example
 import torch
 
@@ -2132,7 +2597,7 @@ print(f"PyTorch Cell 166: ", z166)
 ```
 
 
-```
+```python
 # Cell 167 - PyTorch Example
 import torch
 
@@ -2143,7 +2608,7 @@ print(f"PyTorch Cell 167: ", z167)
 ```
 
 
-```
+```python
 # Cell 168 - PyTorch Example
 import torch
 
@@ -2154,7 +2619,7 @@ print(f"PyTorch Cell 168: ", z168)
 ```
 
 
-```
+```python
 # Cell 169 - PyTorch Example
 import torch
 
@@ -2165,7 +2630,7 @@ print(f"PyTorch Cell 169: ", z169)
 ```
 
 
-```
+```python
 # Cell 170 - PyTorch Example
 import torch
 
@@ -2176,7 +2641,7 @@ print(f"PyTorch Cell 170: ", z170)
 ```
 
 
-```
+```python
 # Cell 171 - PyTorch Example
 import torch
 
@@ -2187,7 +2652,7 @@ print(f"PyTorch Cell 171: ", z171)
 ```
 
 
-```
+```python
 # Cell 172 - PyTorch Example
 import torch
 
@@ -2198,7 +2663,7 @@ print(f"PyTorch Cell 172: ", z172)
 ```
 
 
-```
+```python
 # Cell 173 - PyTorch Example
 import torch
 
@@ -2209,7 +2674,7 @@ print(f"PyTorch Cell 173: ", z173)
 ```
 
 
-```
+```python
 # Cell 174 - PyTorch Example
 import torch
 
@@ -2220,7 +2685,7 @@ print(f"PyTorch Cell 174: ", z174)
 ```
 
 
-```
+```python
 # Cell 175 - PyTorch Example
 import torch
 
@@ -2231,7 +2696,7 @@ print(f"PyTorch Cell 175: ", z175)
 ```
 
 
-```
+```python
 # Cell 176 - PyTorch Example
 import torch
 
@@ -2242,7 +2707,7 @@ print(f"PyTorch Cell 176: ", z176)
 ```
 
 
-```
+```python
 # Cell 177 - PyTorch Example
 import torch
 
@@ -2253,7 +2718,7 @@ print(f"PyTorch Cell 177: ", z177)
 ```
 
 
-```
+```python
 # Cell 178 - PyTorch Example
 import torch
 
@@ -2264,7 +2729,7 @@ print(f"PyTorch Cell 178: ", z178)
 ```
 
 
-```
+```python
 # Cell 179 - PyTorch Example
 import torch
 
@@ -2275,7 +2740,7 @@ print(f"PyTorch Cell 179: ", z179)
 ```
 
 
-```
+```python
 # Cell 180 - PyTorch Example
 import torch
 
@@ -2286,7 +2751,7 @@ print(f"PyTorch Cell 180: ", z180)
 ```
 
 
-```
+```python
 # Cell 181 - PyTorch Example
 import torch
 
@@ -2297,7 +2762,7 @@ print(f"PyTorch Cell 181: ", z181)
 ```
 
 
-```
+```python
 # Cell 182 - PyTorch Example
 import torch
 
@@ -2308,7 +2773,7 @@ print(f"PyTorch Cell 182: ", z182)
 ```
 
 
-```
+```python
 # Cell 183 - PyTorch Example
 import torch
 
@@ -2319,7 +2784,7 @@ print(f"PyTorch Cell 183: ", z183)
 ```
 
 
-```
+```python
 # Cell 184 - PyTorch Example
 import torch
 
@@ -2330,7 +2795,7 @@ print(f"PyTorch Cell 184: ", z184)
 ```
 
 
-```
+```python
 # Cell 185 - PyTorch Example
 import torch
 
@@ -2341,7 +2806,7 @@ print(f"PyTorch Cell 185: ", z185)
 ```
 
 
-```
+```python
 # Cell 186 - PyTorch Example
 import torch
 
@@ -2352,7 +2817,7 @@ print(f"PyTorch Cell 186: ", z186)
 ```
 
 
-```
+```python
 # Cell 187 - PyTorch Example
 import torch
 
@@ -2363,7 +2828,7 @@ print(f"PyTorch Cell 187: ", z187)
 ```
 
 
-```
+```python
 # Cell 188 - PyTorch Example
 import torch
 
@@ -2374,7 +2839,7 @@ print(f"PyTorch Cell 188: ", z188)
 ```
 
 
-```
+```python
 # Cell 189 - PyTorch Example
 import torch
 
@@ -2385,7 +2850,7 @@ print(f"PyTorch Cell 189: ", z189)
 ```
 
 
-```
+```python
 # Cell 190 - PyTorch Example
 import torch
 
@@ -2396,7 +2861,7 @@ print(f"PyTorch Cell 190: ", z190)
 ```
 
 
-```
+```python
 # Cell 191 - PyTorch Example
 import torch
 
@@ -2407,7 +2872,7 @@ print(f"PyTorch Cell 191: ", z191)
 ```
 
 
-```
+```python
 # Cell 192 - PyTorch Example
 import torch
 
@@ -2418,7 +2883,7 @@ print(f"PyTorch Cell 192: ", z192)
 ```
 
 
-```
+```python
 # Cell 193 - PyTorch Example
 import torch
 
@@ -2429,7 +2894,7 @@ print(f"PyTorch Cell 193: ", z193)
 ```
 
 
-```
+```python
 # Cell 194 - PyTorch Example
 import torch
 
@@ -2440,7 +2905,7 @@ print(f"PyTorch Cell 194: ", z194)
 ```
 
 
-```
+```python
 # Cell 195 - PyTorch Example
 import torch
 
@@ -2451,7 +2916,7 @@ print(f"PyTorch Cell 195: ", z195)
 ```
 
 
-```
+```python
 # Cell 196 - PyTorch Example
 import torch
 
@@ -2462,7 +2927,7 @@ print(f"PyTorch Cell 196: ", z196)
 ```
 
 
-```
+```python
 # Cell 197 - PyTorch Example
 import torch
 
@@ -2473,7 +2938,7 @@ print(f"PyTorch Cell 197: ", z197)
 ```
 
 
-```
+```python
 # Cell 198 - PyTorch Example
 import torch
 
@@ -2484,7 +2949,7 @@ print(f"PyTorch Cell 198: ", z198)
 ```
 
 
-```
+```python
 # Cell 199 - PyTorch Example
 import torch
 
@@ -2495,7 +2960,7 @@ print(f"PyTorch Cell 199: ", z199)
 ```
 
 
-```
+```python
 # Cell 200 - PyTorch Example
 import torch
 
@@ -2506,7 +2971,7 @@ print(f"PyTorch Cell 200: ", z200)
 ```
 
 
-```
+```python
 # Cell 201 - PyTorch Example
 import torch
 
@@ -2517,7 +2982,7 @@ print(f"PyTorch Cell 201: ", z201)
 ```
 
 
-```
+```python
 # Cell 202 - PyTorch Example
 import torch
 
@@ -2528,7 +2993,7 @@ print(f"PyTorch Cell 202: ", z202)
 ```
 
 
-```
+```python
 # Cell 203 - PyTorch Example
 import torch
 
@@ -2539,7 +3004,7 @@ print(f"PyTorch Cell 203: ", z203)
 ```
 
 
-```
+```python
 # Cell 204 - PyTorch Example
 import torch
 
@@ -2550,7 +3015,7 @@ print(f"PyTorch Cell 204: ", z204)
 ```
 
 
-```
+```python
 # Cell 205 - PyTorch Example
 import torch
 
@@ -2561,7 +3026,7 @@ print(f"PyTorch Cell 205: ", z205)
 ```
 
 
-```
+```python
 # Cell 206 - PyTorch Example
 import torch
 
@@ -2572,7 +3037,7 @@ print(f"PyTorch Cell 206: ", z206)
 ```
 
 
-```
+```python
 # Cell 207 - PyTorch Example
 import torch
 
@@ -2583,7 +3048,7 @@ print(f"PyTorch Cell 207: ", z207)
 ```
 
 
-```
+```python
 # Cell 208 - PyTorch Example
 import torch
 
@@ -2594,7 +3059,7 @@ print(f"PyTorch Cell 208: ", z208)
 ```
 
 
-```
+```python
 # Cell 209 - PyTorch Example
 import torch
 
@@ -2605,7 +3070,7 @@ print(f"PyTorch Cell 209: ", z209)
 ```
 
 
-```
+```python
 # Cell 210 - PyTorch Example
 import torch
 
@@ -2616,7 +3081,7 @@ print(f"PyTorch Cell 210: ", z210)
 ```
 
 
-```
+```python
 # Cell 211 - PyTorch Example
 import torch
 
@@ -2627,7 +3092,7 @@ print(f"PyTorch Cell 211: ", z211)
 ```
 
 
-```
+```python
 # Cell 212 - PyTorch Example
 import torch
 
@@ -2638,7 +3103,7 @@ print(f"PyTorch Cell 212: ", z212)
 ```
 
 
-```
+```python
 # Cell 213 - PyTorch Example
 import torch
 
@@ -2649,7 +3114,7 @@ print(f"PyTorch Cell 213: ", z213)
 ```
 
 
-```
+```python
 # Cell 214 - PyTorch Example
 import torch
 
@@ -2660,7 +3125,7 @@ print(f"PyTorch Cell 214: ", z214)
 ```
 
 
-```
+```python
 # Cell 215 - PyTorch Example
 import torch
 
@@ -2671,7 +3136,7 @@ print(f"PyTorch Cell 215: ", z215)
 ```
 
 
-```
+```python
 # Cell 216 - PyTorch Example
 import torch
 
@@ -2682,7 +3147,7 @@ print(f"PyTorch Cell 216: ", z216)
 ```
 
 
-```
+```python
 # Cell 217 - PyTorch Example
 import torch
 
@@ -2693,7 +3158,7 @@ print(f"PyTorch Cell 217: ", z217)
 ```
 
 
-```
+```python
 # Cell 218 - PyTorch Example
 import torch
 
@@ -2704,7 +3169,7 @@ print(f"PyTorch Cell 218: ", z218)
 ```
 
 
-```
+```python
 # Cell 219 - PyTorch Example
 import torch
 
@@ -2715,7 +3180,7 @@ print(f"PyTorch Cell 219: ", z219)
 ```
 
 
-```
+```python
 # Cell 220 - PyTorch Example
 import torch
 
@@ -2726,7 +3191,7 @@ print(f"PyTorch Cell 220: ", z220)
 ```
 
 
-```
+```python
 # Cell 221 - PyTorch Example
 import torch
 
@@ -2737,7 +3202,7 @@ print(f"PyTorch Cell 221: ", z221)
 ```
 
 
-```
+```python
 # Cell 222 - PyTorch Example
 import torch
 
@@ -2748,7 +3213,7 @@ print(f"PyTorch Cell 222: ", z222)
 ```
 
 
-```
+```python
 # Cell 223 - PyTorch Example
 import torch
 
@@ -2759,7 +3224,7 @@ print(f"PyTorch Cell 223: ", z223)
 ```
 
 
-```
+```python
 # Cell 224 - PyTorch Example
 import torch
 
@@ -2770,7 +3235,7 @@ print(f"PyTorch Cell 224: ", z224)
 ```
 
 
-```
+```python
 # Cell 225 - PyTorch Example
 import torch
 
@@ -2781,7 +3246,7 @@ print(f"PyTorch Cell 225: ", z225)
 ```
 
 
-```
+```python
 # Cell 226 - PyTorch Example
 import torch
 
@@ -2792,7 +3257,7 @@ print(f"PyTorch Cell 226: ", z226)
 ```
 
 
-```
+```python
 # Cell 227 - PyTorch Example
 import torch
 
@@ -2803,7 +3268,7 @@ print(f"PyTorch Cell 227: ", z227)
 ```
 
 
-```
+```python
 # Cell 228 - PyTorch Example
 import torch
 
@@ -2814,7 +3279,7 @@ print(f"PyTorch Cell 228: ", z228)
 ```
 
 
-```
+```python
 # Cell 229 - PyTorch Example
 import torch
 
@@ -2825,7 +3290,7 @@ print(f"PyTorch Cell 229: ", z229)
 ```
 
 
-```
+```python
 # Cell 230 - PyTorch Example
 import torch
 
@@ -2836,7 +3301,7 @@ print(f"PyTorch Cell 230: ", z230)
 ```
 
 
-```
+```python
 # Cell 231 - PyTorch Example
 import torch
 
@@ -2847,7 +3312,7 @@ print(f"PyTorch Cell 231: ", z231)
 ```
 
 
-```
+```python
 # Cell 232 - PyTorch Example
 import torch
 
@@ -2858,7 +3323,7 @@ print(f"PyTorch Cell 232: ", z232)
 ```
 
 
-```
+```python
 # Cell 233 - PyTorch Example
 import torch
 
@@ -2869,7 +3334,7 @@ print(f"PyTorch Cell 233: ", z233)
 ```
 
 
-```
+```python
 # Cell 234 - PyTorch Example
 import torch
 
@@ -2880,7 +3345,7 @@ print(f"PyTorch Cell 234: ", z234)
 ```
 
 
-```
+```python
 # Cell 235 - PyTorch Example
 import torch
 
@@ -2891,7 +3356,7 @@ print(f"PyTorch Cell 235: ", z235)
 ```
 
 
-```
+```python
 # Cell 236 - PyTorch Example
 import torch
 
@@ -2902,7 +3367,7 @@ print(f"PyTorch Cell 236: ", z236)
 ```
 
 
-```
+```python
 # Cell 237 - PyTorch Example
 import torch
 
@@ -2913,7 +3378,7 @@ print(f"PyTorch Cell 237: ", z237)
 ```
 
 
-```
+```python
 # Cell 238 - PyTorch Example
 import torch
 
@@ -2924,7 +3389,7 @@ print(f"PyTorch Cell 238: ", z238)
 ```
 
 
-```
+```python
 # Cell 239 - PyTorch Example
 import torch
 
@@ -2935,7 +3400,7 @@ print(f"PyTorch Cell 239: ", z239)
 ```
 
 
-```
+```python
 # Cell 240 - PyTorch Example
 import torch
 
@@ -2946,7 +3411,7 @@ print(f"PyTorch Cell 240: ", z240)
 ```
 
 
-```
+```python
 # Cell 241 - PyTorch Example
 import torch
 
@@ -2957,7 +3422,7 @@ print(f"PyTorch Cell 241: ", z241)
 ```
 
 
-```
+```python
 # Cell 242 - PyTorch Example
 import torch
 
@@ -2968,7 +3433,7 @@ print(f"PyTorch Cell 242: ", z242)
 ```
 
 
-```
+```python
 # Cell 243 - PyTorch Example
 import torch
 
@@ -2979,7 +3444,7 @@ print(f"PyTorch Cell 243: ", z243)
 ```
 
 
-```
+```python
 # Cell 244 - PyTorch Example
 import torch
 
@@ -2990,7 +3455,7 @@ print(f"PyTorch Cell 244: ", z244)
 ```
 
 
-```
+```python
 # Cell 245 - PyTorch Example
 import torch
 
@@ -3001,7 +3466,7 @@ print(f"PyTorch Cell 245: ", z245)
 ```
 
 
-```
+```python
 # Cell 246 - PyTorch Example
 import torch
 
@@ -3012,7 +3477,7 @@ print(f"PyTorch Cell 246: ", z246)
 ```
 
 
-```
+```python
 # Cell 247 - PyTorch Example
 import torch
 
@@ -3023,7 +3488,7 @@ print(f"PyTorch Cell 247: ", z247)
 ```
 
 
-```
+```python
 # Cell 248 - PyTorch Example
 import torch
 
@@ -3034,7 +3499,7 @@ print(f"PyTorch Cell 248: ", z248)
 ```
 
 
-```
+```python
 # Cell 249 - PyTorch Example
 import torch
 
@@ -3045,7 +3510,7 @@ print(f"PyTorch Cell 249: ", z249)
 ```
 
 
-```
+```python
 # Cell 250 - PyTorch Example
 import torch
 
@@ -3056,7 +3521,7 @@ print(f"PyTorch Cell 250: ", z250)
 ```
 
 
-```
+```python
 # Cell 251 - PyTorch Example
 import torch
 
@@ -3067,7 +3532,7 @@ print(f"PyTorch Cell 251: ", z251)
 ```
 
 
-```
+```python
 # Cell 252 - PyTorch Example
 import torch
 
@@ -3078,7 +3543,7 @@ print(f"PyTorch Cell 252: ", z252)
 ```
 
 
-```
+```python
 # Cell 253 - PyTorch Example
 import torch
 
@@ -3089,7 +3554,7 @@ print(f"PyTorch Cell 253: ", z253)
 ```
 
 
-```
+```python
 # Cell 254 - PyTorch Example
 import torch
 
@@ -3100,7 +3565,7 @@ print(f"PyTorch Cell 254: ", z254)
 ```
 
 
-```
+```python
 # Cell 255 - PyTorch Example
 import torch
 
@@ -3111,7 +3576,7 @@ print(f"PyTorch Cell 255: ", z255)
 ```
 
 
-```
+```python
 # Cell 256 - PyTorch Example
 import torch
 
@@ -3122,7 +3587,7 @@ print(f"PyTorch Cell 256: ", z256)
 ```
 
 
-```
+```python
 # Cell 257 - PyTorch Example
 import torch
 
@@ -3133,7 +3598,7 @@ print(f"PyTorch Cell 257: ", z257)
 ```
 
 
-```
+```python
 # Cell 258 - PyTorch Example
 import torch
 
@@ -3144,7 +3609,7 @@ print(f"PyTorch Cell 258: ", z258)
 ```
 
 
-```
+```python
 # Cell 259 - PyTorch Example
 import torch
 
@@ -3155,7 +3620,7 @@ print(f"PyTorch Cell 259: ", z259)
 ```
 
 
-```
+```python
 # Cell 260 - PyTorch Example
 import torch
 
@@ -3166,7 +3631,7 @@ print(f"PyTorch Cell 260: ", z260)
 ```
 
 
-```
+```python
 # Cell 261 - PyTorch Example
 import torch
 
@@ -3177,7 +3642,7 @@ print(f"PyTorch Cell 261: ", z261)
 ```
 
 
-```
+```python
 # Cell 262 - PyTorch Example
 import torch
 
@@ -3188,7 +3653,7 @@ print(f"PyTorch Cell 262: ", z262)
 ```
 
 
-```
+```python
 # Cell 263 - PyTorch Example
 import torch
 
@@ -3199,7 +3664,7 @@ print(f"PyTorch Cell 263: ", z263)
 ```
 
 
-```
+```python
 # Cell 264 - PyTorch Example
 import torch
 
@@ -3210,7 +3675,7 @@ print(f"PyTorch Cell 264: ", z264)
 ```
 
 
-```
+```python
 # Cell 265 - PyTorch Example
 import torch
 
@@ -3221,7 +3686,7 @@ print(f"PyTorch Cell 265: ", z265)
 ```
 
 
-```
+```python
 # Cell 266 - PyTorch Example
 import torch
 
@@ -3232,7 +3697,7 @@ print(f"PyTorch Cell 266: ", z266)
 ```
 
 
-```
+```python
 # Cell 267 - PyTorch Example
 import torch
 
@@ -3243,7 +3708,7 @@ print(f"PyTorch Cell 267: ", z267)
 ```
 
 
-```
+```python
 # Cell 268 - PyTorch Example
 import torch
 
@@ -3254,7 +3719,7 @@ print(f"PyTorch Cell 268: ", z268)
 ```
 
 
-```
+```python
 # Cell 269 - PyTorch Example
 import torch
 
@@ -3265,7 +3730,7 @@ print(f"PyTorch Cell 269: ", z269)
 ```
 
 
-```
+```python
 # Cell 270 - PyTorch Example
 import torch
 
@@ -3276,7 +3741,7 @@ print(f"PyTorch Cell 270: ", z270)
 ```
 
 
-```
+```python
 # Cell 271 - PyTorch Example
 import torch
 
@@ -3287,7 +3752,7 @@ print(f"PyTorch Cell 271: ", z271)
 ```
 
 
-```
+```python
 # Cell 272 - PyTorch Example
 import torch
 
@@ -3298,7 +3763,7 @@ print(f"PyTorch Cell 272: ", z272)
 ```
 
 
-```
+```python
 # Cell 273 - PyTorch Example
 import torch
 
@@ -3309,7 +3774,7 @@ print(f"PyTorch Cell 273: ", z273)
 ```
 
 
-```
+```python
 # Cell 274 - PyTorch Example
 import torch
 
@@ -3320,7 +3785,7 @@ print(f"PyTorch Cell 274: ", z274)
 ```
 
 
-```
+```python
 # Cell 275 - PyTorch Example
 import torch
 
@@ -3331,7 +3796,7 @@ print(f"PyTorch Cell 275: ", z275)
 ```
 
 
-```
+```python
 # Cell 276 - PyTorch Example
 import torch
 
@@ -3342,7 +3807,7 @@ print(f"PyTorch Cell 276: ", z276)
 ```
 
 
-```
+```python
 # Cell 277 - PyTorch Example
 import torch
 
@@ -3353,7 +3818,7 @@ print(f"PyTorch Cell 277: ", z277)
 ```
 
 
-```
+```python
 # Cell 278 - PyTorch Example
 import torch
 
@@ -3364,7 +3829,7 @@ print(f"PyTorch Cell 278: ", z278)
 ```
 
 
-```
+```python
 # Cell 279 - PyTorch Example
 import torch
 
@@ -3375,7 +3840,7 @@ print(f"PyTorch Cell 279: ", z279)
 ```
 
 
-```
+```python
 # Cell 280 - PyTorch Example
 import torch
 
@@ -3386,7 +3851,7 @@ print(f"PyTorch Cell 280: ", z280)
 ```
 
 
-```
+```python
 # Cell 281 - PyTorch Example
 import torch
 
@@ -3397,7 +3862,7 @@ print(f"PyTorch Cell 281: ", z281)
 ```
 
 
-```
+```python
 # Cell 282 - PyTorch Example
 import torch
 
@@ -3408,7 +3873,7 @@ print(f"PyTorch Cell 282: ", z282)
 ```
 
 
-```
+```python
 # Cell 283 - PyTorch Example
 import torch
 
@@ -3419,7 +3884,7 @@ print(f"PyTorch Cell 283: ", z283)
 ```
 
 
-```
+```python
 # Cell 284 - PyTorch Example
 import torch
 
@@ -3430,7 +3895,7 @@ print(f"PyTorch Cell 284: ", z284)
 ```
 
 
-```
+```python
 # Cell 285 - PyTorch Example
 import torch
 
@@ -3441,7 +3906,7 @@ print(f"PyTorch Cell 285: ", z285)
 ```
 
 
-```
+```python
 # Cell 286 - PyTorch Example
 import torch
 
@@ -3452,7 +3917,7 @@ print(f"PyTorch Cell 286: ", z286)
 ```
 
 
-```
+```python
 # Cell 287 - PyTorch Example
 import torch
 
@@ -3463,7 +3928,7 @@ print(f"PyTorch Cell 287: ", z287)
 ```
 
 
-```
+```python
 # Cell 288 - PyTorch Example
 import torch
 
@@ -3474,7 +3939,7 @@ print(f"PyTorch Cell 288: ", z288)
 ```
 
 
-```
+```python
 # Cell 289 - PyTorch Example
 import torch
 
@@ -3485,7 +3950,7 @@ print(f"PyTorch Cell 289: ", z289)
 ```
 
 
-```
+```python
 # Cell 290 - PyTorch Example
 import torch
 
@@ -3496,7 +3961,7 @@ print(f"PyTorch Cell 290: ", z290)
 ```
 
 
-```
+```python
 # Cell 291 - PyTorch Example
 import torch
 
@@ -3507,7 +3972,7 @@ print(f"PyTorch Cell 291: ", z291)
 ```
 
 
-```
+```python
 # Cell 292 - PyTorch Example
 import torch
 
@@ -3518,7 +3983,7 @@ print(f"PyTorch Cell 292: ", z292)
 ```
 
 
-```
+```python
 # Cell 293 - PyTorch Example
 import torch
 
@@ -3529,7 +3994,7 @@ print(f"PyTorch Cell 293: ", z293)
 ```
 
 
-```
+```python
 # Cell 294 - PyTorch Example
 import torch
 
@@ -3540,7 +4005,7 @@ print(f"PyTorch Cell 294: ", z294)
 ```
 
 
-```
+```python
 # Cell 295 - PyTorch Example
 import torch
 
@@ -3551,7 +4016,7 @@ print(f"PyTorch Cell 295: ", z295)
 ```
 
 
-```
+```python
 # Cell 296 - PyTorch Example
 import torch
 
@@ -3562,7 +4027,7 @@ print(f"PyTorch Cell 296: ", z296)
 ```
 
 
-```
+```python
 # Cell 297 - PyTorch Example
 import torch
 
@@ -3573,7 +4038,7 @@ print(f"PyTorch Cell 297: ", z297)
 ```
 
 
-```
+```python
 # Cell 298 - PyTorch Example
 import torch
 
@@ -3584,7 +4049,7 @@ print(f"PyTorch Cell 298: ", z298)
 ```
 
 
-```
+```python
 # Cell 299 - PyTorch Example
 import torch
 
@@ -3595,7 +4060,7 @@ print(f"PyTorch Cell 299: ", z299)
 ```
 
 
-```
+```python
 # Cell 300 - PyTorch Example
 import torch
 
@@ -3606,7 +4071,7 @@ print(f"PyTorch Cell 300: ", z300)
 ```
 
 
-```
+```python
 # Cell 301 - SciPy Example
 from scipy.integrate import quad
 
@@ -3618,7 +4083,7 @@ print(f"SciPy Cell 301: ", result_301)
 ```
 
 
-```
+```python
 # Cell 302 - SciPy Example
 from scipy.integrate import quad
 
@@ -3630,7 +4095,7 @@ print(f"SciPy Cell 302: ", result_302)
 ```
 
 
-```
+```python
 # Cell 303 - SciPy Example
 from scipy.integrate import quad
 
@@ -3642,7 +4107,7 @@ print(f"SciPy Cell 303: ", result_303)
 ```
 
 
-```
+```python
 # Cell 304 - SciPy Example
 from scipy.integrate import quad
 
@@ -3654,7 +4119,7 @@ print(f"SciPy Cell 304: ", result_304)
 ```
 
 
-```
+```python
 # Cell 305 - SciPy Example
 from scipy.integrate import quad
 
@@ -3666,7 +4131,7 @@ print(f"SciPy Cell 305: ", result_305)
 ```
 
 
-```
+```python
 # Cell 306 - SciPy Example
 from scipy.integrate import quad
 
@@ -3678,7 +4143,7 @@ print(f"SciPy Cell 306: ", result_306)
 ```
 
 
-```
+```python
 # Cell 307 - SciPy Example
 from scipy.integrate import quad
 
@@ -3690,7 +4155,7 @@ print(f"SciPy Cell 307: ", result_307)
 ```
 
 
-```
+```python
 # Cell 308 - SciPy Example
 from scipy.integrate import quad
 
@@ -3702,7 +4167,7 @@ print(f"SciPy Cell 308: ", result_308)
 ```
 
 
-```
+```python
 # Cell 309 - SciPy Example
 from scipy.integrate import quad
 
@@ -3714,7 +4179,7 @@ print(f"SciPy Cell 309: ", result_309)
 ```
 
 
-```
+```python
 # Cell 310 - SciPy Example
 from scipy.integrate import quad
 
@@ -3726,7 +4191,7 @@ print(f"SciPy Cell 310: ", result_310)
 ```
 
 
-```
+```python
 # Cell 311 - SciPy Example
 from scipy.integrate import quad
 
@@ -3738,7 +4203,7 @@ print(f"SciPy Cell 311: ", result_311)
 ```
 
 
-```
+```python
 # Cell 312 - SciPy Example
 from scipy.integrate import quad
 
@@ -3750,7 +4215,7 @@ print(f"SciPy Cell 312: ", result_312)
 ```
 
 
-```
+```python
 # Cell 313 - SciPy Example
 from scipy.integrate import quad
 
@@ -3762,7 +4227,7 @@ print(f"SciPy Cell 313: ", result_313)
 ```
 
 
-```
+```python
 # Cell 314 - SciPy Example
 from scipy.integrate import quad
 
@@ -3774,7 +4239,7 @@ print(f"SciPy Cell 314: ", result_314)
 ```
 
 
-```
+```python
 # Cell 315 - SciPy Example
 from scipy.integrate import quad
 
@@ -3786,7 +4251,7 @@ print(f"SciPy Cell 315: ", result_315)
 ```
 
 
-```
+```python
 # Cell 316 - SciPy Example
 from scipy.integrate import quad
 
@@ -3798,7 +4263,7 @@ print(f"SciPy Cell 316: ", result_316)
 ```
 
 
-```
+```python
 # Cell 317 - SciPy Example
 from scipy.integrate import quad
 
@@ -3810,7 +4275,7 @@ print(f"SciPy Cell 317: ", result_317)
 ```
 
 
-```
+```python
 # Cell 318 - SciPy Example
 from scipy.integrate import quad
 
@@ -3822,7 +4287,7 @@ print(f"SciPy Cell 318: ", result_318)
 ```
 
 
-```
+```python
 # Cell 319 - SciPy Example
 from scipy.integrate import quad
 
@@ -3834,7 +4299,7 @@ print(f"SciPy Cell 319: ", result_319)
 ```
 
 
-```
+```python
 # Cell 320 - SciPy Example
 from scipy.integrate import quad
 
@@ -3846,7 +4311,7 @@ print(f"SciPy Cell 320: ", result_320)
 ```
 
 
-```
+```python
 # Cell 321 - SciPy Example
 from scipy.integrate import quad
 
@@ -3858,7 +4323,7 @@ print(f"SciPy Cell 321: ", result_321)
 ```
 
 
-```
+```python
 # Cell 322 - SciPy Example
 from scipy.integrate import quad
 
@@ -3870,7 +4335,7 @@ print(f"SciPy Cell 322: ", result_322)
 ```
 
 
-```
+```python
 # Cell 323 - SciPy Example
 from scipy.integrate import quad
 
@@ -3882,7 +4347,7 @@ print(f"SciPy Cell 323: ", result_323)
 ```
 
 
-```
+```python
 # Cell 324 - SciPy Example
 from scipy.integrate import quad
 
@@ -3894,7 +4359,7 @@ print(f"SciPy Cell 324: ", result_324)
 ```
 
 
-```
+```python
 # Cell 325 - SciPy Example
 from scipy.integrate import quad
 
@@ -3906,7 +4371,7 @@ print(f"SciPy Cell 325: ", result_325)
 ```
 
 
-```
+```python
 # Cell 326 - SciPy Example
 from scipy.integrate import quad
 
@@ -3918,7 +4383,7 @@ print(f"SciPy Cell 326: ", result_326)
 ```
 
 
-```
+```python
 # Cell 327 - SciPy Example
 from scipy.integrate import quad
 
@@ -3930,7 +4395,7 @@ print(f"SciPy Cell 327: ", result_327)
 ```
 
 
-```
+```python
 # Cell 328 - SciPy Example
 from scipy.integrate import quad
 
@@ -3942,7 +4407,7 @@ print(f"SciPy Cell 328: ", result_328)
 ```
 
 
-```
+```python
 # Cell 329 - SciPy Example
 from scipy.integrate import quad
 
@@ -3954,7 +4419,7 @@ print(f"SciPy Cell 329: ", result_329)
 ```
 
 
-```
+```python
 # Cell 330 - SciPy Example
 from scipy.integrate import quad
 
@@ -3966,7 +4431,7 @@ print(f"SciPy Cell 330: ", result_330)
 ```
 
 
-```
+```python
 # Cell 331 - SciPy Example
 from scipy.integrate import quad
 
@@ -3978,7 +4443,7 @@ print(f"SciPy Cell 331: ", result_331)
 ```
 
 
-```
+```python
 # Cell 332 - SciPy Example
 from scipy.integrate import quad
 
@@ -3990,7 +4455,7 @@ print(f"SciPy Cell 332: ", result_332)
 ```
 
 
-```
+```python
 # Cell 333 - SciPy Example
 from scipy.integrate import quad
 
@@ -4002,7 +4467,7 @@ print(f"SciPy Cell 333: ", result_333)
 ```
 
 
-```
+```python
 # Cell 334 - SciPy Example
 from scipy.integrate import quad
 
@@ -4014,7 +4479,7 @@ print(f"SciPy Cell 334: ", result_334)
 ```
 
 
-```
+```python
 # Cell 335 - SciPy Example
 from scipy.integrate import quad
 
@@ -4026,7 +4491,7 @@ print(f"SciPy Cell 335: ", result_335)
 ```
 
 
-```
+```python
 # Cell 336 - SciPy Example
 from scipy.integrate import quad
 
@@ -4038,7 +4503,7 @@ print(f"SciPy Cell 336: ", result_336)
 ```
 
 
-```
+```python
 # Cell 337 - SciPy Example
 from scipy.integrate import quad
 
@@ -4050,7 +4515,7 @@ print(f"SciPy Cell 337: ", result_337)
 ```
 
 
-```
+```python
 # Cell 338 - SciPy Example
 from scipy.integrate import quad
 
@@ -4062,7 +4527,7 @@ print(f"SciPy Cell 338: ", result_338)
 ```
 
 
-```
+```python
 # Cell 339 - SciPy Example
 from scipy.integrate import quad
 
@@ -4074,7 +4539,7 @@ print(f"SciPy Cell 339: ", result_339)
 ```
 
 
-```
+```python
 # Cell 340 - SciPy Example
 from scipy.integrate import quad
 
@@ -4086,7 +4551,7 @@ print(f"SciPy Cell 340: ", result_340)
 ```
 
 
-```
+```python
 # Cell 341 - SciPy Example
 from scipy.integrate import quad
 
@@ -4098,7 +4563,7 @@ print(f"SciPy Cell 341: ", result_341)
 ```
 
 
-```
+```python
 # Cell 342 - SciPy Example
 from scipy.integrate import quad
 
@@ -4110,7 +4575,7 @@ print(f"SciPy Cell 342: ", result_342)
 ```
 
 
-```
+```python
 # Cell 343 - SciPy Example
 from scipy.integrate import quad
 
@@ -4122,7 +4587,7 @@ print(f"SciPy Cell 343: ", result_343)
 ```
 
 
-```
+```python
 # Cell 344 - SciPy Example
 from scipy.integrate import quad
 
@@ -4134,7 +4599,7 @@ print(f"SciPy Cell 344: ", result_344)
 ```
 
 
-```
+```python
 # Cell 345 - SciPy Example
 from scipy.integrate import quad
 
@@ -4146,7 +4611,7 @@ print(f"SciPy Cell 345: ", result_345)
 ```
 
 
-```
+```python
 # Cell 346 - SciPy Example
 from scipy.integrate import quad
 
@@ -4158,7 +4623,7 @@ print(f"SciPy Cell 346: ", result_346)
 ```
 
 
-```
+```python
 # Cell 347 - SciPy Example
 from scipy.integrate import quad
 
@@ -4170,7 +4635,7 @@ print(f"SciPy Cell 347: ", result_347)
 ```
 
 
-```
+```python
 # Cell 348 - SciPy Example
 from scipy.integrate import quad
 
@@ -4182,7 +4647,7 @@ print(f"SciPy Cell 348: ", result_348)
 ```
 
 
-```
+```python
 # Cell 349 - SciPy Example
 from scipy.integrate import quad
 
@@ -4194,7 +4659,7 @@ print(f"SciPy Cell 349: ", result_349)
 ```
 
 
-```
+```python
 # Cell 350 - SciPy Example
 from scipy.integrate import quad
 
@@ -4206,7 +4671,7 @@ print(f"SciPy Cell 350: ", result_350)
 ```
 
 
-```
+```python
 # Cell 351 - SciPy Example
 from scipy.integrate import quad
 
@@ -4218,7 +4683,7 @@ print(f"SciPy Cell 351: ", result_351)
 ```
 
 
-```
+```python
 # Cell 352 - SciPy Example
 from scipy.integrate import quad
 
@@ -4230,7 +4695,7 @@ print(f"SciPy Cell 352: ", result_352)
 ```
 
 
-```
+```python
 # Cell 353 - SciPy Example
 from scipy.integrate import quad
 
@@ -4242,7 +4707,7 @@ print(f"SciPy Cell 353: ", result_353)
 ```
 
 
-```
+```python
 # Cell 354 - SciPy Example
 from scipy.integrate import quad
 
@@ -4254,7 +4719,7 @@ print(f"SciPy Cell 354: ", result_354)
 ```
 
 
-```
+```python
 # Cell 355 - SciPy Example
 from scipy.integrate import quad
 
@@ -4266,7 +4731,7 @@ print(f"SciPy Cell 355: ", result_355)
 ```
 
 
-```
+```python
 # Cell 356 - SciPy Example
 from scipy.integrate import quad
 
@@ -4278,7 +4743,7 @@ print(f"SciPy Cell 356: ", result_356)
 ```
 
 
-```
+```python
 # Cell 357 - SciPy Example
 from scipy.integrate import quad
 
@@ -4290,7 +4755,7 @@ print(f"SciPy Cell 357: ", result_357)
 ```
 
 
-```
+```python
 # Cell 358 - SciPy Example
 from scipy.integrate import quad
 
@@ -4302,7 +4767,7 @@ print(f"SciPy Cell 358: ", result_358)
 ```
 
 
-```
+```python
 # Cell 359 - SciPy Example
 from scipy.integrate import quad
 
@@ -4314,7 +4779,7 @@ print(f"SciPy Cell 359: ", result_359)
 ```
 
 
-```
+```python
 # Cell 360 - SciPy Example
 from scipy.integrate import quad
 
@@ -4326,7 +4791,7 @@ print(f"SciPy Cell 360: ", result_360)
 ```
 
 
-```
+```python
 # Cell 361 - SciPy Example
 from scipy.integrate import quad
 
@@ -4338,7 +4803,7 @@ print(f"SciPy Cell 361: ", result_361)
 ```
 
 
-```
+```python
 # Cell 362 - SciPy Example
 from scipy.integrate import quad
 
@@ -4350,7 +4815,7 @@ print(f"SciPy Cell 362: ", result_362)
 ```
 
 
-```
+```python
 # Cell 363 - SciPy Example
 from scipy.integrate import quad
 
@@ -4362,7 +4827,7 @@ print(f"SciPy Cell 363: ", result_363)
 ```
 
 
-```
+```python
 # Cell 364 - SciPy Example
 from scipy.integrate import quad
 
@@ -4374,7 +4839,7 @@ print(f"SciPy Cell 364: ", result_364)
 ```
 
 
-```
+```python
 # Cell 365 - SciPy Example
 from scipy.integrate import quad
 
@@ -4386,7 +4851,7 @@ print(f"SciPy Cell 365: ", result_365)
 ```
 
 
-```
+```python
 # Cell 366 - SciPy Example
 from scipy.integrate import quad
 
@@ -4398,7 +4863,7 @@ print(f"SciPy Cell 366: ", result_366)
 ```
 
 
-```
+```python
 # Cell 367 - SciPy Example
 from scipy.integrate import quad
 
@@ -4410,7 +4875,7 @@ print(f"SciPy Cell 367: ", result_367)
 ```
 
 
-```
+```python
 # Cell 368 - SciPy Example
 from scipy.integrate import quad
 
@@ -4422,7 +4887,7 @@ print(f"SciPy Cell 368: ", result_368)
 ```
 
 
-```
+```python
 # Cell 369 - SciPy Example
 from scipy.integrate import quad
 
@@ -4434,7 +4899,7 @@ print(f"SciPy Cell 369: ", result_369)
 ```
 
 
-```
+```python
 # Cell 370 - SciPy Example
 from scipy.integrate import quad
 
@@ -4446,7 +4911,7 @@ print(f"SciPy Cell 370: ", result_370)
 ```
 
 
-```
+```python
 # Cell 371 - SciPy Example
 from scipy.integrate import quad
 
@@ -4458,7 +4923,7 @@ print(f"SciPy Cell 371: ", result_371)
 ```
 
 
-```
+```python
 # Cell 372 - SciPy Example
 from scipy.integrate import quad
 
@@ -4470,7 +4935,7 @@ print(f"SciPy Cell 372: ", result_372)
 ```
 
 
-```
+```python
 # Cell 373 - SciPy Example
 from scipy.integrate import quad
 
@@ -4482,7 +4947,7 @@ print(f"SciPy Cell 373: ", result_373)
 ```
 
 
-```
+```python
 # Cell 374 - SciPy Example
 from scipy.integrate import quad
 
@@ -4494,7 +4959,7 @@ print(f"SciPy Cell 374: ", result_374)
 ```
 
 
-```
+```python
 # Cell 375 - SciPy Example
 from scipy.integrate import quad
 
@@ -4506,7 +4971,7 @@ print(f"SciPy Cell 375: ", result_375)
 ```
 
 
-```
+```python
 # Cell 376 - SciPy Example
 from scipy.integrate import quad
 
@@ -4518,7 +4983,7 @@ print(f"SciPy Cell 376: ", result_376)
 ```
 
 
-```
+```python
 # Cell 377 - SciPy Example
 from scipy.integrate import quad
 
@@ -4530,7 +4995,7 @@ print(f"SciPy Cell 377: ", result_377)
 ```
 
 
-```
+```python
 # Cell 378 - SciPy Example
 from scipy.integrate import quad
 
@@ -4542,7 +5007,7 @@ print(f"SciPy Cell 378: ", result_378)
 ```
 
 
-```
+```python
 # Cell 379 - SciPy Example
 from scipy.integrate import quad
 
@@ -4554,7 +5019,7 @@ print(f"SciPy Cell 379: ", result_379)
 ```
 
 
-```
+```python
 # Cell 380 - SciPy Example
 from scipy.integrate import quad
 
@@ -4566,7 +5031,7 @@ print(f"SciPy Cell 380: ", result_380)
 ```
 
 
-```
+```python
 # Cell 381 - SciPy Example
 from scipy.integrate import quad
 
@@ -4578,7 +5043,7 @@ print(f"SciPy Cell 381: ", result_381)
 ```
 
 
-```
+```python
 # Cell 382 - SciPy Example
 from scipy.integrate import quad
 
@@ -4590,7 +5055,7 @@ print(f"SciPy Cell 382: ", result_382)
 ```
 
 
-```
+```python
 # Cell 383 - SciPy Example
 from scipy.integrate import quad
 
@@ -4602,7 +5067,7 @@ print(f"SciPy Cell 383: ", result_383)
 ```
 
 
-```
+```python
 # Cell 384 - SciPy Example
 from scipy.integrate import quad
 
@@ -4614,7 +5079,7 @@ print(f"SciPy Cell 384: ", result_384)
 ```
 
 
-```
+```python
 # Cell 385 - SciPy Example
 from scipy.integrate import quad
 
@@ -4626,7 +5091,7 @@ print(f"SciPy Cell 385: ", result_385)
 ```
 
 
-```
+```python
 # Cell 386 - SciPy Example
 from scipy.integrate import quad
 
@@ -4638,7 +5103,7 @@ print(f"SciPy Cell 386: ", result_386)
 ```
 
 
-```
+```python
 # Cell 387 - SciPy Example
 from scipy.integrate import quad
 
@@ -4650,7 +5115,7 @@ print(f"SciPy Cell 387: ", result_387)
 ```
 
 
-```
+```python
 # Cell 388 - SciPy Example
 from scipy.integrate import quad
 
@@ -4662,7 +5127,7 @@ print(f"SciPy Cell 388: ", result_388)
 ```
 
 
-```
+```python
 # Cell 389 - SciPy Example
 from scipy.integrate import quad
 
@@ -4674,7 +5139,7 @@ print(f"SciPy Cell 389: ", result_389)
 ```
 
 
-```
+```python
 # Cell 390 - SciPy Example
 from scipy.integrate import quad
 
@@ -4686,7 +5151,7 @@ print(f"SciPy Cell 390: ", result_390)
 ```
 
 
-```
+```python
 # Cell 391 - SciPy Example
 from scipy.integrate import quad
 
@@ -4698,7 +5163,7 @@ print(f"SciPy Cell 391: ", result_391)
 ```
 
 
-```
+```python
 # Cell 392 - SciPy Example
 from scipy.integrate import quad
 
@@ -4710,7 +5175,7 @@ print(f"SciPy Cell 392: ", result_392)
 ```
 
 
-```
+```python
 # Cell 393 - SciPy Example
 from scipy.integrate import quad
 
@@ -4722,7 +5187,7 @@ print(f"SciPy Cell 393: ", result_393)
 ```
 
 
-```
+```python
 # Cell 394 - SciPy Example
 from scipy.integrate import quad
 
@@ -4734,7 +5199,7 @@ print(f"SciPy Cell 394: ", result_394)
 ```
 
 
-```
+```python
 # Cell 395 - SciPy Example
 from scipy.integrate import quad
 
@@ -4746,7 +5211,7 @@ print(f"SciPy Cell 395: ", result_395)
 ```
 
 
-```
+```python
 # Cell 396 - SciPy Example
 from scipy.integrate import quad
 
@@ -4758,7 +5223,7 @@ print(f"SciPy Cell 396: ", result_396)
 ```
 
 
-```
+```python
 # Cell 397 - SciPy Example
 from scipy.integrate import quad
 
@@ -4770,7 +5235,7 @@ print(f"SciPy Cell 397: ", result_397)
 ```
 
 
-```
+```python
 # Cell 398 - SciPy Example
 from scipy.integrate import quad
 
@@ -4782,7 +5247,7 @@ print(f"SciPy Cell 398: ", result_398)
 ```
 
 
-```
+```python
 # Cell 399 - SciPy Example
 from scipy.integrate import quad
 
@@ -4794,7 +5259,7 @@ print(f"SciPy Cell 399: ", result_399)
 ```
 
 
-```
+```python
 # Cell 400 - SciPy Example
 from scipy.integrate import quad
 
@@ -4806,7 +5271,7 @@ print(f"SciPy Cell 400: ", result_400)
 ```
 
 
-```
+```python
 # Cell 401 - SciPy Example
 from scipy.integrate import quad
 
@@ -4818,7 +5283,7 @@ print(f"SciPy Cell 401: ", result_401)
 ```
 
 
-```
+```python
 # Cell 402 - SciPy Example
 from scipy.integrate import quad
 
@@ -4830,7 +5295,7 @@ print(f"SciPy Cell 402: ", result_402)
 ```
 
 
-```
+```python
 # Cell 403 - SciPy Example
 from scipy.integrate import quad
 
@@ -4842,7 +5307,7 @@ print(f"SciPy Cell 403: ", result_403)
 ```
 
 
-```
+```python
 # Cell 404 - SciPy Example
 from scipy.integrate import quad
 
@@ -4854,7 +5319,7 @@ print(f"SciPy Cell 404: ", result_404)
 ```
 
 
-```
+```python
 # Cell 405 - SciPy Example
 from scipy.integrate import quad
 
@@ -4866,7 +5331,7 @@ print(f"SciPy Cell 405: ", result_405)
 ```
 
 
-```
+```python
 # Cell 406 - SciPy Example
 from scipy.integrate import quad
 
@@ -4878,7 +5343,7 @@ print(f"SciPy Cell 406: ", result_406)
 ```
 
 
-```
+```python
 # Cell 407 - SciPy Example
 from scipy.integrate import quad
 
@@ -4890,7 +5355,7 @@ print(f"SciPy Cell 407: ", result_407)
 ```
 
 
-```
+```python
 # Cell 408 - SciPy Example
 from scipy.integrate import quad
 
@@ -4902,7 +5367,7 @@ print(f"SciPy Cell 408: ", result_408)
 ```
 
 
-```
+```python
 # Cell 409 - SciPy Example
 from scipy.integrate import quad
 
@@ -4914,7 +5379,7 @@ print(f"SciPy Cell 409: ", result_409)
 ```
 
 
-```
+```python
 # Cell 410 - SciPy Example
 from scipy.integrate import quad
 
@@ -4926,7 +5391,7 @@ print(f"SciPy Cell 410: ", result_410)
 ```
 
 
-```
+```python
 # Cell 411 - SciPy Example
 from scipy.integrate import quad
 
@@ -4938,7 +5403,7 @@ print(f"SciPy Cell 411: ", result_411)
 ```
 
 
-```
+```python
 # Cell 412 - SciPy Example
 from scipy.integrate import quad
 
@@ -4950,7 +5415,7 @@ print(f"SciPy Cell 412: ", result_412)
 ```
 
 
-```
+```python
 # Cell 413 - SciPy Example
 from scipy.integrate import quad
 
@@ -4962,7 +5427,7 @@ print(f"SciPy Cell 413: ", result_413)
 ```
 
 
-```
+```python
 # Cell 414 - SciPy Example
 from scipy.integrate import quad
 
@@ -4974,7 +5439,7 @@ print(f"SciPy Cell 414: ", result_414)
 ```
 
 
-```
+```python
 # Cell 415 - SciPy Example
 from scipy.integrate import quad
 
@@ -4986,7 +5451,7 @@ print(f"SciPy Cell 415: ", result_415)
 ```
 
 
-```
+```python
 # Cell 416 - SciPy Example
 from scipy.integrate import quad
 
@@ -4998,7 +5463,7 @@ print(f"SciPy Cell 416: ", result_416)
 ```
 
 
-```
+```python
 # Cell 417 - SciPy Example
 from scipy.integrate import quad
 
@@ -5010,7 +5475,7 @@ print(f"SciPy Cell 417: ", result_417)
 ```
 
 
-```
+```python
 # Cell 418 - SciPy Example
 from scipy.integrate import quad
 
@@ -5022,7 +5487,7 @@ print(f"SciPy Cell 418: ", result_418)
 ```
 
 
-```
+```python
 # Cell 419 - SciPy Example
 from scipy.integrate import quad
 
@@ -5034,7 +5499,7 @@ print(f"SciPy Cell 419: ", result_419)
 ```
 
 
-```
+```python
 # Cell 420 - SciPy Example
 from scipy.integrate import quad
 
@@ -5046,7 +5511,7 @@ print(f"SciPy Cell 420: ", result_420)
 ```
 
 
-```
+```python
 # Cell 421 - SciPy Example
 from scipy.integrate import quad
 
@@ -5058,7 +5523,7 @@ print(f"SciPy Cell 421: ", result_421)
 ```
 
 
-```
+```python
 # Cell 422 - SciPy Example
 from scipy.integrate import quad
 
@@ -5070,7 +5535,7 @@ print(f"SciPy Cell 422: ", result_422)
 ```
 
 
-```
+```python
 # Cell 423 - SciPy Example
 from scipy.integrate import quad
 
@@ -5082,7 +5547,7 @@ print(f"SciPy Cell 423: ", result_423)
 ```
 
 
-```
+```python
 # Cell 424 - SciPy Example
 from scipy.integrate import quad
 
@@ -5094,7 +5559,7 @@ print(f"SciPy Cell 424: ", result_424)
 ```
 
 
-```
+```python
 # Cell 425 - SciPy Example
 from scipy.integrate import quad
 
@@ -5106,7 +5571,7 @@ print(f"SciPy Cell 425: ", result_425)
 ```
 
 
-```
+```python
 # Cell 426 - SciPy Example
 from scipy.integrate import quad
 
@@ -5118,7 +5583,7 @@ print(f"SciPy Cell 426: ", result_426)
 ```
 
 
-```
+```python
 # Cell 427 - SciPy Example
 from scipy.integrate import quad
 
@@ -5130,7 +5595,7 @@ print(f"SciPy Cell 427: ", result_427)
 ```
 
 
-```
+```python
 # Cell 428 - SciPy Example
 from scipy.integrate import quad
 
@@ -5142,7 +5607,7 @@ print(f"SciPy Cell 428: ", result_428)
 ```
 
 
-```
+```python
 # Cell 429 - SciPy Example
 from scipy.integrate import quad
 
@@ -5154,7 +5619,7 @@ print(f"SciPy Cell 429: ", result_429)
 ```
 
 
-```
+```python
 # Cell 430 - SciPy Example
 from scipy.integrate import quad
 
@@ -5166,7 +5631,7 @@ print(f"SciPy Cell 430: ", result_430)
 ```
 
 
-```
+```python
 # Cell 431 - SciPy Example
 from scipy.integrate import quad
 
@@ -5178,7 +5643,7 @@ print(f"SciPy Cell 431: ", result_431)
 ```
 
 
-```
+```python
 # Cell 432 - SciPy Example
 from scipy.integrate import quad
 
@@ -5190,7 +5655,7 @@ print(f"SciPy Cell 432: ", result_432)
 ```
 
 
-```
+```python
 # Cell 433 - SciPy Example
 from scipy.integrate import quad
 
@@ -5202,7 +5667,7 @@ print(f"SciPy Cell 433: ", result_433)
 ```
 
 
-```
+```python
 # Cell 434 - SciPy Example
 from scipy.integrate import quad
 
@@ -5214,7 +5679,7 @@ print(f"SciPy Cell 434: ", result_434)
 ```
 
 
-```
+```python
 # Cell 435 - SciPy Example
 from scipy.integrate import quad
 
@@ -5226,7 +5691,7 @@ print(f"SciPy Cell 435: ", result_435)
 ```
 
 
-```
+```python
 # Cell 436 - SciPy Example
 from scipy.integrate import quad
 
@@ -5238,7 +5703,7 @@ print(f"SciPy Cell 436: ", result_436)
 ```
 
 
-```
+```python
 # Cell 437 - SciPy Example
 from scipy.integrate import quad
 
@@ -5250,7 +5715,7 @@ print(f"SciPy Cell 437: ", result_437)
 ```
 
 
-```
+```python
 # Cell 438 - SciPy Example
 from scipy.integrate import quad
 
@@ -5262,7 +5727,7 @@ print(f"SciPy Cell 438: ", result_438)
 ```
 
 
-```
+```python
 # Cell 439 - SciPy Example
 from scipy.integrate import quad
 
@@ -5274,7 +5739,7 @@ print(f"SciPy Cell 439: ", result_439)
 ```
 
 
-```
+```python
 # Cell 440 - SciPy Example
 from scipy.integrate import quad
 
@@ -5286,7 +5751,7 @@ print(f"SciPy Cell 440: ", result_440)
 ```
 
 
-```
+```python
 # Cell 441 - SciPy Example
 from scipy.integrate import quad
 
@@ -5298,7 +5763,7 @@ print(f"SciPy Cell 441: ", result_441)
 ```
 
 
-```
+```python
 # Cell 442 - SciPy Example
 from scipy.integrate import quad
 
@@ -5310,7 +5775,7 @@ print(f"SciPy Cell 442: ", result_442)
 ```
 
 
-```
+```python
 # Cell 443 - SciPy Example
 from scipy.integrate import quad
 
@@ -5322,7 +5787,7 @@ print(f"SciPy Cell 443: ", result_443)
 ```
 
 
-```
+```python
 # Cell 444 - SciPy Example
 from scipy.integrate import quad
 
@@ -5334,7 +5799,7 @@ print(f"SciPy Cell 444: ", result_444)
 ```
 
 
-```
+```python
 # Cell 445 - SciPy Example
 from scipy.integrate import quad
 
@@ -5346,7 +5811,7 @@ print(f"SciPy Cell 445: ", result_445)
 ```
 
 
-```
+```python
 # Cell 446 - SciPy Example
 from scipy.integrate import quad
 
@@ -5358,7 +5823,7 @@ print(f"SciPy Cell 446: ", result_446)
 ```
 
 
-```
+```python
 # Cell 447 - SciPy Example
 from scipy.integrate import quad
 
@@ -5370,7 +5835,7 @@ print(f"SciPy Cell 447: ", result_447)
 ```
 
 
-```
+```python
 # Cell 448 - SciPy Example
 from scipy.integrate import quad
 
@@ -5382,7 +5847,7 @@ print(f"SciPy Cell 448: ", result_448)
 ```
 
 
-```
+```python
 # Cell 449 - SciPy Example
 from scipy.integrate import quad
 
@@ -5394,7 +5859,7 @@ print(f"SciPy Cell 449: ", result_449)
 ```
 
 
-```
+```python
 # Cell 450 - SciPy Example
 from scipy.integrate import quad
 
@@ -5406,7 +5871,7 @@ print(f"SciPy Cell 450: ", result_450)
 ```
 
 
-```
+```python
 # Cell 451 - TensorFlow Example
 import tensorflow as tf
 
@@ -5417,7 +5882,7 @@ print(f"TensorFlow Cell 451: ", c_451.numpy())
 ```
 
 
-```
+```python
 # Cell 452 - TensorFlow Example
 import tensorflow as tf
 
@@ -5428,7 +5893,7 @@ print(f"TensorFlow Cell 452: ", c_452.numpy())
 ```
 
 
-```
+```python
 # Cell 453 - TensorFlow Example
 import tensorflow as tf
 
@@ -5439,7 +5904,7 @@ print(f"TensorFlow Cell 453: ", c_453.numpy())
 ```
 
 
-```
+```python
 # Cell 454 - TensorFlow Example
 import tensorflow as tf
 
@@ -5450,7 +5915,7 @@ print(f"TensorFlow Cell 454: ", c_454.numpy())
 ```
 
 
-```
+```python
 # Cell 455 - TensorFlow Example
 import tensorflow as tf
 
@@ -5461,7 +5926,7 @@ print(f"TensorFlow Cell 455: ", c_455.numpy())
 ```
 
 
-```
+```python
 # Cell 456 - TensorFlow Example
 import tensorflow as tf
 
@@ -5472,7 +5937,7 @@ print(f"TensorFlow Cell 456: ", c_456.numpy())
 ```
 
 
-```
+```python
 # Cell 457 - TensorFlow Example
 import tensorflow as tf
 
@@ -5483,7 +5948,7 @@ print(f"TensorFlow Cell 457: ", c_457.numpy())
 ```
 
 
-```
+```python
 # Cell 458 - TensorFlow Example
 import tensorflow as tf
 
@@ -5494,7 +5959,7 @@ print(f"TensorFlow Cell 458: ", c_458.numpy())
 ```
 
 
-```
+```python
 # Cell 459 - TensorFlow Example
 import tensorflow as tf
 
@@ -5505,7 +5970,7 @@ print(f"TensorFlow Cell 459: ", c_459.numpy())
 ```
 
 
-```
+```python
 # Cell 460 - TensorFlow Example
 import tensorflow as tf
 
@@ -5516,7 +5981,7 @@ print(f"TensorFlow Cell 460: ", c_460.numpy())
 ```
 
 
-```
+```python
 # Cell 461 - TensorFlow Example
 import tensorflow as tf
 
@@ -5527,7 +5992,7 @@ print(f"TensorFlow Cell 461: ", c_461.numpy())
 ```
 
 
-```
+```python
 # Cell 462 - TensorFlow Example
 import tensorflow as tf
 
@@ -5538,7 +6003,7 @@ print(f"TensorFlow Cell 462: ", c_462.numpy())
 ```
 
 
-```
+```python
 # Cell 463 - TensorFlow Example
 import tensorflow as tf
 
@@ -5549,7 +6014,7 @@ print(f"TensorFlow Cell 463: ", c_463.numpy())
 ```
 
 
-```
+```python
 # Cell 464 - TensorFlow Example
 import tensorflow as tf
 
@@ -5560,7 +6025,7 @@ print(f"TensorFlow Cell 464: ", c_464.numpy())
 ```
 
 
-```
+```python
 # Cell 465 - TensorFlow Example
 import tensorflow as tf
 
@@ -5571,7 +6036,7 @@ print(f"TensorFlow Cell 465: ", c_465.numpy())
 ```
 
 
-```
+```python
 # Cell 466 - TensorFlow Example
 import tensorflow as tf
 
@@ -5582,7 +6047,7 @@ print(f"TensorFlow Cell 466: ", c_466.numpy())
 ```
 
 
-```
+```python
 # Cell 467 - TensorFlow Example
 import tensorflow as tf
 
@@ -5593,7 +6058,7 @@ print(f"TensorFlow Cell 467: ", c_467.numpy())
 ```
 
 
-```
+```python
 # Cell 468 - TensorFlow Example
 import tensorflow as tf
 
@@ -5604,7 +6069,7 @@ print(f"TensorFlow Cell 468: ", c_468.numpy())
 ```
 
 
-```
+```python
 # Cell 469 - TensorFlow Example
 import tensorflow as tf
 
@@ -5615,7 +6080,7 @@ print(f"TensorFlow Cell 469: ", c_469.numpy())
 ```
 
 
-```
+```python
 # Cell 470 - TensorFlow Example
 import tensorflow as tf
 
@@ -5626,7 +6091,7 @@ print(f"TensorFlow Cell 470: ", c_470.numpy())
 ```
 
 
-```
+```python
 # Cell 471 - TensorFlow Example
 import tensorflow as tf
 
@@ -5637,7 +6102,7 @@ print(f"TensorFlow Cell 471: ", c_471.numpy())
 ```
 
 
-```
+```python
 # Cell 472 - TensorFlow Example
 import tensorflow as tf
 
@@ -5648,7 +6113,7 @@ print(f"TensorFlow Cell 472: ", c_472.numpy())
 ```
 
 
-```
+```python
 # Cell 473 - TensorFlow Example
 import tensorflow as tf
 
@@ -5659,7 +6124,7 @@ print(f"TensorFlow Cell 473: ", c_473.numpy())
 ```
 
 
-```
+```python
 # Cell 474 - TensorFlow Example
 import tensorflow as tf
 
@@ -5670,7 +6135,7 @@ print(f"TensorFlow Cell 474: ", c_474.numpy())
 ```
 
 
-```
+```python
 # Cell 475 - TensorFlow Example
 import tensorflow as tf
 
@@ -5681,7 +6146,7 @@ print(f"TensorFlow Cell 475: ", c_475.numpy())
 ```
 
 
-```
+```python
 # Cell 476 - TensorFlow Example
 import tensorflow as tf
 
@@ -5692,7 +6157,7 @@ print(f"TensorFlow Cell 476: ", c_476.numpy())
 ```
 
 
-```
+```python
 # Cell 477 - TensorFlow Example
 import tensorflow as tf
 
@@ -5703,7 +6168,7 @@ print(f"TensorFlow Cell 477: ", c_477.numpy())
 ```
 
 
-```
+```python
 # Cell 478 - TensorFlow Example
 import tensorflow as tf
 
@@ -5714,7 +6179,7 @@ print(f"TensorFlow Cell 478: ", c_478.numpy())
 ```
 
 
-```
+```python
 # Cell 479 - TensorFlow Example
 import tensorflow as tf
 
@@ -5725,7 +6190,7 @@ print(f"TensorFlow Cell 479: ", c_479.numpy())
 ```
 
 
-```
+```python
 # Cell 480 - TensorFlow Example
 import tensorflow as tf
 
@@ -5736,7 +6201,7 @@ print(f"TensorFlow Cell 480: ", c_480.numpy())
 ```
 
 
-```
+```python
 # Cell 481 - TensorFlow Example
 import tensorflow as tf
 
@@ -5747,7 +6212,7 @@ print(f"TensorFlow Cell 481: ", c_481.numpy())
 ```
 
 
-```
+```python
 # Cell 482 - TensorFlow Example
 import tensorflow as tf
 
@@ -5758,7 +6223,7 @@ print(f"TensorFlow Cell 482: ", c_482.numpy())
 ```
 
 
-```
+```python
 # Cell 483 - TensorFlow Example
 import tensorflow as tf
 
@@ -5769,7 +6234,7 @@ print(f"TensorFlow Cell 483: ", c_483.numpy())
 ```
 
 
-```
+```python
 # Cell 484 - TensorFlow Example
 import tensorflow as tf
 
@@ -5780,7 +6245,7 @@ print(f"TensorFlow Cell 484: ", c_484.numpy())
 ```
 
 
-```
+```python
 # Cell 485 - TensorFlow Example
 import tensorflow as tf
 
@@ -5791,7 +6256,7 @@ print(f"TensorFlow Cell 485: ", c_485.numpy())
 ```
 
 
-```
+```python
 # Cell 486 - TensorFlow Example
 import tensorflow as tf
 
@@ -5802,7 +6267,7 @@ print(f"TensorFlow Cell 486: ", c_486.numpy())
 ```
 
 
-```
+```python
 # Cell 487 - TensorFlow Example
 import tensorflow as tf
 
@@ -5813,7 +6278,7 @@ print(f"TensorFlow Cell 487: ", c_487.numpy())
 ```
 
 
-```
+```python
 # Cell 488 - TensorFlow Example
 import tensorflow as tf
 
@@ -5824,7 +6289,7 @@ print(f"TensorFlow Cell 488: ", c_488.numpy())
 ```
 
 
-```
+```python
 # Cell 489 - TensorFlow Example
 import tensorflow as tf
 
@@ -5835,7 +6300,7 @@ print(f"TensorFlow Cell 489: ", c_489.numpy())
 ```
 
 
-```
+```python
 # Cell 490 - TensorFlow Example
 import tensorflow as tf
 
@@ -5846,7 +6311,7 @@ print(f"TensorFlow Cell 490: ", c_490.numpy())
 ```
 
 
-```
+```python
 # Cell 491 - TensorFlow Example
 import tensorflow as tf
 
@@ -5857,7 +6322,7 @@ print(f"TensorFlow Cell 491: ", c_491.numpy())
 ```
 
 
-```
+```python
 # Cell 492 - TensorFlow Example
 import tensorflow as tf
 
@@ -5868,7 +6333,7 @@ print(f"TensorFlow Cell 492: ", c_492.numpy())
 ```
 
 
-```
+```python
 # Cell 493 - TensorFlow Example
 import tensorflow as tf
 
@@ -5879,7 +6344,7 @@ print(f"TensorFlow Cell 493: ", c_493.numpy())
 ```
 
 
-```
+```python
 # Cell 494 - TensorFlow Example
 import tensorflow as tf
 
@@ -5890,7 +6355,7 @@ print(f"TensorFlow Cell 494: ", c_494.numpy())
 ```
 
 
-```
+```python
 # Cell 495 - TensorFlow Example
 import tensorflow as tf
 
@@ -5901,7 +6366,7 @@ print(f"TensorFlow Cell 495: ", c_495.numpy())
 ```
 
 
-```
+```python
 # Cell 496 - TensorFlow Example
 import tensorflow as tf
 
@@ -5912,7 +6377,7 @@ print(f"TensorFlow Cell 496: ", c_496.numpy())
 ```
 
 
-```
+```python
 # Cell 497 - TensorFlow Example
 import tensorflow as tf
 
@@ -5923,7 +6388,7 @@ print(f"TensorFlow Cell 497: ", c_497.numpy())
 ```
 
 
-```
+```python
 # Cell 498 - TensorFlow Example
 import tensorflow as tf
 
@@ -5934,7 +6399,7 @@ print(f"TensorFlow Cell 498: ", c_498.numpy())
 ```
 
 
-```
+```python
 # Cell 499 - TensorFlow Example
 import tensorflow as tf
 
@@ -5945,7 +6410,7 @@ print(f"TensorFlow Cell 499: ", c_499.numpy())
 ```
 
 
-```
+```python
 # Cell 500 - TensorFlow Example
 import tensorflow as tf
 
@@ -5956,7 +6421,7 @@ print(f"TensorFlow Cell 500: ", c_500.numpy())
 ```
 
 
-```
+```python
 # Cell 501 - TensorFlow Example
 import tensorflow as tf
 
@@ -5967,7 +6432,7 @@ print(f"TensorFlow Cell 501: ", c_501.numpy())
 ```
 
 
-```
+```python
 # Cell 502 - TensorFlow Example
 import tensorflow as tf
 
@@ -5978,7 +6443,7 @@ print(f"TensorFlow Cell 502: ", c_502.numpy())
 ```
 
 
-```
+```python
 # Cell 503 - TensorFlow Example
 import tensorflow as tf
 
@@ -5989,7 +6454,7 @@ print(f"TensorFlow Cell 503: ", c_503.numpy())
 ```
 
 
-```
+```python
 # Cell 504 - TensorFlow Example
 import tensorflow as tf
 
@@ -6000,7 +6465,7 @@ print(f"TensorFlow Cell 504: ", c_504.numpy())
 ```
 
 
-```
+```python
 # Cell 505 - TensorFlow Example
 import tensorflow as tf
 
@@ -6011,7 +6476,7 @@ print(f"TensorFlow Cell 505: ", c_505.numpy())
 ```
 
 
-```
+```python
 # Cell 506 - TensorFlow Example
 import tensorflow as tf
 
@@ -6022,7 +6487,7 @@ print(f"TensorFlow Cell 506: ", c_506.numpy())
 ```
 
 
-```
+```python
 # Cell 507 - TensorFlow Example
 import tensorflow as tf
 
@@ -6033,7 +6498,7 @@ print(f"TensorFlow Cell 507: ", c_507.numpy())
 ```
 
 
-```
+```python
 # Cell 508 - TensorFlow Example
 import tensorflow as tf
 
@@ -6044,7 +6509,7 @@ print(f"TensorFlow Cell 508: ", c_508.numpy())
 ```
 
 
-```
+```python
 # Cell 509 - TensorFlow Example
 import tensorflow as tf
 
@@ -6055,7 +6520,7 @@ print(f"TensorFlow Cell 509: ", c_509.numpy())
 ```
 
 
-```
+```python
 # Cell 510 - TensorFlow Example
 import tensorflow as tf
 
@@ -6066,7 +6531,7 @@ print(f"TensorFlow Cell 510: ", c_510.numpy())
 ```
 
 
-```
+```python
 # Cell 511 - TensorFlow Example
 import tensorflow as tf
 
@@ -6077,7 +6542,7 @@ print(f"TensorFlow Cell 511: ", c_511.numpy())
 ```
 
 
-```
+```python
 # Cell 512 - TensorFlow Example
 import tensorflow as tf
 
@@ -6088,7 +6553,7 @@ print(f"TensorFlow Cell 512: ", c_512.numpy())
 ```
 
 
-```
+```python
 # Cell 513 - TensorFlow Example
 import tensorflow as tf
 
@@ -6099,7 +6564,7 @@ print(f"TensorFlow Cell 513: ", c_513.numpy())
 ```
 
 
-```
+```python
 # Cell 514 - TensorFlow Example
 import tensorflow as tf
 
@@ -6110,7 +6575,7 @@ print(f"TensorFlow Cell 514: ", c_514.numpy())
 ```
 
 
-```
+```python
 # Cell 515 - TensorFlow Example
 import tensorflow as tf
 
@@ -6121,7 +6586,7 @@ print(f"TensorFlow Cell 515: ", c_515.numpy())
 ```
 
 
-```
+```python
 # Cell 516 - TensorFlow Example
 import tensorflow as tf
 
@@ -6132,7 +6597,7 @@ print(f"TensorFlow Cell 516: ", c_516.numpy())
 ```
 
 
-```
+```python
 # Cell 517 - TensorFlow Example
 import tensorflow as tf
 
@@ -6143,7 +6608,7 @@ print(f"TensorFlow Cell 517: ", c_517.numpy())
 ```
 
 
-```
+```python
 # Cell 518 - TensorFlow Example
 import tensorflow as tf
 
@@ -6154,7 +6619,7 @@ print(f"TensorFlow Cell 518: ", c_518.numpy())
 ```
 
 
-```
+```python
 # Cell 519 - TensorFlow Example
 import tensorflow as tf
 
@@ -6165,7 +6630,7 @@ print(f"TensorFlow Cell 519: ", c_519.numpy())
 ```
 
 
-```
+```python
 # Cell 520 - TensorFlow Example
 import tensorflow as tf
 
@@ -6176,7 +6641,7 @@ print(f"TensorFlow Cell 520: ", c_520.numpy())
 ```
 
 
-```
+```python
 # Cell 521 - TensorFlow Example
 import tensorflow as tf
 
@@ -6187,7 +6652,7 @@ print(f"TensorFlow Cell 521: ", c_521.numpy())
 ```
 
 
-```
+```python
 # Cell 522 - TensorFlow Example
 import tensorflow as tf
 
@@ -6198,7 +6663,7 @@ print(f"TensorFlow Cell 522: ", c_522.numpy())
 ```
 
 
-```
+```python
 # Cell 523 - TensorFlow Example
 import tensorflow as tf
 
@@ -6209,7 +6674,7 @@ print(f"TensorFlow Cell 523: ", c_523.numpy())
 ```
 
 
-```
+```python
 # Cell 524 - TensorFlow Example
 import tensorflow as tf
 
@@ -6220,7 +6685,7 @@ print(f"TensorFlow Cell 524: ", c_524.numpy())
 ```
 
 
-```
+```python
 # Cell 525 - TensorFlow Example
 import tensorflow as tf
 
@@ -6231,7 +6696,7 @@ print(f"TensorFlow Cell 525: ", c_525.numpy())
 ```
 
 
-```
+```python
 # Cell 526 - TensorFlow Example
 import tensorflow as tf
 
@@ -6242,7 +6707,7 @@ print(f"TensorFlow Cell 526: ", c_526.numpy())
 ```
 
 
-```
+```python
 # Cell 527 - TensorFlow Example
 import tensorflow as tf
 
@@ -6253,7 +6718,7 @@ print(f"TensorFlow Cell 527: ", c_527.numpy())
 ```
 
 
-```
+```python
 # Cell 528 - TensorFlow Example
 import tensorflow as tf
 
@@ -6264,7 +6729,7 @@ print(f"TensorFlow Cell 528: ", c_528.numpy())
 ```
 
 
-```
+```python
 # Cell 529 - TensorFlow Example
 import tensorflow as tf
 
@@ -6275,7 +6740,7 @@ print(f"TensorFlow Cell 529: ", c_529.numpy())
 ```
 
 
-```
+```python
 # Cell 530 - TensorFlow Example
 import tensorflow as tf
 
@@ -6286,7 +6751,7 @@ print(f"TensorFlow Cell 530: ", c_530.numpy())
 ```
 
 
-```
+```python
 # Cell 531 - TensorFlow Example
 import tensorflow as tf
 
@@ -6297,7 +6762,7 @@ print(f"TensorFlow Cell 531: ", c_531.numpy())
 ```
 
 
-```
+```python
 # Cell 532 - TensorFlow Example
 import tensorflow as tf
 
@@ -6308,7 +6773,7 @@ print(f"TensorFlow Cell 532: ", c_532.numpy())
 ```
 
 
-```
+```python
 # Cell 533 - TensorFlow Example
 import tensorflow as tf
 
@@ -6319,7 +6784,7 @@ print(f"TensorFlow Cell 533: ", c_533.numpy())
 ```
 
 
-```
+```python
 # Cell 534 - TensorFlow Example
 import tensorflow as tf
 
@@ -6330,7 +6795,7 @@ print(f"TensorFlow Cell 534: ", c_534.numpy())
 ```
 
 
-```
+```python
 # Cell 535 - TensorFlow Example
 import tensorflow as tf
 
@@ -6341,7 +6806,7 @@ print(f"TensorFlow Cell 535: ", c_535.numpy())
 ```
 
 
-```
+```python
 # Cell 536 - TensorFlow Example
 import tensorflow as tf
 
@@ -6352,7 +6817,7 @@ print(f"TensorFlow Cell 536: ", c_536.numpy())
 ```
 
 
-```
+```python
 # Cell 537 - TensorFlow Example
 import tensorflow as tf
 
@@ -6363,7 +6828,7 @@ print(f"TensorFlow Cell 537: ", c_537.numpy())
 ```
 
 
-```
+```python
 # Cell 538 - TensorFlow Example
 import tensorflow as tf
 
@@ -6374,7 +6839,7 @@ print(f"TensorFlow Cell 538: ", c_538.numpy())
 ```
 
 
-```
+```python
 # Cell 539 - TensorFlow Example
 import tensorflow as tf
 
@@ -6385,7 +6850,7 @@ print(f"TensorFlow Cell 539: ", c_539.numpy())
 ```
 
 
-```
+```python
 # Cell 540 - TensorFlow Example
 import tensorflow as tf
 
@@ -6396,7 +6861,7 @@ print(f"TensorFlow Cell 540: ", c_540.numpy())
 ```
 
 
-```
+```python
 # Cell 541 - TensorFlow Example
 import tensorflow as tf
 
@@ -6407,7 +6872,7 @@ print(f"TensorFlow Cell 541: ", c_541.numpy())
 ```
 
 
-```
+```python
 # Cell 542 - TensorFlow Example
 import tensorflow as tf
 
@@ -6418,7 +6883,7 @@ print(f"TensorFlow Cell 542: ", c_542.numpy())
 ```
 
 
-```
+```python
 # Cell 543 - TensorFlow Example
 import tensorflow as tf
 
@@ -6429,7 +6894,7 @@ print(f"TensorFlow Cell 543: ", c_543.numpy())
 ```
 
 
-```
+```python
 # Cell 544 - TensorFlow Example
 import tensorflow as tf
 
@@ -6440,7 +6905,7 @@ print(f"TensorFlow Cell 544: ", c_544.numpy())
 ```
 
 
-```
+```python
 # Cell 545 - TensorFlow Example
 import tensorflow as tf
 
@@ -6451,7 +6916,7 @@ print(f"TensorFlow Cell 545: ", c_545.numpy())
 ```
 
 
-```
+```python
 # Cell 546 - TensorFlow Example
 import tensorflow as tf
 
@@ -6462,7 +6927,7 @@ print(f"TensorFlow Cell 546: ", c_546.numpy())
 ```
 
 
-```
+```python
 # Cell 547 - TensorFlow Example
 import tensorflow as tf
 
@@ -6473,7 +6938,7 @@ print(f"TensorFlow Cell 547: ", c_547.numpy())
 ```
 
 
-```
+```python
 # Cell 548 - TensorFlow Example
 import tensorflow as tf
 
@@ -6484,7 +6949,7 @@ print(f"TensorFlow Cell 548: ", c_548.numpy())
 ```
 
 
-```
+```python
 # Cell 549 - TensorFlow Example
 import tensorflow as tf
 
@@ -6495,7 +6960,7 @@ print(f"TensorFlow Cell 549: ", c_549.numpy())
 ```
 
 
-```
+```python
 # Cell 550 - TensorFlow Example
 import tensorflow as tf
 
@@ -6506,7 +6971,7 @@ print(f"TensorFlow Cell 550: ", c_550.numpy())
 ```
 
 
-```
+```python
 # Cell 551 - TensorFlow Example
 import tensorflow as tf
 
@@ -6517,7 +6982,7 @@ print(f"TensorFlow Cell 551: ", c_551.numpy())
 ```
 
 
-```
+```python
 # Cell 552 - TensorFlow Example
 import tensorflow as tf
 
@@ -6528,7 +6993,7 @@ print(f"TensorFlow Cell 552: ", c_552.numpy())
 ```
 
 
-```
+```python
 # Cell 553 - TensorFlow Example
 import tensorflow as tf
 
@@ -6539,7 +7004,7 @@ print(f"TensorFlow Cell 553: ", c_553.numpy())
 ```
 
 
-```
+```python
 # Cell 554 - TensorFlow Example
 import tensorflow as tf
 
@@ -6550,7 +7015,7 @@ print(f"TensorFlow Cell 554: ", c_554.numpy())
 ```
 
 
-```
+```python
 # Cell 555 - TensorFlow Example
 import tensorflow as tf
 
@@ -6561,7 +7026,7 @@ print(f"TensorFlow Cell 555: ", c_555.numpy())
 ```
 
 
-```
+```python
 # Cell 556 - TensorFlow Example
 import tensorflow as tf
 
@@ -6572,7 +7037,7 @@ print(f"TensorFlow Cell 556: ", c_556.numpy())
 ```
 
 
-```
+```python
 # Cell 557 - TensorFlow Example
 import tensorflow as tf
 
@@ -6583,7 +7048,7 @@ print(f"TensorFlow Cell 557: ", c_557.numpy())
 ```
 
 
-```
+```python
 # Cell 558 - TensorFlow Example
 import tensorflow as tf
 
@@ -6594,7 +7059,7 @@ print(f"TensorFlow Cell 558: ", c_558.numpy())
 ```
 
 
-```
+```python
 # Cell 559 - TensorFlow Example
 import tensorflow as tf
 
@@ -6605,7 +7070,7 @@ print(f"TensorFlow Cell 559: ", c_559.numpy())
 ```
 
 
-```
+```python
 # Cell 560 - TensorFlow Example
 import tensorflow as tf
 
@@ -6616,7 +7081,7 @@ print(f"TensorFlow Cell 560: ", c_560.numpy())
 ```
 
 
-```
+```python
 # Cell 561 - TensorFlow Example
 import tensorflow as tf
 
@@ -6627,7 +7092,7 @@ print(f"TensorFlow Cell 561: ", c_561.numpy())
 ```
 
 
-```
+```python
 # Cell 562 - TensorFlow Example
 import tensorflow as tf
 
@@ -6638,7 +7103,7 @@ print(f"TensorFlow Cell 562: ", c_562.numpy())
 ```
 
 
-```
+```python
 # Cell 563 - TensorFlow Example
 import tensorflow as tf
 
@@ -6649,7 +7114,7 @@ print(f"TensorFlow Cell 563: ", c_563.numpy())
 ```
 
 
-```
+```python
 # Cell 564 - TensorFlow Example
 import tensorflow as tf
 
@@ -6660,7 +7125,7 @@ print(f"TensorFlow Cell 564: ", c_564.numpy())
 ```
 
 
-```
+```python
 # Cell 565 - TensorFlow Example
 import tensorflow as tf
 
@@ -6671,7 +7136,7 @@ print(f"TensorFlow Cell 565: ", c_565.numpy())
 ```
 
 
-```
+```python
 # Cell 566 - TensorFlow Example
 import tensorflow as tf
 
@@ -6682,7 +7147,7 @@ print(f"TensorFlow Cell 566: ", c_566.numpy())
 ```
 
 
-```
+```python
 # Cell 567 - TensorFlow Example
 import tensorflow as tf
 
@@ -6693,7 +7158,7 @@ print(f"TensorFlow Cell 567: ", c_567.numpy())
 ```
 
 
-```
+```python
 # Cell 568 - TensorFlow Example
 import tensorflow as tf
 
@@ -6704,7 +7169,7 @@ print(f"TensorFlow Cell 568: ", c_568.numpy())
 ```
 
 
-```
+```python
 # Cell 569 - TensorFlow Example
 import tensorflow as tf
 
@@ -6715,7 +7180,7 @@ print(f"TensorFlow Cell 569: ", c_569.numpy())
 ```
 
 
-```
+```python
 # Cell 570 - TensorFlow Example
 import tensorflow as tf
 
@@ -6726,7 +7191,7 @@ print(f"TensorFlow Cell 570: ", c_570.numpy())
 ```
 
 
-```
+```python
 # Cell 571 - TensorFlow Example
 import tensorflow as tf
 
@@ -6737,7 +7202,7 @@ print(f"TensorFlow Cell 571: ", c_571.numpy())
 ```
 
 
-```
+```python
 # Cell 572 - TensorFlow Example
 import tensorflow as tf
 
@@ -6748,7 +7213,7 @@ print(f"TensorFlow Cell 572: ", c_572.numpy())
 ```
 
 
-```
+```python
 # Cell 573 - TensorFlow Example
 import tensorflow as tf
 
@@ -6759,7 +7224,7 @@ print(f"TensorFlow Cell 573: ", c_573.numpy())
 ```
 
 
-```
+```python
 # Cell 574 - TensorFlow Example
 import tensorflow as tf
 
@@ -6770,7 +7235,7 @@ print(f"TensorFlow Cell 574: ", c_574.numpy())
 ```
 
 
-```
+```python
 # Cell 575 - TensorFlow Example
 import tensorflow as tf
 
@@ -6781,7 +7246,7 @@ print(f"TensorFlow Cell 575: ", c_575.numpy())
 ```
 
 
-```
+```python
 # Cell 576 - TensorFlow Example
 import tensorflow as tf
 
@@ -6792,7 +7257,7 @@ print(f"TensorFlow Cell 576: ", c_576.numpy())
 ```
 
 
-```
+```python
 # Cell 577 - TensorFlow Example
 import tensorflow as tf
 
@@ -6803,7 +7268,7 @@ print(f"TensorFlow Cell 577: ", c_577.numpy())
 ```
 
 
-```
+```python
 # Cell 578 - TensorFlow Example
 import tensorflow as tf
 
@@ -6814,7 +7279,7 @@ print(f"TensorFlow Cell 578: ", c_578.numpy())
 ```
 
 
-```
+```python
 # Cell 579 - TensorFlow Example
 import tensorflow as tf
 
@@ -6825,7 +7290,7 @@ print(f"TensorFlow Cell 579: ", c_579.numpy())
 ```
 
 
-```
+```python
 # Cell 580 - TensorFlow Example
 import tensorflow as tf
 
@@ -6836,7 +7301,7 @@ print(f"TensorFlow Cell 580: ", c_580.numpy())
 ```
 
 
-```
+```python
 # Cell 581 - TensorFlow Example
 import tensorflow as tf
 
@@ -6847,7 +7312,7 @@ print(f"TensorFlow Cell 581: ", c_581.numpy())
 ```
 
 
-```
+```python
 # Cell 582 - TensorFlow Example
 import tensorflow as tf
 
@@ -6858,7 +7323,7 @@ print(f"TensorFlow Cell 582: ", c_582.numpy())
 ```
 
 
-```
+```python
 # Cell 583 - TensorFlow Example
 import tensorflow as tf
 
@@ -6869,7 +7334,7 @@ print(f"TensorFlow Cell 583: ", c_583.numpy())
 ```
 
 
-```
+```python
 # Cell 584 - TensorFlow Example
 import tensorflow as tf
 
@@ -6880,7 +7345,7 @@ print(f"TensorFlow Cell 584: ", c_584.numpy())
 ```
 
 
-```
+```python
 # Cell 585 - TensorFlow Example
 import tensorflow as tf
 
@@ -6891,7 +7356,7 @@ print(f"TensorFlow Cell 585: ", c_585.numpy())
 ```
 
 
-```
+```python
 # Cell 586 - TensorFlow Example
 import tensorflow as tf
 
@@ -6902,7 +7367,7 @@ print(f"TensorFlow Cell 586: ", c_586.numpy())
 ```
 
 
-```
+```python
 # Cell 587 - TensorFlow Example
 import tensorflow as tf
 
@@ -6913,7 +7378,7 @@ print(f"TensorFlow Cell 587: ", c_587.numpy())
 ```
 
 
-```
+```python
 # Cell 588 - TensorFlow Example
 import tensorflow as tf
 
@@ -6924,7 +7389,7 @@ print(f"TensorFlow Cell 588: ", c_588.numpy())
 ```
 
 
-```
+```python
 # Cell 589 - TensorFlow Example
 import tensorflow as tf
 
@@ -6935,7 +7400,7 @@ print(f"TensorFlow Cell 589: ", c_589.numpy())
 ```
 
 
-```
+```python
 # Cell 590 - TensorFlow Example
 import tensorflow as tf
 
@@ -6946,7 +7411,7 @@ print(f"TensorFlow Cell 590: ", c_590.numpy())
 ```
 
 
-```
+```python
 # Cell 591 - TensorFlow Example
 import tensorflow as tf
 
@@ -6957,7 +7422,7 @@ print(f"TensorFlow Cell 591: ", c_591.numpy())
 ```
 
 
-```
+```python
 # Cell 592 - TensorFlow Example
 import tensorflow as tf
 
@@ -6968,7 +7433,7 @@ print(f"TensorFlow Cell 592: ", c_592.numpy())
 ```
 
 
-```
+```python
 # Cell 593 - TensorFlow Example
 import tensorflow as tf
 
@@ -6979,7 +7444,7 @@ print(f"TensorFlow Cell 593: ", c_593.numpy())
 ```
 
 
-```
+```python
 # Cell 594 - TensorFlow Example
 import tensorflow as tf
 
@@ -6990,7 +7455,7 @@ print(f"TensorFlow Cell 594: ", c_594.numpy())
 ```
 
 
-```
+```python
 # Cell 595 - TensorFlow Example
 import tensorflow as tf
 
@@ -7001,7 +7466,7 @@ print(f"TensorFlow Cell 595: ", c_595.numpy())
 ```
 
 
-```
+```python
 # Cell 596 - TensorFlow Example
 import tensorflow as tf
 
@@ -7012,7 +7477,7 @@ print(f"TensorFlow Cell 596: ", c_596.numpy())
 ```
 
 
-```
+```python
 # Cell 597 - TensorFlow Example
 import tensorflow as tf
 
@@ -7023,7 +7488,7 @@ print(f"TensorFlow Cell 597: ", c_597.numpy())
 ```
 
 
-```
+```python
 # Cell 598 - TensorFlow Example
 import tensorflow as tf
 
@@ -7034,7 +7499,7 @@ print(f"TensorFlow Cell 598: ", c_598.numpy())
 ```
 
 
-```
+```python
 # Cell 599 - TensorFlow Example
 import tensorflow as tf
 
@@ -7045,7 +7510,7 @@ print(f"TensorFlow Cell 599: ", c_599.numpy())
 ```
 
 
-```
+```python
 # Cell 600 - TensorFlow Example
 import tensorflow as tf
 
@@ -7053,6 +7518,11 @@ a_600 = tf.constant([600.0, 601.0])
 b_600 = tf.constant([602.0, 603.0])
 c_600 = tf.add(a_600, b_600)
 print(f"TensorFlow Cell 600: ", c_600.numpy())
+```
+
+
+```python
+
 ```
 
 

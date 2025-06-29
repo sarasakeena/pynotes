@@ -47,6 +47,46 @@
 
 
             <article>
+                <a href="https://sarasakeena.github.io/pynotes/list-vs-tuple.html"><h3 class="article-title">List Vs Tuple</h3></a>
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">list1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">list1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">tuple1</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">tuple1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tuples are immutable:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Tuples</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="nl">immutable:</span><span class="w"> </span><span class="p">&#39;</span><span class="n">tuple</span><span class="p">&#39;</span><span class="w"> </span><span class="n">object</span><span class="w"> </span><span class="n">does</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">support</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">assignment</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">list_test</span><span class="p">():</span>
+    <span class="n">list_x</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">)]</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">tuple_test</span><span class="p">():</span>
+    <span class="n">tuple_x</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">x …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/list-vs-tuple.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://sarasakeena.github.io/pynotes/loops-and-conditions.html"><h3 class="article-title">Loops And Conditions</h3></a>
 <h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
@@ -276,26 +316,29 @@ Square of 5 is 25
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="gh">#</span> Cell 1 - Pytest Example
-def add_1(a, b):
-    return a + b + 1
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 1 - Pytest Example</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">add_1</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">1</span>
 
-def test_add_1():
-    assert add_1(1, 2) == 4
+<span class="k">def</span><span class="w"> </span><span class="nf">test_add_1</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">add_1</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">4</span>
 
-test_add_1()
-print(&quot;Pytest Cell 1 Passed&quot;)
+<span class="n">test_add_1</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pytest Cell 1 Passed&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="gh">#</span> Cell 2 - Pytest Example
-def add_2(a, b):
-    return a + b + 2
+<div class="highlight"><pre><span></span><code>Pytest Cell 1 Passed
+</code></pre></div>
 
-def test_add_2():
-    assert add_2(2, 3) == 7
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 2 - Pytest Example</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">add_2</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="mi">2</span>
 
-test_add_2()
-print(&quot;Pytest Cell 2 Passed …</code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">test_add_2</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">add_2</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">7</span>
+
+<span class="n">test_add_2</span><span class="p">()</span>
+<span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
@@ -388,41 +431,6 @@ print(&quot;Pytest Cell 2 Passed …</code></pre></div><p class="subheader">Cate
 
 
                 <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/python-arrays-dictionaries.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://sarasakeena.github.io/pynotes/python-metaclasses.html"><h3 class="article-title">Python Metaclasses</h3></a>
-<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Meta1</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">dct</span><span class="p">):</span>
-        <span class="n">dct</span><span class="p">[</span><span class="s1">&#39;meta_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">dct</span><span class="p">)</span>
-
-<span class="k">class</span><span class="w"> </span><span class="nc">ClassWithMeta1</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">Meta1</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">show_meta_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_id</span>
-
-<span class="n">obj1</span> <span class="o">=</span> <span class="n">ClassWithMeta1</span><span class="p">()</span>
-<span class="n">obj1</span><span class="o">.</span><span class="n">show_meta_id</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Meta2</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">dct</span><span class="p">):</span>
-        <span class="n">dct</span><span class="p">[</span><span class="s1">&#39;meta_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/python-metaclasses.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
