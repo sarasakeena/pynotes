@@ -1,0 +1,16810 @@
+---
+title: Time Series Analysisbasics
+date: 2025-06-30
+author: Your Name
+cell_count: 200
+score: 200
+---
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.455345</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.163381</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.306777</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.168787</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.689750</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.164823</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.561895</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.544220</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.402455</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.001270</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.500184</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.666031</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.601255</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.015943</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.030061</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.082104</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.899961</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.079906</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.614689</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.622113</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.200973</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.856261</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.109959</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.020210</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.448851</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.976926</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.833225</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.006448</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.145399</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.095457</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.829080</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.046893</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.505105</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.122031</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.388545</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.410296</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.431501</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.901595</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.239899</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.223432</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.083860</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.793722</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.482279</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.217652</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.175020</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.340376</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.347463</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.530346</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.010082</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.220195</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.873778</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.019814</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.053120</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.002058</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.229925</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.311565</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.102824</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.906991</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.795885</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.528194</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.001081</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.772227</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.458938</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.350847</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.017719</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.351434</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-1.007042</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.554440</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.432515</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.813879</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.940191</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.344685</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.013199</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.073481</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.412134</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.224390</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.193373</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.065614</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.095660</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.140764</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.481464</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.059991</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.012221</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.064270</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.605293</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.076915</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.072444</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.055249</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.342117</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.061042</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.591093</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.297031</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.995933</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.342192</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.172289</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.856617</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.589539</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.356276</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.451450</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.187241</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.536320</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.289955</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.251856</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.051579</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.072860</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.930916</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-1.033701</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.921453</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.058494</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.874826</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.729054</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.272282</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.813701</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.810985</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.848145</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.110143</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.040091</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.254453</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.190737</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.107153</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.814854</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.901178</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.780190</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.983484</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.732861</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.706328</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.241912</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.067061</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.707774</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.662536</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.809043</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.312012</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.278850</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.484439</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.019309</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.191957</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.507275</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.207025</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.353679</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.701729</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.699173</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.208695</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.363030</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.550154</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.211394</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.245213</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.231204</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.272467</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.155950</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.010890</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.536961</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.584466</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.401673</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.085435</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.076751</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.841762</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.623008</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.942921</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.665248</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.435025</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.023341</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.593240</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.195281</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.490133</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.794666</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.311786</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.367508</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.165374</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.215975</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.655326</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.405062</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.063762</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.281627</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.088828</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.139908</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.314369</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.698106</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.197327</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.777726</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.202514</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.490491</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.323382</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.549922</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.657447</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.341768</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.061887</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.372018</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.027458</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.446095</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.213124</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.279766</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.475471</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.603550</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.150682</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.028362</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.015139</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.420404</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.436354</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.026366</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.097097</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.120743</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.104357</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.294563</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.779888</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.092840</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.318567</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.831165</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.290400</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.127478</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.860556</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.070050</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.270364</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.421033</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.040567</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.566773</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.844156</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.511033</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>1.006331</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.797123</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.716819</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.064466</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.750119</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.612040</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.718836</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.029495</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.392525</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.361904</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.164049</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.138710</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.038777</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.236460</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.150957</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.867653</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.104170</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.079328</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.389219</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.506333</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.964075</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.828829</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.028234</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.324976</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.792374</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.717894</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.847115</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.098695</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.020508</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.415424</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.172226</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.255621</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.550303</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.127713</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.020414</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.696512</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.880131</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>1.245384</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.771658</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.076766</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.429637</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.063516</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.236112</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.001947</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.023742</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.316385</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.205092</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.016014</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.171982</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.926093</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.127064</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.038746</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.965130</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.238579</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.216302</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.617640</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.589801</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.412427</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.214879</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.131293</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.256870</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.334522</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.327717</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.060912</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.172716</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.434504</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.714644</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.469484</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.402860</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.165643</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.110229</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.889194</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.962296</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.439898</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.097016</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.701916</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.135287</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.268747</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.341324</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.122877</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.768545</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.331648</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.184160</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.160225</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.506771</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.124577</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.443260</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.468408</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.086723</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.409503</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.779904</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.629338</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.288806</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.160824</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.064937</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.169324</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.625299</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.292334</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.104323</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.905070</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.796666</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.328287</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.335575</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.220957</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.335426</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.331970</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.326188</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.504867</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.181993</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>1.065133</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.258067</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.931927</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.540880</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.956077</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.958678</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.998837</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.405979</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.190680</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.881989</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.129914</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.013221</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.361741</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.105830</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.687194</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.831380</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.599155</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.189152</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.184475</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.672227</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.175610</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.732273</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.269611</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.057342</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.709802</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.706753</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.749461</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.027555</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.396270</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.247447</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.509975</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.384418</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.573017</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.496493</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.370430</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.480461</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.964202</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.236433</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.585545</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.524437</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.770801</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.279966</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.486559</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.315208</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.359074</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.178662</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.984007</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.046246</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.496353</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.031026</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.226986</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.504198</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.413902</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.692015</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.172914</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.222770</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.214817</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.210257</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.571714</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.956100</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.356414</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.927804</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.128436</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.056696</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.487728</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.011505</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.501991</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.177344</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.104100</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.140712</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.372670</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.027844</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.153230</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.238420</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.283937</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.019113</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.281153</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.241880</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.649052</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.486557</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.359155</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.705675</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.066424</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.203665</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.246943</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.293614</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.168777</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.001124</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.089598</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.060079</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.058485</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.097147</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.241033</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.581798</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.484388</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.403761</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.351264</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.286496</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.378837</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.818015</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.311032</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.038434</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.350513</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.394329</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.221573</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.334871</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.436111</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.769581</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.848826</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.526144</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.558130</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.279178</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.341613</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.606236</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.797733</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.170173</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.526149</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.478205</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.572423</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.071119</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.435074</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.199233</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.067164</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.419004</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.887660</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.914643</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.389626</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.059825</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.371384</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.094110</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.300930</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.086051</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.268919</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.257376</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.719108</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.637391</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.528254</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.253934</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.101143</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.213756</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.463253</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.049552</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.408197</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.115535</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.467059</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.263123</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.114385</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.904886</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.574685</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.405308</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.255621</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.292428</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.629605</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.441402</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.134436</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.027666</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.272544</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.004398</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.273488</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.069535</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.227589</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.234696</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.610867</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.048348</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.475476</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.248439</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.857446</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.380015</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.911190</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.199561</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.582221</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.374788</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.591080</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.021416</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.260001</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.554802</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.412347</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.501018</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.030375</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.267388</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.183730</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.058515</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.387964</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.304983</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.864905</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.246982</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.646842</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.356523</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.589815</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.234761</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.606317</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.002866</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.566883</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.976871</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.202820</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.073122</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.630652</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.907455</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.591994</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.649600</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.425305</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.104728</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.415922</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.480351</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.213164</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.222768</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.382319</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.592524</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.759940</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.596916</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.126880</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.195678</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.293899</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.329358</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.214131</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.005472</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.175655</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.020069</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.104942</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.243313</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.218983</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.304048</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.016053</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.829299</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.806867</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.496284</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.120224</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.266281</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.292036</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.159905</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.139391</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.181078</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.570614</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.063435</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.532802</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.527380</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.582443</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.003714</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.015719</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.211742</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.165809</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.506944</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.401207</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.512625</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.223882</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.680219</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.370883</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.438501</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.322293</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.296953</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.339588</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.610681</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.525021</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.549489</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.532428</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.656072</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.442848</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.126679</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.512736</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.888266</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.050354</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.012928</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.659232</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.510048</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.005483</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.936165</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.433583</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.792257</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.506155</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.878339</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.706814</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.582394</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.281476</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.461342</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.558317</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.075532</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.268273</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.544400</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.294550</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.589538</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.293471</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.766885</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.141232</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.487285</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.413201</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.491183</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.236887</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.077676</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.040283</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.294769</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.985650</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.683876</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.046205</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.003317</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.084904</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.044604</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.155584</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.521945</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.654648</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.134653</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.467529</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.375553</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.816602</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.378400</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.510663</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.327654</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.147124</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.201465</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.587111</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.000935</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.259204</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.554145</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.666738</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.712376</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.745820</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.238319</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.229252</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.202335</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.091536</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.336329</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.014810</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.173246</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.546037</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.272624</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.800859</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.856195</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.671862</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.620309</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.987121</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.862656</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.704583</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>1.101888</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.116637</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.925777</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.161418</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.518703</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.513563</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.797520</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.046132</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.432483</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.646260</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.817102</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.697185</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.553752</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.512009</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.261162</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.138319</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.000927</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.535187</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.242753</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.250688</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.617608</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.039421</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.430437</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.303397</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.469538</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.041636</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.637604</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.352207</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.418492</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.101066</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.359604</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.099308</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.522281</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.563832</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.001320</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.331830</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.058759</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.244914</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.813847</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.326351</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.051144</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.614782</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.699296</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.523722</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.397622</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.554841</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.528872</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.135202</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.088438</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.212928</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.806488</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.180999</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.007500</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.494235</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.420073</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.583546</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.744659</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.636913</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.400781</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.121813</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.036643</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.889329</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.304443</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.260725</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.297989</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.659348</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.339316</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.059587</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.064990</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.235433</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.142407</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.493000</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.703067</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.690350</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.723113</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.774348</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.881685</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.119207</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.110548</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.612276</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.921852</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.835669</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.426976</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.850759</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.633430</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.074075</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.316132</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.269394</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.299846</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.270143</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.151301</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.587234</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.293593</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.043310</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.448451</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.072609</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.164583</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.206294</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.150925</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.348694</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.127242</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.224922</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.372208</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.055877</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.137456</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.520142</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.709258</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.356650</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.651046</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.053049</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.270969</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.068049</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.204957</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.692901</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.650863</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.661791</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.364537</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.853307</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.559224</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.241123</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.669134</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.318362</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.220104</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.516816</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.407526</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.514186</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.091986</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.010403</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.184859</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.013134</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.302571</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.245625</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.410193</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.360840</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.869657</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.227587</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.577241</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.105369</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.063355</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.451225</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.077175</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.415658</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.133982</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.827663</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.332915</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.168378</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.013022</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.251757</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.301443</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.623432</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.264532</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.235776</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.203603</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.163674</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.795903</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.165685</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.209210</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.519017</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.385270</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.391188</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.048226</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.646386</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.258191</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.359915</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.431606</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.176984</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.245705</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.197709</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.335769</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.632891</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.423709</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.257928</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.109233</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.077447</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.275011</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.307813</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.434811</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.381929</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.807948</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.371196</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.820017</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.463153</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.861100</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.097403</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.089192</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.254633</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.189367</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.046906</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.072243</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.290940</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.765354</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.033850</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.287465</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.000446</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.158375</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.666035</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.042908</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.009786</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.545363</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.146758</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.591519</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.137787</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.546540</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.132671</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.728461</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.349061</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.104302</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.489582</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.471024</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.105642</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.597977</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.175113</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.155421</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.123730</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.425730</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.369535</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.545041</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.800068</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.809425</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.631431</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.407850</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.260406</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.308223</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.183659</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.119652</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.266598</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.839058</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.355040</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.573541</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.439808</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.074707</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.483255</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.890570</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.325387</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.294872</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.586812</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.096617</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.139114</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.596817</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.363461</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.933810</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.136836</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.427018</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.036642</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.094978</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.271558</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.227785</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.565084</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.401098</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.366443</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.097784</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.084587</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.536190</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.002674</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.284731</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.229994</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.449233</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.084476</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.070399</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.542838</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.800218</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.191586</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.980551</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.272661</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.123523</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.228095</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.491768</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.197100</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.081166</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.012130</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.143853</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.404596</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.224932</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.250394</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.455426</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.664473</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.931310</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.413107</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.135399</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.623948</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.470427</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.136939</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.829972</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.058540</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.027514</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.081985</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.150239</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.369107</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.560506</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.321748</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.552387</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.314746</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.243086</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.012839</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.118713</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.541198</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.089901</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.334090</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.385323</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.061620</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.197957</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.642131</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.706187</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.455448</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.908308</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.822342</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.976044</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.257226</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.604898</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.243576</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.072402</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.570896</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.464861</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.451654</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.756106</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.852941</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.624085</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.619821</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.652955</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.379312</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.917941</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.821152</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.138969</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.000504</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.032043</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.154384</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.241546</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.012934</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.439128</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.394586</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.554015</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.532732</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.784559</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.533355</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.356181</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.316240</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.853967</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.447950</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.315779</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.323273</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.550318</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.421425</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.726292</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.428800</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.688354</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.420143</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.921137</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.194677</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.239369</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.398747</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.173778</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.423789</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.672689</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.440503</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.771668</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.506637</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.049220</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.609881</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.532720</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.051869</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.542503</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.913459</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.120806</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.915087</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.708357</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.065681</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.556563</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.247284</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.200941</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.049446</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.111223</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.357921</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.338011</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.635472</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.958967</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.359781</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.167589</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.102978</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.654832</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.389083</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.143092</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.205954</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.428056</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.370280</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.481394</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.106396</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.273393</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.776936</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.135672</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.582935</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.214053</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.058641</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.660589</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.106876</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.123809</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.472027</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.041045</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.440032</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.958953</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.805561</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.880996</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.963040</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.726059</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.526570</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.267852</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.755761</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.452397</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.202842</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.150494</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.322694</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.228173</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.305958</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.936114</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.368715</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.142515</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.296635</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.993193</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.399082</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.152050</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.404973</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.479680</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.280209</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.219804</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.559069</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.162447</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.243295</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.257820</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.213019</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.266281</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.744930</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.008320</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.025235</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.289819</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.379340</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.267912</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.113072</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.396749</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.841764</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.701255</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.042054</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>1.339234</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.377624</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.535001</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.079872</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.338095</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.594645</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.391941</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.153975</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.021615</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.832148</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.017946</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.213805</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.557507</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.859813</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.637174</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.066284</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.340306</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.227561</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.179159</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.198017</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.148784</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.278712</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.046667</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.487963</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.128652</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.546572</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.931533</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.030245</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.662141</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.369202</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.405673</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.520899</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.194174</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.485593</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.460869</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.078063</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.116637</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.057558</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.754374</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.247683</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.383692</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.261938</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.271301</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.197454</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.631162</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.495746</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.454159</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.211562</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.393843</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.432299</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.264888</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.790859</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.075019</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.489868</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.997044</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.210471</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.451907</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.476627</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.575007</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.221643</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.209576</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.432273</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.634620</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.201221</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.091083</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.000771</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.354604</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.588211</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.903359</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.781414</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.142398</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.423916</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.235073</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.005337</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.415547</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.723591</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.218722</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.263410</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.405857</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.970210</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.747069</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.390360</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.158094</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.208571</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.682224</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>1.075258</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.527747</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.365640</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.509748</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.469951</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.132518</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.132354</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.326957</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.022739</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.804692</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.630281</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.101716</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.890430</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.210775</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.223719</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.882527</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.240407</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.552824</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.480310</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.788081</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.886506</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.158388</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.263106</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.722937</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.942612</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.383462</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.835568</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.371852</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.054314</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.410700</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.547225</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.686826</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.904469</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.524506</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.521440</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.377617</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.164561</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.201039</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.571393</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.446819</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.828393</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.143347</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.719045</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.565321</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.237902</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.138528</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.043587</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.730611</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.432142</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.502665</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.578951</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.397546</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.930672</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.151198</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.363619</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.083409</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.450078</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.137171</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.092505</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.455492</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.573058</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.237825</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.486967</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.036851</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.821136</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.239722</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.048061</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.025597</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.130717</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.074941</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.199306</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.058113</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.505475</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.573455</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.485720</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.293306</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-1.307850</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.558696</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.174659</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.508805</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.737557</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.483961</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.533572</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>1.159530</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.903672</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>1.178035</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.472457</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.110938</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.020089</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.796628</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.148146</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.141417</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.623128</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.312488</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.021038</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.379884</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.208589</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.113431</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.399650</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.253899</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.362225</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.103722</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.171926</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.614449</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.155761</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.122357</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.448234</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.611672</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.362814</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.187213</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.581487</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.532864</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.308371</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.431991</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.912384</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.376025</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.208905</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.649539</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.220801</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.353801</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.097418</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.031999</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.611788</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.354494</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.130820</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.445980</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.016074</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.302467</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.050303</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.188200</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.389865</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.046616</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.653472</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.052290</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.630065</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.388018</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.027877</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.438080</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.445034</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.238360</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.182640</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.023348</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.131669</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.729122</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.285561</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.294591</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.358068</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.234021</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.034493</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.282133</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>1.035111</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.965076</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.903509</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.471558</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.078324</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.092938</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.001258</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.850358</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.648864</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.124194</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.003931</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.857921</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.147758</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.751920</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.323247</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.393485</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.244269</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.487670</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.350086</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.231998</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.104536</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.506101</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.645572</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.718213</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.307541</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.188036</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.115730</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.032886</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.343321</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.522433</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>1.017902</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.976013</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.422286</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.202736</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.015175</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.022672</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.036077</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.152943</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.876135</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.237968</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.122802</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.778276</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.606364</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.621935</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.001610</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.542180</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.624347</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.704234</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.750091</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.089142</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.399897</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.842921</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.005868</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.114212</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.230123</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.680361</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.269371</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.287218</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.580000</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.135145</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.571494</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.023560</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.155882</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.172446</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.269263</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.214387</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.056708</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.540265</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.335836</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.338232</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.150512</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.062376</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.108221</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.265490</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.535777</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.390527</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.313017</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.244963</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.110323</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.290386</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.970517</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.024513</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>1.223266</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.048274</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.021768</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.203249</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.277334</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.101015</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.479227</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.780095</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.667551</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.143559</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>1.063601</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.647385</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.442010</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.380654</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.371754</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.175125</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.047337</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.272813</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.411035</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.896340</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.907279</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-1.028834</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.596290</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.541959</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.324523</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.155162</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.891503</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.517398</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.396161</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.757684</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.437260</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.790908</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>1.244624</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.538919</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.019007</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.116074</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.078428</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.614310</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.033174</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.421501</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.442976</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.464428</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.519881</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.539748</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.011987</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.301042</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.082847</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.337910</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.223405</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.370213</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.619276</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.771621</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.376052</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.194218</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.771545</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>1.019696</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.689676</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.207914</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.602635</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.906536</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.965196</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.691066</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.509557</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.048667</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.145670</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-1.178171</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.243407</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.600342</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.617498</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.118732</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.405813</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.108158</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.284491</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.602624</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.922694</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.122531</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.231432</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.738356</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.507553</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.106339</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.053723</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.637436</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.679071</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>1.315491</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.755491</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.381330</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.400650</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.010114</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.142561</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.407329</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.143202</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.208104</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.227629</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.629356</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-1.170754</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-1.245489</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-1.424537</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.772381</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.295168</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>0.202005</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.135366</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.478274</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.507533</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.147489</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.503332</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.293669</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.565530</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.308642</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.389267</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.850026</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.447985</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.393063</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.153449</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.045863</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.732918</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.597687</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.357321</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.627524</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.213489</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.466244</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.733401</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.193267</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.310122</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.408376</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-1.052861</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.623900</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.432326</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.183999</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.376699</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.479068</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.452365</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.243421</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.100982</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.907891</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.345717</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.387809</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.131190</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.033567</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-1.506276</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.498841</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.178505</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.063059</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.806469</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.683483</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.400796</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.060494</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.517591</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.655006</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>0.056456</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.480070</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.335149</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.463081</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.190150</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.673476</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.750144</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.948654</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.568036</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.006688</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.546198</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.311679</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.857501</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>1.027786</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.347982</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.246175</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.462607</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.200484</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.012464</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.540844</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.278513</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.375615</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>-0.944818</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-1.258446</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.319060</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>-0.807838</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>-0.244823</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>-0.203143</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>0.740145</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>0.987105</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+import pandas as pd
+import numpy as np
+rng = pd.date_range('2023-01-01', periods=10, freq='D')
+df = pd.DataFrame({'date': rng, 'value': np.random.randn(10)})
+df.set_index('date').rolling(window=3).mean()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>value</th>
+    </tr>
+    <tr>
+      <th>date</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-01-01</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-02</th>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2023-01-03</th>
+      <td>0.058596</td>
+    </tr>
+    <tr>
+      <th>2023-01-04</th>
+      <td>-0.582462</td>
+    </tr>
+    <tr>
+      <th>2023-01-05</th>
+      <td>-0.755552</td>
+    </tr>
+    <tr>
+      <th>2023-01-06</th>
+      <td>0.256950</td>
+    </tr>
+    <tr>
+      <th>2023-01-07</th>
+      <td>0.361268</td>
+    </tr>
+    <tr>
+      <th>2023-01-08</th>
+      <td>0.693772</td>
+    </tr>
+    <tr>
+      <th>2023-01-09</th>
+      <td>-0.866219</td>
+    </tr>
+    <tr>
+      <th>2023-01-10</th>
+      <td>-0.814639</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+---
+**Score: 200**
