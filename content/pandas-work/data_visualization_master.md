@@ -2,7 +2,7 @@
 title: Data Visualization Master
 date: 2025-06-29
 author: Your Name
-cell_count: 65
+cell_count: 67
 score: 65
 ---
 
@@ -42,6 +42,69 @@ df.head()
 ```
 
 
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Day</th>
+      <th>Sales</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Mon</td>
+      <td>200</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Tue</td>
+      <td>300</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Wed</td>
+      <td>250</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Thu</td>
+      <td>400</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Fri</td>
+      <td>450</td>
+      <td>A</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
 ```python
 # Basic line plot
 plt.plot(x, y)
@@ -49,6 +112,12 @@ plt.title("Simple Line Plot")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_4_0.png)
+    
+
 
 
 ```python
@@ -62,6 +131,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_5_0.png)
+    
+
+
+
 ```python
 # Line color and style
 plt.plot(x, y, color='green', linestyle='--', marker='o')
@@ -71,6 +146,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_6_0.png)
+    
+
+
+
 ```python
 # Line thickness
 plt.plot(x, y, linewidth=2)
@@ -78,6 +159,12 @@ plt.title("Thick Line")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_7_0.png)
+    
+
 
 
 ```python
@@ -91,6 +178,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_8_0.png)
+    
+
+
+
 ```python
 # Grid
 plt.plot(x, y)
@@ -101,6 +194,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_9_0.png)
+    
+
+
+
 ```python
 # Markers
 plt.plot(x, y, marker='^')
@@ -108,6 +207,12 @@ plt.title("Custom Markers")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_10_0.png)
+    
+
 
 
 ```python
@@ -121,6 +226,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_11_0.png)
+    
+
+
+
 ```python
 # Color
 plt.plot(x, y, color='purple')
@@ -128,6 +239,12 @@ plt.title("Purple Line")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_12_0.png)
+    
+
 
 
 ```python
@@ -146,6 +263,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_13_0.png)
+    
+
+
+
 ```python
 # Bar chart
 plt.bar(df['Day'], df['Sales'])
@@ -155,6 +278,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_14_0.png)
+    
+
+
+
 ```python
 # Horizontal bar
 plt.barh(df['Day'], df['Sales'], color='orange')
@@ -162,6 +291,12 @@ plt.title("Horizontal Bar")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_15_0.png)
+    
+
 
 
 ```python
@@ -174,6 +309,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_16_0.png)
+    
+
+
+
 ```python
 # Width
 plt.bar(df['Day'], df['Sales'], width=0.5)
@@ -183,25 +324,10 @@ plt.show()
 ```
 
 
-```python
-# Grouped bars
-labels = ['G1', 'G2', 'G3']
-a = [20, 34, 30]
-b = [25, 32, 34]
+    
+![png](/pynotes/images/data_visualization_master_17_0.png)
+    
 
-x = np.arange(len(labels))
-width = 0.35
-
-fig, ax = plt.subplots()
-ax.bar(x - width/2, a, width, label='A')
-ax.bar(x + width/2, b, width, label='B')
-ax.set_xticks(x)
-ax.set_xticklabels(labels)
-ax.legend()
-plt.title("Grouped Bar Chart")
-plt.show()
-
-```
 
 
 ```python
@@ -223,6 +349,39 @@ plt.title("Grouped Bar Chart")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_18_0.png)
+    
+
+
+
+```python
+# Grouped bars
+labels = ['G1', 'G2', 'G3']
+a = [20, 34, 30]
+b = [25, 32, 34]
+
+x = np.arange(len(labels))
+width = 0.35
+
+fig, ax = plt.subplots()
+ax.bar(x - width/2, a, width, label='A')
+ax.bar(x + width/2, b, width, label='B')
+ax.set_xticks(x)
+ax.set_xticklabels(labels)
+ax.legend()
+plt.title("Grouped Bar Chart")
+plt.show()
+
+```
+
+
+    
+![png](/pynotes/images/data_visualization_master_19_0.png)
+    
+
 
 
 ```python
@@ -237,6 +396,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_20_0.png)
+    
+
+
+
 ```python
 # Bar chart by category
 sns.barplot(x='Day', y='Sales', hue='Category', data=df)
@@ -244,6 +409,12 @@ plt.title("Bar Chart with Seaborn")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_21_0.png)
+    
+
 
 
 ```python
@@ -255,6 +426,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_22_0.png)
+    
+
+
+
 ```python
 # Bar chart with palette
 sns.barplot(x='Day', y='Sales', data=df, palette='mako')
@@ -262,6 +439,19 @@ plt.title("Palette Mako")
 plt.show()
 
 ```
+
+    C:\Users\HP\AppData\Local\Temp\ipykernel_12360\1520212098.py:2: FutureWarning: 
+    
+    Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+    
+      sns.barplot(x='Day', y='Sales', data=df, palette='mako')
+    
+
+
+    
+![png](/pynotes/images/data_visualization_master_23_1.png)
+    
+
 
 
 ```python
@@ -271,6 +461,12 @@ plt.title("Seaborn Horizontal Bar")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_24_0.png)
+    
+
 
 
 ```python
@@ -284,6 +480,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_25_0.png)
+    
+
+
+
 ```python
 # Pie with explode
 explode = (0.1, 0, 0, 0)
@@ -294,6 +496,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_26_0.png)
+    
+
+
+
 ```python
 # Pie with shadow
 plt.pie(sizes, labels=labels, shadow=True, startangle=140)
@@ -301,6 +509,12 @@ plt.title("Pie with Shadow")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_27_0.png)
+    
+
 
 
 ```python
@@ -313,6 +527,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_28_0.png)
+    
+
+
+
 ```python
 # Pie with percentages
 plt.pie(sizes, labels=labels, autopct='%1.2f%%')
@@ -320,6 +540,12 @@ plt.title("Pie Percentages")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_29_0.png)
+    
+
 
 
 ```python
@@ -330,6 +556,12 @@ plt.title("Donut Chart")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_30_0.png)
+    
+
 
 
 ```python
@@ -344,6 +576,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_31_0.png)
+    
+
+
+
 ```python
 # Pie from dataframe
 sales = df['Sales']
@@ -352,6 +590,12 @@ plt.title("Sales Distribution Pie")
 plt.show()
 
 ```
+
+
+    
+![png](/pynotes/images/data_visualization_master_32_0.png)
+    
+
 
 
 ```python
@@ -365,6 +609,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_33_0.png)
+    
+
+
+
 ```python
 # Pie chart rotated
 plt.pie(sizes, labels=labels, startangle=90)
@@ -372,6 +622,77 @@ plt.title("Rotated Pie")
 plt.show()
 
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    Cell In[35], line 2
+          1 # Pie chart rotated
+    ----> 2 plt.pie(sizes, labels=labels, startangle=90)
+          3 plt.title("Rotated Pie")
+          4 plt.show()
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\pyplot.py:3762, in pie(x, explode, labels, colors, autopct, pctdistance, shadow, labeldistance, startangle, radius, counterclock, wedgeprops, textprops, center, frame, rotatelabels, normalize, hatch, data)
+       3739 @_copy_docstring_and_deprecators(Axes.pie)
+       3740 def pie(
+       3741     x: ArrayLike,
+       (...)   3760     data=None,
+       3761 ) -> tuple[list[Wedge], list[Text]] | tuple[list[Wedge], list[Text], list[Text]]:
+    -> 3762     return gca().pie(
+       3763         x,
+       3764         explode=explode,
+       3765         labels=labels,
+       3766         colors=colors,
+       3767         autopct=autopct,
+       3768         pctdistance=pctdistance,
+       3769         shadow=shadow,
+       3770         labeldistance=labeldistance,
+       3771         startangle=startangle,
+       3772         radius=radius,
+       3773         counterclock=counterclock,
+       3774         wedgeprops=wedgeprops,
+       3775         textprops=textprops,
+       3776         center=center,
+       3777         frame=frame,
+       3778         rotatelabels=rotatelabels,
+       3779         normalize=normalize,
+       3780         hatch=hatch,
+       3781         **({"data": data} if data is not None else {}),
+       3782     )
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\__init__.py:1473, in _preprocess_data.<locals>.inner(ax, data, *args, **kwargs)
+       1470 @functools.wraps(func)
+       1471 def inner(ax, *args, data=None, **kwargs):
+       1472     if data is None:
+    -> 1473         return func(
+       1474             ax,
+       1475             *map(sanitize_sequence, args),
+       1476             **{k: sanitize_sequence(v) for k, v in kwargs.items()})
+       1478     bound = new_sig.bind(ax, *args, **kwargs)
+       1479     auto_label = (bound.arguments.get(label_namer)
+       1480                   or bound.kwargs.get(label_namer))
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_axes.py:3298, in Axes.pie(self, x, explode, labels, colors, autopct, pctdistance, shadow, labeldistance, startangle, radius, counterclock, wedgeprops, textprops, center, frame, rotatelabels, normalize, hatch)
+       3296     explode = [0] * len(x)
+       3297 if len(x) != len(labels):
+    -> 3298     raise ValueError("'label' must be of length 'x'")
+       3299 if len(x) != len(explode):
+       3300     raise ValueError("'explode' must be of length 'x'")
+    
+
+    ValueError: 'label' must be of length 'x'
+
+
+
+    
+![png](/pynotes/images/data_visualization_master_34_1.png)
+    
+
 
 
 ```python
@@ -555,6 +876,72 @@ plt.show()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    Cell In[36], line 3
+          1 # Dark theme
+          2 plt.style.use('dark_background')
+    ----> 3 plt.plot(x, y)
+          4 plt.title("Dark Theme Plot")
+          5 plt.show()
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\pyplot.py:3794, in plot(scalex, scaley, data, *args, **kwargs)
+       3786 @_copy_docstring_and_deprecators(Axes.plot)
+       3787 def plot(
+       3788     *args: float | ArrayLike | str,
+       (...)   3792     **kwargs,
+       3793 ) -> list[Line2D]:
+    -> 3794     return gca().plot(
+       3795         *args,
+       3796         scalex=scalex,
+       3797         scaley=scaley,
+       3798         **({"data": data} if data is not None else {}),
+       3799         **kwargs,
+       3800     )
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_axes.py:1779, in Axes.plot(self, scalex, scaley, data, *args, **kwargs)
+       1536 """
+       1537 Plot y versus x as lines and/or markers.
+       1538 
+       (...)   1776 (``'green'``) or hex strings (``'#008000'``).
+       1777 """
+       1778 kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)
+    -> 1779 lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+       1780 for line in lines:
+       1781     self.add_line(line)
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_base.py:296, in _process_plot_var_args.__call__(self, axes, data, *args, **kwargs)
+        294     this += args[0],
+        295     args = args[1:]
+    --> 296 yield from self._plot_args(
+        297     axes, this, kwargs, ambiguous_fmt_datakey=ambiguous_fmt_datakey)
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_base.py:486, in _process_plot_var_args._plot_args(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)
+        483     axes.yaxis.update_units(y)
+        485 if x.shape[0] != y.shape[0]:
+    --> 486     raise ValueError(f"x and y must have same first dimension, but "
+        487                      f"have shapes {x.shape} and {y.shape}")
+        488 if x.ndim > 2 or y.ndim > 2:
+        489     raise ValueError(f"x and y can be no greater than 2D, but have "
+        490                      f"shapes {x.shape} and {y.shape}")
+    
+
+    ValueError: x and y must have same first dimension, but have shapes (3,) and (5,)
+
+
+
+    
+![png](/pynotes/images/data_visualization_master_53_1.png)
+    
+
+
+
 ```python
 # Reset style
 plt.style.use('default')
@@ -586,6 +973,12 @@ plt.show()
 ```
 
 
+    
+![png](/pynotes/images/data_visualization_master_56_0.png)
+    
+
+
+
 ```python
 # Rug plot
 sns.rugplot(data, height=0.3)
@@ -595,6 +988,21 @@ plt.show()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[38], line 2
+          1 # Rug plot
+    ----> 2 sns.rugplot(data, height=0.3)
+          3 plt.title("Rug Plot")
+          4 plt.show()
+    
+
+    NameError: name 'data' is not defined
+
+
+
 ```python
 # Strip plot
 sns.stripplot(x='day', y='total_bill', data=tips)
@@ -604,6 +1012,21 @@ plt.show()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[39], line 2
+          1 # Strip plot
+    ----> 2 sns.stripplot(x='day', y='total_bill', data=tips)
+          3 plt.title("Strip Plot")
+          4 plt.show()
+    
+
+    NameError: name 'tips' is not defined
+
+
+
 ```python
 # Strip plot
 sns.stripplot(x='day', y='total_bill', data=tips)
@@ -611,6 +1034,21 @@ plt.title("Strip Plot")
 plt.show()
 
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[40], line 2
+          1 # Strip plot
+    ----> 2 sns.stripplot(x='day', y='total_bill', data=tips)
+          3 plt.title("Strip Plot")
+          4 plt.show()
+    
+
+    NameError: name 'tips' is not defined
+
 
 
 ```python
@@ -622,6 +1060,21 @@ plt.show()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[41], line 2
+          1 # Multi-hue bar plot
+    ----> 2 sns.barplot(x="day", y="tip", hue="sex", data=tips)
+          3 plt.title("Multi-Hue Bar")
+          4 plt.show()
+    
+
+    NameError: name 'tips' is not defined
+
+
+
 ```python
 # Histogram + KDE + Style
 sns.histplot(tips['total_bill'], kde=True, color='skyblue')
@@ -629,6 +1082,21 @@ plt.title("Styled Hist + KDE")
 plt.show()
 
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[42], line 2
+          1 # Histogram + KDE + Style
+    ----> 2 sns.histplot(tips['total_bill'], kde=True, color='skyblue')
+          3 plt.title("Styled Hist + KDE")
+          4 plt.show()
+    
+
+    NameError: name 'tips' is not defined
+
 
 
 ```python
@@ -639,12 +1107,102 @@ plt.show()
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[43], line 2
+          1 # Joint plot
+    ----> 2 sns.jointplot(x="total_bill", y="tip", data=tips, kind='reg')
+          3 plt.show()
+    
+
+    NameError: name 'tips' is not defined
+
+
+
 ```python
 # Set figure size
 plt.figure(figsize=(8, 4))
 plt.plot(x, y)
 plt.title("Custom Size")
 plt.show()
+
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    Cell In[44], line 3
+          1 # Set figure size
+          2 plt.figure(figsize=(8, 4))
+    ----> 3 plt.plot(x, y)
+          4 plt.title("Custom Size")
+          5 plt.show()
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\pyplot.py:3794, in plot(scalex, scaley, data, *args, **kwargs)
+       3786 @_copy_docstring_and_deprecators(Axes.plot)
+       3787 def plot(
+       3788     *args: float | ArrayLike | str,
+       (...)   3792     **kwargs,
+       3793 ) -> list[Line2D]:
+    -> 3794     return gca().plot(
+       3795         *args,
+       3796         scalex=scalex,
+       3797         scaley=scaley,
+       3798         **({"data": data} if data is not None else {}),
+       3799         **kwargs,
+       3800     )
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_axes.py:1779, in Axes.plot(self, scalex, scaley, data, *args, **kwargs)
+       1536 """
+       1537 Plot y versus x as lines and/or markers.
+       1538 
+       (...)   1776 (``'green'``) or hex strings (``'#008000'``).
+       1777 """
+       1778 kwargs = cbook.normalize_kwargs(kwargs, mlines.Line2D)
+    -> 1779 lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+       1780 for line in lines:
+       1781     self.add_line(line)
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_base.py:296, in _process_plot_var_args.__call__(self, axes, data, *args, **kwargs)
+        294     this += args[0],
+        295     args = args[1:]
+    --> 296 yield from self._plot_args(
+        297     axes, this, kwargs, ambiguous_fmt_datakey=ambiguous_fmt_datakey)
+    
+
+    File ~\AppData\Roaming\Python\Python312\site-packages\matplotlib\axes\_base.py:486, in _process_plot_var_args._plot_args(self, axes, tup, kwargs, return_kwargs, ambiguous_fmt_datakey)
+        483     axes.yaxis.update_units(y)
+        485 if x.shape[0] != y.shape[0]:
+    --> 486     raise ValueError(f"x and y must have same first dimension, but "
+        487                      f"have shapes {x.shape} and {y.shape}")
+        488 if x.ndim > 2 or y.ndim > 2:
+        489     raise ValueError(f"x and y can be no greater than 2D, but have "
+        490                      f"shapes {x.shape} and {y.shape}")
+    
+
+    ValueError: x and y must have same first dimension, but have shapes (3,) and (5,)
+
+
+
+    
+![png](/pynotes/images/data_visualization_master_63_1.png)
+    
+
+
+
+```python
+
+```
+
+
+```python
 
 ```
 
