@@ -424,24 +424,25 @@
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Cell 1 - instance methods</span>
-<span class="k">class</span> <span class="n">Sample0:</span>
-    <span class="n">def</span> <span class="n">__init__</span>(<span class="nb">self</span>, <span class="nb">value</span>):
-        <span class="nb">self</span>.<span class="nb">value</span> = <span class="nb">value</span>
-    <span class="n">def</span> <span class="n">display</span>(<span class="nb">self</span>):
-        <span class="nb">print</span>(<span class="n">f&#39;Sample0</span> <span class="n">Value:&#39;</span>, <span class="nb">self</span>.<span class="nb">value</span>)
+<span class="k">class</span><span class="w"> </span><span class="nc">Sample0</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Sample0 Value:&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
 
-<span class="n">obj0</span> = <span class="n">Sample0</span>(<span class="mi">0</span>)
-<span class="n">obj0</span>.<span class="n">display</span>()
+<span class="n">obj0</span> <span class="o">=</span> <span class="n">Sample0</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">obj0</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Sample0 Value: 0
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Cell 2 - composition</span>
-<span class="k">class</span> <span class="n">Sample1:</span>
-    <span class="n">def</span> <span class="n">__init__</span>(<span class="nb">self</span>, <span class="nb">value</span>):
-        <span class="nb">self</span>.<span class="nb">value</span> = <span class="nb">value</span>
-    <span class="n">def</span> <span class="n">display</span>(<span class="nb">self</span>):
-        <span class="nb">print</span>(<span class="n">f&#39;Sample1</span> <span class="n">Value:&#39;</span>, <span class="nb">self</span>.<span class="nb">value</span>)
-
-<span class="n">obj1</span> = <span class="n">Sample1 …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">Sample1</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Sample1 Value:&#39;</span><span class="p">,</span> <span class="bp">self …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
