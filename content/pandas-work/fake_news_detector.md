@@ -2,7 +2,7 @@
 title: Fake News Detector
 date: 2025-06-29
 author: Your Name
-cell_count: 6
+cell_count: 8
 score: 5
 ---
 
@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
+import streamlit as st
 
 ```
 
@@ -142,6 +143,47 @@ print("Prediction:", model.predict(sample_vec)[0])
 ```
 
     Prediction: real
+    
+
+
+```python
+st.title("Fake News Detector")
+user_input = st.text_area("Enter news headline:")
+
+```
+
+    2025-06-29 18:06:25.913 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.742 
+      [33m[1mWarning:[0m to view this Streamlit app on a browser, run it with the following
+      command:
+    
+        streamlit run C:\Users\HP\miniconda3\envs\py312\Lib\site-packages\ipykernel_launcher.py [ARGUMENTS]
+    2025-06-29 18:06:26.744 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.746 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.747 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.748 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.750 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.752 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.754 Session state does not function when running a script without `streamlit run`
+    2025-06-29 18:06:26.755 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.756 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.759 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    
+
+
+```python
+if st.button("Check"):
+    vec_input = vectorizer.transform([user_input])
+    prediction = model.predict(vec_input)[0]
+    st.write(f"### Prediction: `{prediction.upper()}`")
+```
+
+    2025-06-29 18:06:26.770 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.772 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.777 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.778 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.779 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+    2025-06-29 18:06:26.781 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
     
 
 
