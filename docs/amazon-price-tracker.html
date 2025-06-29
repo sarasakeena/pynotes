@@ -399,11 +399,31 @@
 </code></pre></div>
 
 <p><img alt="png" src="/pynotes/images/Amazon_Price_Tracker_5_0.png"></p>
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1">## ⭐ Product Ratings Summary</span>
+
+<span class="n">We</span> <span class="n">now</span> <span class="n">analyze</span> <span class="n">the</span> <span class="n">overall</span> <span class="n">product</span> <span class="n">rating</span> <span class="n">distribution</span><span class="o">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Rating&quot;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribution of Product Ratings&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Rating&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Number of Products&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">## 💸 Price Per Rating Point</span>
+
+<span class="n">Helps</span> <span class="n">identify</span> <span class="n">cost</span><span class="o">-</span><span class="n">effective</span> <span class="n">products</span> <span class="n">based</span> <span class="n">on</span> <span class="n">value</span><span class="o">-</span><span class="k">for</span><span class="o">-</span><span class="n">rating</span><span class="o">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Price_per_rating&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Price&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Rating&quot;</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">&quot;Price_per_rating&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p>
+<p><strong>Score: 10</strong></p>
 <p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a>
 
 </p>

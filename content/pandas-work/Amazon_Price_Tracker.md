@@ -2,8 +2,8 @@
 title: Amazon Price Tracker
 date: 2025-06-29
 author: Your Name
-cell_count: 7
-score: 5
+cell_count: 10
+score: 10
 ---
 
 ```python
@@ -392,9 +392,39 @@ plt.show()
 
 
 ```python
+## ⭐ Product Ratings Summary
+
+We now analyze the overall product rating distribution.
+
+```
+
+
+```python
+plt.figure(figsize=(8,5))
+sns.histplot(df["Rating"], bins=5, kde=True, color='skyblue')
+plt.title("Distribution of Product Ratings")
+plt.xlabel("Rating")
+plt.ylabel("Number of Products")
+plt.grid(True)
+plt.show()
+
+```
+
+
+```python
+## 💸 Price Per Rating Point
+
+Helps identify cost-effective products based on value-for-rating.
+
+```
+
+
+```python
+df["Price_per_rating"] = df["Price"] / df["Rating"]
+df.sort_values("Price_per_rating")
 
 ```
 
 
 ---
-**Score: 5**
+**Score: 10**
