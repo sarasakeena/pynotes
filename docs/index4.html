@@ -108,41 +108,64 @@
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString1&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Upper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<div class="highlight"><pre><span></span><code><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;hello world&#39;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">Original</span><span class="o">:</span><span class="w"> </span><span class="n">PythonString1</span>
-<span class="n">Upper</span><span class="o">:</span><span class="w"> </span><span class="n">PYTHONSTRING1</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString1&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Original:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Upper:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+<div class="highlight"><pre><span></span><code><span class="mf">11</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">Original</span><span class="o">:</span><span class="w"> </span><span class="n">PythonString1</span>
-<span class="n">Upper</span><span class="o">:</span><span class="w"> </span><span class="n">PYTHONSTRING1</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString2&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Lower:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+<div class="highlight"><pre><span></span><code>HELLO WORLD
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">Lower</span><span class="o">:</span><span class="w"> </span><span class="n">pythonstring2</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString4&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reversed:&quot;</span><span class="p">,</span> <span class="n">sample</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<div class="highlight"><pre><span></span><code>hello world
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">Reversed</span><span class="o">:</span><span class="w"> </span><span class="mi">4</span><span class="n">gnirtSnohtyP</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Cell 5</span>
-<span class="n">sample</span> <span class="o">=</span> <span class="s2">&quot;PythonString5&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Slice 2 …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+<div class="highlight"><pre><span></span><code>Hello world
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">title</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Hello World
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">swapcase</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>HELLO WORLD
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;world&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;o&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">rfind …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 

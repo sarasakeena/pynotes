@@ -2,775 +2,691 @@
 title: Strings
 date: 2025-06-29
 author: Your Name
-cell_count: 85
+cell_count: 87
 score: 85
 ---
 
 ```python
-sample = "PythonString1"
-print("Original:", sample)
-print("Upper:", sample.upper())
+s = 'hello world'
 ```
 
-    Original: PythonString1
-    Upper: PYTHONSTRING1
-    
-
 
 ```python
-sample = "PythonString1"
-print("Original:", sample)
-print("Upper:", sample.upper())
+print(len(s))
 ```
 
-    Original: PythonString1
-    Upper: PYTHONSTRING1
+    11
     
 
 
 ```python
-sample = "PythonString2"
-print("Lower:", sample.lower())
+print(s.upper())
 ```
 
-    Lower: pythonstring2
+    HELLO WORLD
     
 
 
 ```python
-sample = "PythonString4"
-print("Reversed:", sample[::-1])
+print(s.lower())
 ```
 
-    Reversed: 4gnirtSnohtyP
+    hello world
     
 
 
 ```python
-# Cell 5
-sample = "PythonString5"
-print("Slice 2–6:", sample[2:6])
+print(s.capitalize())
 ```
 
-    Slice 2–6: thon
+    Hello world
     
 
 
 ```python
-sample = "PythonString6"
-print("Replace 'o' with '@':", sample.replace('o', '@'))
+print(s.title())
 ```
 
-    Replace 'o' with '@': Pyth@nString6
+    Hello World
     
 
 
 ```python
-sample = "PythonString7"
-print("Count 'n':", sample.count('n'))
+print(s.swapcase())
 ```
 
-    Count 'n': 2
+    HELLO WORLD
     
 
 
 ```python
-sample = "PythonString8"
-print("Ends with 'g':", sample.endswith('g'))
+print(s.startswith('hello'))
 ```
 
-    Ends with 'g': False
+    True
     
 
 
 ```python
-sample = "PythonString9"
-print("Starts with 'P':", sample.startswith('P')
+print(s.endswith('world'))
 ```
 
-
-      Cell In[9], line 2
-        print("Starts with 'P':", sample.startswith('P')
-                                                        ^
-    SyntaxError: incomplete input
+    True
     
-
 
 
 ```python
-sample = "PythonString10"
-print("Title:", sample.title())
+print(s.find('o'))
 ```
 
-    Title: Pythonstring10
+    4
     
 
 
 ```python
-sample = "PythonString11"
-print("Swapcase:", sample.swapcase())
+print(s.rfind('o'))
 ```
 
-    Swapcase: pYTHONsTRING11
+    7
     
 
 
 ```python
-sample = "PythonString12"
-print("Center (20):", sample.center(20, "-"))
+print(s.index('e'))
 ```
 
-    Center (20): ---PythonString12---
+    1
     
 
 
 ```python
-sample = "PythonString13"
-print("Find 't':", sample.find('t'))
+print(s.replace('world', 'python'))
 ```
 
-    Find 't': 2
+    hello python
     
 
 
 ```python
-
+print(s.split())
 ```
+
+    ['hello', 'world']
+    
 
 
 ```python
-sample = "PythonString14"
-print("Zfill (20):", sample.zfill(20))
+print('-'.join(['a', 'b', 'c']))
 ```
 
-    Zfill (20): 000000PythonString14
+    a-b-c
     
 
 
 ```python
-# Cell 15
-sample = "PythonString15"
-print("Encode:", sample.encode())
+print(s.strip())
 ```
 
-    Encode: b'PythonString15'
+    hello world
     
 
 
 ```python
-sample = "PythonString16"
-print("IsUpper:", sample.isupper())
+print('  test  '.lstrip())
 ```
 
-    IsUpper: False
+    test  
     
 
 
 ```python
-sample = "PythonString16"
-print("IsUpper:", sample.isupper())
+print('  test  '.rstrip())
 ```
 
-    IsUpper: False
+      test
     
 
 
 ```python
-sample = "PythonString17"
-print("IsLower:", sample.islower())
+print(s.count('l'))
 ```
 
-    IsLower: False
+    3
     
 
 
 ```python
-sample = "PythonString20"
-print("Index of 'h':", sample.index('h'))
+print('abc123'.isalnum())
 ```
 
-    Index of 'h': 3
+    True
     
 
 
 ```python
-sample = "PythonString21"
-print("Partition:", sample.partition("n"))
+print('abc'.isalpha())
 ```
 
-    Partition: ('Pytho', 'n', 'String21')
+    True
     
 
 
 ```python
-sample = "PythonString23"
-print("Ljust (20):", sample.ljust(20, "*"))
+print('123'.isdigit())
 ```
 
-    Ljust (20): PythonString23******
+    True
     
 
 
 ```python
-sample = "PythonString22"
-print("Rjust (20):", sample.rjust(20, "*"))
+print('abc'.islower())
 ```
 
-    Rjust (20): ******PythonString22
+    True
     
 
 
 ```python
-sample = "PythonString22"
-print("Rjust (20):", sample.rjust(20, "*"))
+print('ABC'.isupper())
 ```
 
-    Rjust (20): ******PythonString22
+    True
     
 
 
 ```python
-sample = "PythonString26"
-print("Isdecimal:", sample.isdecimal())
+print('Hello'.istitle())
 ```
 
-    Isdecimal: False
+    True
     
 
 
 ```python
-sample = "PythonString27"
-print("Isidentifier:", sample.isidentifier())
+print('   '.isspace())
 ```
 
-    Isidentifier: True
+    True
     
 
 
 ```python
-sample = "PythonString28"
-print("Isidentifier:", sample.isidentifier())
+print('abc'.center(10, '-'))
 ```
 
-    Isidentifier: True
+    ---abc----
     
 
 
 ```python
-sample = "PythonString29"
-print("Expandtabs:", "Python\tString".expandtabs(4))
-
+print('abc'.ljust(10, '*'))
 ```
 
-    Expandtabs: Python  String
+    abc*******
     
 
 
 ```python
-sample = "PythonString30"
-print("Translate (remove 'o'):", sample.translate(str.maketrans("", "", "o")))
-
+print('abc'.rjust(10, '*'))
 ```
 
-    Translate (remove 'o'): PythnString30
+    *******abc
     
 
 
 ```python
-sample = "PythonString31"
-print("Replace 'P' with 'X':", sample.replace("P", "X"))
-
+print('42'.zfill(5))
 ```
 
-    Replace 'P' with 'X': XythonString31
+    00042
     
 
 
 ```python
-# Cell 32
-sample = "PythonString32"
-print("Strip:", f"   {sample}   ".strip())
+print('a	b	c'.expandtabs(4))
 ```
 
-    Strip: PythonString32
+    a   b   c
     
 
 
 ```python
-sample = "PythonString33"
-print("Rstrip:", f"   {sample}   ".rstrip())
+print(f'Length of s is {len(s)}')
 ```
 
-    Rstrip:    PythonString33
+    Length of s is 11
     
 
 
 ```python
-sample = "PythonString34"
-print("Lstrip:", f"   {sample}   ".lstrip())
+s2 = 'こんにちは'
+print(s2.encode('utf-8'))
 ```
 
-    Lstrip: PythonString34   
+    b'\xe3\x81\x93\xe3\x82\x93\xe3\x81\xab\xe3\x81\xa1\xe3\x81\xaf'
     
 
 
 ```python
-sample = "PythonString35"
-print("Casefold:", sample.casefold())
+print(list('hello'))
 ```
 
-    Casefold: pythonstring35
+    ['h', 'e', 'l', 'l', 'o']
     
 
 
 ```python
-sample = "PythonString36"
-print("Count 't':", sample.count("t"))
+print(s[1:5])
 ```
 
-    Count 't': 2
+    ello
     
 
 
 ```python
-sample = "PythonString37"
-print("Find 'S':", sample.find("S"))
+print(s[:5])
 ```
 
-    Find 'S': 6
+    hello
     
 
 
 ```python
-sample = "PythonString38"
-print("Rfind 'n':", sample.rfind("n"))
+print(s[6:])
 ```
 
-    Rfind 'n': 10
+    world
     
 
 
 ```python
-sample = "PythonString39"
-print("IsSpace:", "   ".isspace())
-
+print(s[::-1])
 ```
 
-    IsSpace: True
+    dlrow olleh
     
 
 
 ```python
-sample = "PythonString40"
-print("IsTitle:", "Python Is Cool".istitle())
-
+print('hello' * 3)
 ```
 
-    IsTitle: True
+    hellohellohello
     
 
 
 ```python
-sample = "PythonString41"
-print("Startswith 'Py':", sample.startswith("Py"))
+print('lo' in s)
 ```
 
-    Startswith 'Py': True
+    True
     
 
 
 ```python
-sample = "PythonString42"
-print("Endswith '42':", sample.endswith("42"))
-
+print('xyz' not in s)
 ```
 
-    Endswith '42': True
+    True
     
 
 
 ```python
-sample = "PythonString43"
-print("Length:", len(sample))
-
+print(any(char.isdigit() for char in s))
 ```
 
-    Length: 14
+    False
     
 
 
 ```python
-sample = "PythonString44"
-print("Multiply * 2:", sample * 2)
+print(all(char.isalpha() for char in 'abc'))
 ```
 
-    Multiply * 2: PythonString44PythonString44
+    True
     
 
 
 ```python
-sample = "PythonString45"
-print("In Operator ('on' in str):", "on" in sample)
-
+print('python3'.partition('3'))
 ```
 
-    In Operator ('on' in str): True
+    ('python', '3', '')
     
 
 
 ```python
-sample = "PythonString46"
-print("Convert to List:", list(sample))
+print('foo
+bar
+baz'.splitlines())
 ```
 
-    Convert to List: ['P', 'y', 't', 'h', 'o', 'n', 'S', 't', 'r', 'i', 'n', 'g', '4', '6']
+
+      Cell In[78], line 1
+        print('foo
+              ^
+    SyntaxError: unterminated string literal (detected at line 1)
     
 
 
+
 ```python
-sample = "PythonString46"
-print("Convert to List:", list(sample))
+print('1,2,3'.split(','))
 ```
 
-    Convert to List: ['P', 'y', 't', 'h', 'o', 'n', 'S', 't', 'r', 'i', 'n', 'g', '4', '6']
+    ['1', '2', '3']
     
 
 
 ```python
-sample = "PythonString47"
-print("Count 'i':", sample.count("i"))
+print('...hello...'.strip('.'))
 ```
 
-    Count 'i': 1
+    hello
     
 
 
 ```python
-sample = "PythonString48"
-print("Count 'g':", sample.count("g"))
+print('TestCase'.casefold())
 ```
 
-    Count 'g': 1
+    testcase
     
 
 
 ```python
-sample = "PythonString50"
-print("Count 'z':", sample.count("z"))
-
+print('ß'.lower())
 ```
 
-    Count 'z': 0
+    ß
     
 
 
 ```python
-sample = "PythonString50"
-print("Count 'z':", sample.count("z"))
-
+print('ß'.casefold())
 ```
 
-    Count 'z': 0
+    ss
     
 
 
 ```python
-sample = "PythonString51"
-print("All Upper:", sample.upper() == sample)
+print(chr(97))
 ```
 
-    All Upper: False
+    a
     
 
 
 ```python
-sample = "PythonString52"
-print("All Lower:", sample.lower() == sample)
+print(ord('a'))
 ```
 
-    All Lower: False
+    97
     
 
 
 ```python
-sample = "PythonString53"
-print("Only alphabets:", sample.isalpha())
-
+print('hello'.__contains__('ell'))
 ```
 
-    Only alphabets: False
+    True
     
 
 
 ```python
-sample = "PythonString54"
-print("Only digits:", sample.isdigit())
-
+print('python'.__getitem__(3))
 ```
 
-    Only digits: False
+    h
     
 
 
 ```python
-sample = "PythonString55"
-print("Only alnum:", sample.isalnum())
+print('hello'.__len__())
 ```
 
-    Only alnum: True
+    5
     
 
 
 ```python
-sample = "PythonString56"
-print("Replace 't' with '*':", sample.replace("t", "*"))
+print('  abc  '.strip(' '))
 ```
 
-    Replace 't' with '*': Py*honS*ring56
+    abc
     
 
 
 ```python
-sample = "PythonString57"
-print("Count of vowels:", sum(sample.count(v) for v in "aeiouAEIOU"))
+print('abcABC123'.isprintable())
 ```
 
-    Count of vowels: 2
+    True
     
 
 
 ```python
-sample = "PythonString58"
-print("ASCII sum:", sum(ord(c) for c in sample))
+print('abc
+def'.isprintable())
 ```
+
 
-    ASCII sum: 1382
+      Cell In[91], line 1
+        print('abc
+              ^
+    SyntaxError: unterminated string literal (detected at line 1)
     
 
 
+
 ```python
-sample = "PythonString59"
-print("Check 'String' in value:", "String" in sample)
+print('ABC'.rpartition('B'))
 ```
 
-    Check 'String' in value: True
+    ('A', 'B', 'C')
     
 
 
 ```python
-sample = "PythonString61"
-print("Max char:", max(sample))
+print('hello'.rindex('l'))
 ```
 
-    Max char: y
+    3
     
 
 
 ```python
-sample = "PythonString62"
-print("Min char:", min(sample))
+print('hello'.isidentifier())
 ```
 
-    Min char: 2
+    True
     
 
 
 ```python
-sample = "PythonString63"
-print("String multiplied:", sample * 3)
+print('_var'.isidentifier())
 ```
 
-    String multiplied: PythonString63PythonString63PythonString63
+    True
     
 
 
 ```python
-sample = "PythonString64"
-print("First char:", sample[0])
+print('snake_case'.replace('_', ' ').title().replace(' ', ''))
 ```
 
-    First char: P
+    SnakeCase
     
 
 
 ```python
-sample = "PythonString65"
-print("Last char:", sample[-1])
+print('abc'.encode())
 ```
 
-    Last char: 5
+    b'abc'
     
 
 
 ```python
-sample = "PythonString66"
-print("Slice last 3:", sample[-3:])
+print(b'abc'.decode())
 ```
 
-    Slice last 3: g66
+    abc
     
 
 
 ```python
-sample = "PythonString67"
-print("Slice middle:", sample[3:8])
+print('abcDEF'.translate(str.maketrans('abc', '123')))
 ```
 
-    Slice middle: honSt
+    123DEF
     
 
 
 ```python
-sample = "PythonString68"
-print("Slice even index:", sample[::2])
+print('12345'.isdigit())
 ```
 
-    Slice even index: PtoSrn6
+    True
     
 
 
 ```python
-sample = "PythonString69"
-print("Slice odd index:", sample[1::2])
+print('Ⅻ'.isnumeric())
 ```
 
-    Slice odd index: yhntig9
+    True
     
 
 
 ```python
-sample = "PythonString70"
-print("Replace 'n' with 'Z':", sample.replace('n', 'Z'))
+print('one1two2'.translate(str.maketrans('', '', '0123456789')))
 ```
 
-    Replace 'n' with 'Z': PythoZStriZg70
+    onetwo
     
 
 
 ```python
-sample = "PythonString71"
-print("Make binary of each char:", [bin(ord(c)) for c in sample])
-
-# Cell 72
+print('  Hello  '.strip().lower())
 ```
 
-    Make binary of each char: ['0b1010000', '0b1111001', '0b1110100', '0b1101000', '0b1101111', '0b1101110', '0b1010011', '0b1110100', '0b1110010', '0b1101001', '0b1101110', '0b1100111', '0b110111', '0b110001']
+    hello
     
 
 
 ```python
-ample = "PythonString72"
-print("Find index of first vowel:", next((i for i, c in enumerate(sample) if c.lower() in 'aeiou'), -1))
-
+print('12'.rjust(5, '0'))
 ```
 
-    Find index of first vowel: 4
+    00012
     
 
 
 ```python
-sample = "PythonString73"
-print("String after removing vowels:", ''.join([c for c in sample if c.lower() not in 'aeiou']))
-
+print('abc'.rjust(10))
 ```
 
-    String after removing vowels: PythnStrng73
+           abc
     
 
 
 ```python
-sample = "PythonString74"
-print("Reverse using loop:", ''.join(reversed(sample)))
+print('xyxyxy'.replace('xy', 'z', 2))
 ```
 
-    Reverse using loop: 47gnirtSnohtyP
+    zzxy
     
 
 
 ```python
-sample = "PythonString75"
-print("String repeated with newlines:\n", '\n'.join([sample] * 3))
+print('hello'.count('l', 1, 4))
 ```
 
-    String repeated with newlines:
-     PythonString75
-    PythonString75
-    PythonString75
+    2
     
 
 
 ```python
-sample = "PythonString76"
-print("Is numeric:", sample.isnumeric())
+print('abcdefghijklmno'.find('k', 5))
 ```
 
-    Is numeric: False
+    10
     
 
 
 ```python
-sample = "PythonString77"
-print("String in Title Case:", sample.title())
+print('a-b-c'.rsplit('-', 1))
 ```
 
-    String in Title Case: Pythonstring77
+    ['a-b', 'c']
     
 
 
 ```python
-sample = "PythonString78"
-print("Count of 'Py':", sample.count('Py'))
+print('a,b,c'.split(',', 2))
 ```
 
-    Count of 'Py': 1
+    ['a', 'b', 'c']
     
 
 
 ```python
-sample = "PythonString78"
-print("Count of 'Py':", sample.count('Py'))
+print('abc'.rjust(6, '.'))
 ```
 
-    Count of 'Py': 1
+    ...abc
     
 
 
 ```python
-sample = "PythonString80"
-print("Number of uppercase letters:", sum(1 for c in sample if c.isupper()))
-
+print(','.join(map(str, range(5))))
 ```
 
-    Number of uppercase letters: 2
+    0,1,2,3,4
     
 
 
 ```python
+print('abc'.__add__('123'))
+```
+
+    abc123
+    
 
 
+```python
+print('abc' < 'abd')
+```
 
+    True
+    
 
-sample = "PythonString80"
-print("Number of uppercase letters:", sum(1 for c in sample if c.isupper()))
 
+```python
+print('Abc' < 'abc')
 ```
 
-    Number of uppercase letters: 2
+    True
     
 
 
 ```python
-sample = "PythonString81"
-print("Number of lowercase letters:", sum(1 for c in sample if c.islower()))
+print('hello'.endswith(('o', 'd')))
 ```
 
-    Number of lowercase letters: 10
+    True
     
 
 
 ```python
-
+print('hello'.startswith(('he', 'le')))
 ```
+
+    True
+    
 
 
 ```python

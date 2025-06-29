@@ -52,245 +52,387 @@
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code>d = {}
+    <div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;a&#39;] = 1
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;b&#39;] = 2
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d[&#39;a&#39;])
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 1, &#39;b&#39;: 2}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;c&#39;] = 3
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;a&#39;] = 100
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>del d[&#39;b&#39;]
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>len(d)
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;b&#39;: 2, &#39;c&#39;: 3}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.get(&#39;a&#39;)
+<div class="highlight"><pre><span></span><code><span class="k">del</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.get(&#39;z&#39;, &#39;not found&#39;)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>&#39;c&#39; in d
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;c&#39;: 3}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>&#39;z&#39; in d
+<div class="highlight"><pre><span></span><code><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.keys()
+<div class="highlight"><pre><span></span><code><span class="mf">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.values()
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.items()
+<div class="highlight"><pre><span></span><code><span class="mf">100</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="nv">key</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">d</span>:<span class="w"> </span><span class="nv">print</span><span class="ss">(</span><span class="nv">key</span><span class="ss">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;not found&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">d</span>.<span class="nv">values</span><span class="ss">()</span>:<span class="w"> </span><span class="nv">print</span><span class="ss">(</span><span class="nv">value</span><span class="ss">)</span>
+<div class="highlight"><pre><span></span><code>&#39;not found&#39;
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="nv">k</span>,<span class="w"> </span><span class="nv">v</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">d</span>.<span class="nv">items</span><span class="ss">()</span>:<span class="w"> </span><span class="nv">print</span><span class="ss">(</span><span class="nv">k</span>,<span class="w"> </span><span class="nv">v</span><span class="ss">)</span>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;c&#39;</span> <span class="ow">in</span> <span class="n">d</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict1 = {&#39;x&#39;: 1, &#39;y&#39;: 2}
+<div class="highlight"><pre><span></span><code>True
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict2 = {&#39;y&#39;: 3, &#39;z&#39;: 4}
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="n">d</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict1.update(dict2)
+<div class="highlight"><pre><span></span><code>False
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(dict1)
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict3 = dict1.copy()
+<div class="highlight"><pre><span></span><code>dict_keys([&#39;a&#39;, &#39;c&#39;])
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(dict3)
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict3.clear()
+<div class="highlight"><pre><span></span><code>dict_values([100, 3])
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(dict3)
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict4 = dict(a=1, b=2)
+<div class="highlight"><pre><span></span><code>dict_items([(&#39;a&#39;, 100), (&#39;c&#39;, 3)])
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(dict4)
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dict5 = {i: i**2 for i in range(5)}
+<div class="highlight"><pre><span></span><code>a
+c
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(dict5)
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">():</span> <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>tuple_key = (1, 2)
+<div class="highlight"><pre><span></span><code><span class="mf">100</span>
+<span class="mf">3</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">[</span><span class="n">tuple_key</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;tuple as key&#39;</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code>a 100
+c 3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="o">:</span><span class="w"> </span><span class="n">print</span><span class="o">(</span><span class="n">d</span><span class="o">[</span><span class="s1">&#39;missing&#39;</span><span class="o">])</span>
-<span class="n">except</span><span class="w"> </span><span class="n">KeyError</span><span class="o">:</span><span class="w"> </span><span class="n">print</span><span class="o">(</span><span class="s1">&#39;KeyError&#39;</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>default = d.setdefault(&#39;new&#39;, 999)
+<div class="highlight"><pre><span></span><code><span class="n">dict2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="n">dict1</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">dict2</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(default)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">dict1</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.pop(&#39;new&#39;)
+<div class="highlight"><pre><span></span><code>{&#39;x&#39;: 1, &#39;y&#39;: 3, &#39;z&#39;: 4}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="n">dict3</span> <span class="o">=</span> <span class="n">dict1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.popitem()
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">dict3</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code>{&#39;x&#39;: 1, &#39;y&#39;: 3, &#39;z&#39;: 4}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">dict3</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">dict3</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">dict4</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">dict4</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 1, &#39;b&#39;: 2}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">dict5</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">dict5</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">tuple_key</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="n">tuple_key</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;tuple as key&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;c&#39;: 3, (1, 2): &#39;tuple as key&#39;}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;missing&#39;</span><span class="p">])</span>
+<span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;KeyError&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>KeyError
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">default</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s1">&#39;new&#39;</span><span class="p">,</span> <span class="mi">999</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;c&#39;: 3, (1, 2): &#39;tuple as key&#39;, &#39;new&#39;: 999}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">default</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">999</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;new&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">999</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;c&#39;: 3, (1, 2): &#39;tuple as key&#39;}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">popitem</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>((1, 2), &#39;tuple as key&#39;)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;c&#39;: 3}
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dd = defaultdict(int)
+<div class="highlight"><pre><span></span><code><span class="n">dd</span> <span class="o">=</span> <span class="n">defaultdict</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>dd[&#39;a&#39;] += 1
+<div class="highlight"><pre><span></span><code><span class="n">dd</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(dd)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>defaultdict(&lt;class &#39;int&#39;&gt;, {&#39;a&#39;: 1})
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">OrderedDict</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>od = OrderedDict()
+<div class="highlight"><pre><span></span><code><span class="n">od</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>od[&#39;a&#39;] = 1
+<div class="highlight"><pre><span></span><code><span class="n">od</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>od[&#39;b&#39;] = 2
+<div class="highlight"><pre><span></span><code><span class="n">od</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(od)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>od.move_to_end(&#39;a&#39;)
+<div class="highlight"><pre><span></span><code>OrderedDict({&#39;a&#39;: 1, &#39;b&#39;: 2})
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(od)
+<div class="highlight"><pre><span></span><code><span class="n">od</span><span class="o">.</span><span class="n">move_to_end</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>od.popitem(last=False)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(od)
+<div class="highlight"><pre><span></span><code>OrderedDict({&#39;b&#39;: 2, &#39;a&#39;: 1})
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d = dict([(&#39;x&#39;, 10), (&#39;y&#39;, 20)])
+<div class="highlight"><pre><span></span><code><span class="n">od</span><span class="o">.</span><span class="n">popitem</span><span class="p">(</span><span class="n">last</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code>(&#39;b&#39;, 2)
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>zipped = zip([&#39;a&#39;, &#39;b&#39;], [1, 2])
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">od</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d = dict(zipped)
+<div class="highlight"><pre><span></span><code>OrderedDict({&#39;a&#39;: 1})
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">([(</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">)])</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nv">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>{<span class="nv">chr</span><span class="ss">(</span><span class="mi">65</span><span class="o">+</span><span class="nv">i</span><span class="ss">)</span>:<span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">range</span><span class="ss">(</span><span class="mi">10</span><span class="ss">)</span>}
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code>{&#39;x&#39;: 10, &#39;y&#39;: 20}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nv">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>{<span class="nv">x</span>:<span class="w"> </span><span class="nv">x</span><span class="o">+</span><span class="mi">1</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">range</span><span class="ss">(</span><span class="mi">10</span><span class="ss">)</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span>}
+<div class="highlight"><pre><span></span><code><span class="n">zipped</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">([</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">zipped</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>hash(&#39;abc&#39;)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>hash(123)
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 1, &#39;b&#39;: 2}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>hash((1,2))
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="o">+</span><span class="n">i</span><span class="p">):</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d = {&#39;a&#39;: {&#39;nested&#39;: 1}}
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d[&#39;a&#39;][&#39;nested&#39;])
+<div class="highlight"><pre><span></span><code>{&#39;A&#39;: 0, &#39;B&#39;: 1, &#39;C&#39;: 2, &#39;D&#39;: 3, &#39;E&#39;: 4, &#39;F&#39;: 5, &#39;G&#39;: 6, &#39;H&#39;: 7, &#39;I&#39;: 8, &#39;J&#39;: 9}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;a&#39;][&#39;nested&#39;] += 1
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nv">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>{<span class="nv">i</span>:<span class="w"> </span><span class="nv">chr</span><span class="ss">(</span><span class="mi">65</span><span class="o">+</span><span class="nv">i</span><span class="ss">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">range</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span>}
+<div class="highlight"><pre><span></span><code>{0: 1, 2: 3, 4: 5, 6: 7, 8: 9}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">sorted</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="err">:</span><span class="w"> </span><span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">[</span><span class="n">k</span><span class="o">]</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="nb">hash</span><span class="p">(</span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nv">inverse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>{<span class="nv">v</span>:<span class="w"> </span><span class="nv">k</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">k</span>,<span class="w"> </span><span class="nv">v</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">d</span>.<span class="nv">items</span><span class="ss">()</span>}
+<div class="highlight"><pre><span></span><code>-6797330088782940123
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(inverse)
+<div class="highlight"><pre><span></span><code><span class="nb">hash</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">123</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">hash</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>-3550055125485641917
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;nested&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;nested&#39;</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">][</span><span class="s1">&#39;nested&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: {&#39;nested&#39;: 2}}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="nb">chr</span><span class="p">(</span><span class="mi">65</span><span class="o">+</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">d</span><span class="p">):</span> <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="n">A</span>
+<span class="mf">1</span><span class="w"> </span><span class="n">B</span>
+<span class="mf">2</span><span class="w"> </span><span class="n">C</span>
+<span class="mf">3</span><span class="w"> </span><span class="n">D</span>
+<span class="mf">4</span><span class="w"> </span><span class="n">E</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">inverse</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">inverse</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;A&#39;: 0, &#39;B&#39;: 1, &#39;C&#39;: 2, &#39;D&#39;: 3, &#39;E&#39;: 4}
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>json_str = json.dumps(d)
+<div class="highlight"><pre><span></span><code><span class="n">json_str</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(json_str)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">json_str</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&quot;0&quot;: &quot;A&quot;, &quot;1&quot;: &quot;B&quot;, &quot;2&quot;: &quot;C&quot;, &quot;3&quot;: &quot;D&quot;, &quot;4&quot;: &quot;E&quot;}
 </code></pre></div>
 
 <hr>

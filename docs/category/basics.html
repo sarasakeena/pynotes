@@ -1520,61 +1520,61 @@ Det: 1.9999999999999905
 </h6>
 
 
-<div class="highlight"><pre><span></span><code>d = {}
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;a&#39;] = 1
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;b&#39;] = 2
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d[&#39;a&#39;])
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 1, &#39;b&#39;: 2}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;c&#39;] = 3
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">])</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d[&#39;a&#39;] = 100
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>del d[&#39;b&#39;]
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>print(d)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>len(d)
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;b&#39;: 2, &#39;c&#39;: 3}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.get(&#39;a&#39;)
+<div class="highlight"><pre><span></span><code><span class="k">del</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.get(&#39;z&#39;, &#39;not found&#39;)
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>&#39;c&#39; in d
+<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 100, &#39;c&#39;: 3}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>&#39;z&#39; in d
+<div class="highlight"><pre><span></span><code><span class="nb">len</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.keys()
+<div class="highlight"><pre><span></span><code><span class="mf">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.values()
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>d.items()
+<div class="highlight"><pre><span></span><code><span class="mf">100</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="nv">key</span><span class="w"> </span><span class="nv">in …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;z …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
