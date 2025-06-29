@@ -1,6 +1,6 @@
 ---
 title: Ipl 2023 Batting Analysis
-date: 2025-06-29
+date: 2025-06-30
 author: Your Name
 cell_count: 8
 score: 5

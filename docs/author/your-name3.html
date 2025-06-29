@@ -48,7 +48,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/matplotlib-demo.html"><h3 class="article-title">Matplotlib Demo</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -87,7 +87,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/matplotlib-visuals.html"><h3 class="article-title">Matplotlib Visuals</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -119,7 +119,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/numpy-basics.html"><h3 class="article-title">Numpy Basics</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -157,7 +157,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/oop.html"><h3 class="article-title">Oop</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -205,7 +205,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/pandassklearn.html"><h3 class="article-title">Pandas&Sklearn</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -239,7 +239,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/python-arrays-dictionaries.html"><h3 class="article-title">Python Arrays Dictionaries</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -278,8 +278,43 @@
 
 
             <article>
+                <a href="https://sarasakeena.github.io/pynotes/python-metaclasses.html"><h3 class="article-title">Python Metaclasses</h3></a>
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Meta1</span><span class="p">(</span><span class="k">type</span><span class="p">):</span>
+<span class="w">    </span><span class="nx">def</span><span class="w"> </span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">bases</span><span class="p">,</span><span class="w"> </span><span class="nx">dct</span><span class="p">):</span>
+<span class="w">        </span><span class="nx">dct</span><span class="p">[</span><span class="err">&#39;</span><span class="nx">meta_id</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">super</span><span class="p">().</span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">bases</span><span class="p">,</span><span class="w"> </span><span class="nx">dct</span><span class="p">)</span>
+
+<span class="kd">class</span><span class="w"> </span><span class="nx">ClassWithMeta1</span><span class="p">(</span><span class="nx">metaclass</span><span class="p">=</span><span class="nx">Meta1</span><span class="p">):</span>
+<span class="w">    </span><span class="nx">def</span><span class="w"> </span><span class="nx">show_meta_id</span><span class="p">(</span><span class="kp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">meta_id</span>
+
+<span class="nx">obj1</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">ClassWithMeta1</span><span class="p">()</span>
+<span class="nx">obj1</span><span class="p">.</span><span class="nx">show_meta_id</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Meta2</span><span class="p">(</span><span class="k">type</span><span class="p">):</span>
+<span class="w">    </span><span class="nx">def</span><span class="w"> </span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">bases</span><span class="p">,</span><span class="w"> </span><span class="nx">dct</span><span class="p">):</span>
+<span class="w">        </span><span class="nx">dct</span><span class="p">[</span><span class="err">&#39;</span><span class="nx">meta_id</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">2</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">super</span><span class="p">().</span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/python-metaclasses.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://sarasakeena.github.io/pynotes/python-operators.html"><h3 class="article-title">Python Operators</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -320,7 +355,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/quiz-app.html"><h3 class="article-title">Quiz App</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -340,7 +375,7 @@
 
             <article>
                 <a href="https://sarasakeena.github.io/pynotes/regex-basics.html"><h3 class="article-title">Regex Basics</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
 
 
@@ -372,33 +407,6 @@
 
 
                 <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/regex-basics.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://sarasakeena.github.io/pynotes/resume-ranker.html"><h3 class="article-title">Resume Ranker</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">streamlit</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">st</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">st</span><span class="o">.</span><span class="n">set_page_config</span><span class="p">(</span><span class="n">page_title</span><span class="o">=</span><span class="s2">&quot;Resume Ranker&quot;</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="s2">&quot;wide&quot;</span><span class="p">)</span>
-<span class="n">st</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;📄 Resume Ranker&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mi">2025</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span><span class="w"> </span><span class="mi">18</span><span class="err">:</span><span class="mi">16</span><span class="err">:</span><span class="mf">24.949</span><span class="w"> </span><span class="n">WARNING</span><span class="w"> </span><span class="n">streamlit</span><span class="p">.</span><span class="n">runtime</span><span class="p">.</span><span class="n">scriptrunner_utils</span><span class="p">.</span><span class="nl">script_run_context</span><span class="p">:</span><span class="w"> </span><span class="n">Thread</span><span class="w"> </span><span class="s1">&#39;MainThread&#39;</span><span class="err">:</span><span class="w"> </span><span class="n">missing</span><span class="w"> </span><span class="n">ScriptRunContext</span><span class="err">!</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">warning</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">be</span><span class="w"> </span><span class="n">ignored</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">bare</span><span class="w"> </span><span class="n">mode</span><span class="p">.</span>
-<span class="mi">2025</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span><span class="w"> </span><span class="mi">18</span><span class="err">:</span><span class="mi">16</span><span class="err">:</span><span class="mf">24.952</span><span class="w"> </span><span class="n">WARNING</span><span class="w"> </span><span class="n">streamlit …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/resume-ranker.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

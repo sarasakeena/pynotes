@@ -1,6 +1,6 @@
 ---
 title: List Vs Tuple
-date: 2025-06-29
+date: 2025-06-30
 author: Your Name
 cell_count: 7
 score: 5
