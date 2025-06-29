@@ -1329,44 +1329,6 @@ Det: 1.9999999999999905
 
 
             <article>
-                <a href="https://sarasakeena.github.io/pynotes/classes-objects.html"><h3 class="article-title">Classes Objects</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Cell 1 - instance methods</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Sample0</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Sample0 Value:&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
-
-<span class="n">obj0</span> <span class="o">=</span> <span class="n">Sample0</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">obj0</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Sample0 Value: 0
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Cell 2 - composition</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Sample1</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Sample1 Value:&#39;</span><span class="p">,</span> <span class="bp">self …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/classes-objects.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
                 <a href="https://sarasakeena.github.io/pynotes/dictionary-operations.html"><h3 class="article-title">Dictionary Operations</h3></a>
 <h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
 </h6>
@@ -1546,6 +1508,79 @@ Det: 1.9999999999999905
 
 
                 <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/functions.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://sarasakeena.github.io/pynotes/hashtables.html"><h3 class="article-title">Hashtables</h3></a>
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>d = {}
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d[&#39;a&#39;] = 1
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d[&#39;b&#39;] = 2
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print(d)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print(d[&#39;a&#39;])
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d[&#39;c&#39;] = 3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d[&#39;a&#39;] = 100
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print(d)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>del d[&#39;b&#39;]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print(d)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>len(d)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d.get(&#39;a&#39;)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d.get(&#39;z&#39;, &#39;not found&#39;)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&#39;c&#39; in d
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&#39;z&#39; in d
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d.keys()
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d.values()
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>d.items()
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span><span class="w"> </span><span class="nv">key</span><span class="w"> </span><span class="nv">in …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/hashtables.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
