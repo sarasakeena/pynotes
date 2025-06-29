@@ -2,7 +2,7 @@
 title: List Vs Tuple
 date: 2025-06-29
 author: Your Name
-cell_count: 5
+cell_count: 7
 score: 5
 ---
 
@@ -45,14 +45,32 @@ tuple_test()
 print("Tuple time:", time.time() - start)
 ```
 
-    List time: 0.09406590461730957
-    Tuple time: 0.0926821231842041
+    List time: 0.1014707088470459
+    Tuple time: 0.11121249198913574
     
 
 
 ```python
 - Lists: Mutable, Slower, More flexible
 - Tuples: Immutable, Faster, Safer for fixed data
+```
+
+
+      Cell In[5], line 1
+        - Lists: Mutable, Slower, More flexible
+        ^
+    SyntaxError: illegal target for annotation
+    
+
+
+
+```python
+
+```
+
+
+```python
+
 ```
 
 
