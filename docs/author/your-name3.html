@@ -47,6 +47,39 @@
 
 
             <article>
+                <a href="https://sarasakeena.github.io/pynotes/loops-and-conditions.html"><h3 class="article-title">Loops And Conditions</h3></a>
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Square of </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Square of 1 is 1
+Square of 2 is 4
+Square of 3 is 9
+Square of 4 is 16
+Square of 5 is 25
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">n</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">n …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/loops-and-conditions.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://sarasakeena.github.io/pynotes/matplotlib-demo.html"><h3 class="article-title">Matplotlib Demo</h3></a>
 <h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
@@ -238,6 +271,52 @@
 
 
             <article>
+                <a href="https://sarasakeena.github.io/pynotes/python-advanced.html"><h3 class="article-title">Python Advanced</h3></a>
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">AbstractBase1</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">method_1_p</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Encapsulated1</span><span class="p">(</span><span class="n">AbstractBase1</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__value_1</span> <span class="o">=</span> <span class="mi">508</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">method_1_p</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__value_1</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_value_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__value_1</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">set_value_1</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__value_1</span> <span class="o">=</span> <span class="n">value</span>
+
+<span class="n">obj1</span> <span class="o">=</span> <span class="n">Encapsulated1</span><span class="p">()</span>
+<span class="n">obj1</span><span class="o">.</span><span class="n">get_value_1</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">508</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">abc</span><span class="w"> </span><span class="kn">import</span> <span class="n">ABC …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/python-advanced.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://sarasakeena.github.io/pynotes/python-arrays-dictionaries.html"><h3 class="article-title">Python Arrays Dictionaries</h3></a>
 <h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
@@ -283,23 +362,23 @@
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Meta1</span><span class="p">(</span><span class="k">type</span><span class="p">):</span>
-<span class="w">    </span><span class="nx">def</span><span class="w"> </span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">bases</span><span class="p">,</span><span class="w"> </span><span class="nx">dct</span><span class="p">):</span>
-<span class="w">        </span><span class="nx">dct</span><span class="p">[</span><span class="err">&#39;</span><span class="nx">meta_id</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">super</span><span class="p">().</span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">bases</span><span class="p">,</span><span class="w"> </span><span class="nx">dct</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Meta1</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">dct</span><span class="p">):</span>
+        <span class="n">dct</span><span class="p">[</span><span class="s1">&#39;meta_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">dct</span><span class="p">)</span>
 
-<span class="kd">class</span><span class="w"> </span><span class="nx">ClassWithMeta1</span><span class="p">(</span><span class="nx">metaclass</span><span class="p">=</span><span class="nx">Meta1</span><span class="p">):</span>
-<span class="w">    </span><span class="nx">def</span><span class="w"> </span><span class="nx">show_meta_id</span><span class="p">(</span><span class="kp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kp">self</span><span class="p">.</span><span class="nx">meta_id</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ClassWithMeta1</span><span class="p">(</span><span class="n">metaclass</span><span class="o">=</span><span class="n">Meta1</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">show_meta_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta_id</span>
 
-<span class="nx">obj1</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nx">ClassWithMeta1</span><span class="p">()</span>
-<span class="nx">obj1</span><span class="p">.</span><span class="nx">show_meta_id</span><span class="p">()</span>
+<span class="n">obj1</span> <span class="o">=</span> <span class="n">ClassWithMeta1</span><span class="p">()</span>
+<span class="n">obj1</span><span class="o">.</span><span class="n">show_meta_id</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kd">class</span><span class="w"> </span><span class="nx">Meta2</span><span class="p">(</span><span class="k">type</span><span class="p">):</span>
-<span class="w">    </span><span class="nx">def</span><span class="w"> </span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">bases</span><span class="p">,</span><span class="w"> </span><span class="nx">dct</span><span class="p">):</span>
-<span class="w">        </span><span class="nx">dct</span><span class="p">[</span><span class="err">&#39;</span><span class="nx">meta_id</span><span class="err">&#39;</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">2</span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">super</span><span class="p">().</span><span class="nx">__new__</span><span class="p">(</span><span class="nx">cls</span><span class="p">,</span><span class="w"> </span><span class="nx">name …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Meta2</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">dct</span><span class="p">):</span>
+        <span class="n">dct</span><span class="p">[</span><span class="s1">&#39;meta_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__new__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
@@ -350,69 +429,9 @@
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://sarasakeena.github.io/pynotes/quiz-app.html"><h3 class="article-title">Quiz App</h3></a>
-<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
-</h6>
-
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/quiz-app.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://sarasakeena.github.io/pynotes/regex-basics.html"><h3 class="article-title">Regex Basics</h3></a>
-<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Contact us at sara123@gmail.com or call +91-9876543210&quot;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">email</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;[a-zA-Z0-9._]+@[a-z]+\.[a-z]+&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Email:&quot;</span><span class="p">,</span> <span class="n">email</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nl">Email</span><span class="p">:</span><span class="w"> </span><span class="o">[</span><span class="n">&#39;sara123@gmail.com&#39;</span><span class="o">]</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">phone</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\+91-\d</span><span class="si">{10}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Phone:&quot;</span><span class="p">,</span> <span class="n">phone</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Phone: [&#39;+91-9876543210&#39;]
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">Regex</span> <span class="ow">is</span> <span class="n">used</span> <span class="k">for</span> <span class="n">pattern</span> <span class="n">matching</span><span class="o">.</span>
-<span class="n">Useful</span> <span class="ow">in</span> <span class="n">scraping …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/regex-basics.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 3 of 4</h6>
+<h6 class="subheader">Page 3 of 5</h6>
 
 <p>
             <a href="https://sarasakeena.github.io/pynotes/author/your-name2.html">&laquo; Prev</a>

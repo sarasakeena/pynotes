@@ -1329,6 +1329,45 @@ Det: 1.9999999999999905
 
 
             <article>
+                <a href="https://sarasakeena.github.io/pynotes/data-abstraction-operator-overloading.html"><h3 class="article-title">Data Abstraction Operator Overloading</h3></a>
+<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 1 - Data Abstraction Example</span>
+<span class="k">class</span> <span class="n">Example1:</span>
+    <span class="n">def</span> <span class="n">__init__</span>(<span class="nb">self</span>, <span class="nb">value</span>):
+        <span class="nb">self</span>.<span class="n">__value</span> = <span class="nb">value</span>
+
+    <span class="n">def</span> <span class="nb">get_value</span>(<span class="nb">self</span>):
+        <span class="k">return</span> <span class="nb">self</span>.<span class="n">__value</span> * <span class="mi">1</span>
+
+<span class="n">obj1</span> = <span class="n">Example1</span>(<span class="mi">1</span>)
+<span class="nb">print</span>(<span class="n">obj1</span>.<span class="nb">get_value</span>())
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Cell 2 - Data Abstraction Example</span>
+<span class="k">class</span> <span class="n">Example2:</span>
+    <span class="n">def</span> <span class="n">__init__</span>(<span class="nb">self</span>, <span class="nb">value</span>):
+        <span class="nb">self</span>.<span class="n">__value</span> = <span class="nb">value</span>
+
+    <span class="n">def</span> <span class="nb">get_value</span>(<span class="nb">self</span>):
+        <span class="k">return</span> <span class="nb">self</span>.<span class="n">__value</span> * <span class="mi">2</span>
+
+<span class="n">obj2</span> = <span class="n">Example2 …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/data-abstraction-operator-overloading.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://sarasakeena.github.io/pynotes/dictionary-operations.html"><h3 class="article-title">Dictionary Operations</h3></a>
 <h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
 </h6>
@@ -1581,43 +1620,6 @@ Det: 1.9999999999999905
 
 
                 <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/hashtables.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://sarasakeena.github.io/pynotes/iris-knn-classifier.html"><h3 class="article-title">Iris Knn Classifier</h3></a>
-<h6 class="subheader" title="2025-06-30T00:00:00-04:00">Mon 30 June 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.datasets</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_iris</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.neighbors</span><span class="w"> </span><span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
-<span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">model</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-</code></pre></div>
-
-<style>#sk-container-id-1 {
-  /* Definition of color …</style><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/iris-knn-classifier.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
