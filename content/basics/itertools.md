@@ -1,5 +1,5 @@
 ---
-title: Python Itertools 350 Cells
+title: Itertools
 date: 2025-06-29
 author: Your Name
 cell_count: 350
