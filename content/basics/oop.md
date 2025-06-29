@@ -2,7 +2,7 @@
 title: Oop
 date: 2025-06-29
 author: Your Name
-cell_count: 42
+cell_count: 40
 score: 40
 ---
 
@@ -19,6 +19,9 @@ print(type(p1))
 
 ```
 
+    <class '__main__.Person'>
+    
+
 
 ```python
 class Student:
@@ -34,6 +37,9 @@ s1 = Student("Sara", 20)
 print(s1.name, s1.age)
 
 ```
+
+    Sara 20
+    
 
 
 ```python
@@ -53,6 +59,9 @@ d.bark()
 
 ```
 
+    Woof! I am a Labrador
+    
+
 
 ```python
 class Book:
@@ -70,6 +79,9 @@ b = Book("Harry Potter")
 print(b)
 
 ```
+
+    Book: Harry Potter
+    
 
 
 ```python
@@ -97,6 +109,9 @@ c.speak()
 
 ```
 
+    Luna says Meow!
+    
+
 
 ```python
 class Parent:
@@ -118,6 +133,10 @@ class Child(Parent):
 c = Child()
 ```
 
+    Parent init
+    Child init
+    
+
 
 ```python
 class Account:
@@ -135,6 +154,9 @@ acc = Account(1000)
 acc.show_balance()
 
 ```
+
+    Balance: 1000
+    
 
 
 ```python
@@ -164,6 +186,9 @@ user1.show()
 
 ```
 
+    Sara has ₹5000
+    
+
 
 ```python
 user1.deposit(2000)
@@ -171,12 +196,18 @@ user1.show()
 
 ```
 
+    Sara has ₹7000
+    
+
 
 ```python
 user1.withdraw(3000)
 user1.show()
 
 ```
+
+    Sara has ₹4000
+    
 
 
 ```python
@@ -192,6 +223,9 @@ class MathOps:
 print(MathOps.add(5, 7))
 
 ```
+
+    12
+    
 
 
 ```python
@@ -210,6 +244,9 @@ print(Student.get_school())
 
 ```
 
+    CodeHigh
+    
+
 
 ```python
 class Calculator:
@@ -225,6 +262,9 @@ calc = Calculator()
 print(calc.add(2, 3))
 
 ```
+
+    5
+    
 
 
 ```python
@@ -266,6 +306,11 @@ b.drive()
 
 ```
 
+    Generic is driving.
+    Suzuki (car) is zooming!
+    Yamaha (bike) is vrooming!
+    
+
 
 ```python
 class Student:
@@ -289,6 +334,10 @@ print(s.get_name())
 
 ```
 
+    Sara
+    Queen Sara
+    
+
 
 ```python
 class Book:
@@ -307,27 +356,19 @@ class Library:
     def add_book(self, book):
         self.books.append(book)
 
-```
-
-
-```python
     def show_books(self):
         for book in self.books:
             status = "Available" if book.available else "Issued"
             print(f"{book.title} - {status}")
 
-```
-
-
-```python
     def issue_book(self, title):
         for book in self.books:
             if book.title == title and book.available:
                 book.available = False
-                print(f"{title} issued!")
+                print(f"{title} has been issued.")
                 return
-        print("Book not available")
-    
+        print(f"{title} is not available.")
+
 ```
 
 
@@ -346,12 +387,21 @@ lib.show_books()
 
 ```
 
+    Harry Potter - Available
+    Sherlock Holmes - Available
+    
+
 
 ```python
 lib.issue_book("Harry Potter")
 lib.show_books()
 
 ```
+
+    Harry Potter has been issued.
+    Harry Potter - Issued
+    Sherlock Holmes - Available
+    
 
 
 ```python
@@ -374,6 +424,11 @@ for emp in employees:
     print(f"{emp.name} earns ₹{emp.salary}")
 
 ```
+
+    Sara earns ₹70000
+    Ali earns ₹65000
+    Afia earns ₹72000
+    
 
 
 ```python

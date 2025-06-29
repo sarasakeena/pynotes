@@ -431,6 +431,52 @@
 
 
             <article>
+                <a href="https://sarasakeena.github.io/pynotes/dsa.html"><h3 class="article-title">Dsa</h3></a>
+<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Stack using List</span>
+<span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Pushing elements</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Stack after pushes:&quot;</span><span class="p">,</span> <span class="n">stack</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Stack after pushes: [10, 20, 30]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Popping elements</span>
+<span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Stack after pop:&quot;</span><span class="p">,</span> <span class="n">stack</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Stack after pop: [10, 20]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Peek</span>
+<span class="k">if</span> <span class="n">stack</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top element:&quot;</span><span class="p">,</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Top element …</code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/dsa.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://sarasakeena.github.io/pynotes/email-spam-detection.html"><h3 class="article-title">Email Spam Detection</h3></a>
 <h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
 </h6>
@@ -496,111 +542,37 @@
 
 
             <article>
-                <a href="https://sarasakeena.github.io/pynotes/functions.html"><h3 class="article-title">Functions</h3></a>
+                <a href="https://sarasakeena.github.io/pynotes/filehandling.html"><h3 class="article-title">Filehandling</h3></a>
 <h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, Sara!&quot;</span><span class="p">)</span>
-
-<span class="n">greet</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="c1"># Writing a file</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sara.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Sara</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Hello, Sara!
+<div class="highlight"><pre><span></span><code><span class="c1"># Reading the file</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sara.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<div class="highlight"><pre><span></span><code>Sara
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">8</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet_name</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hi </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">welcome</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Sara&quot;</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Welcome, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">intro</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
+<div class="highlight"><pre><span></span><code><span class="c1"># Writing multiple lines</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Line 1</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Line 2</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Line 3</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">]</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;lines.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="n">file</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+<span class="n">file …</span></code></pre></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/basics.html">basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/functions.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://sarasakeena.github.io/pynotes/ipl-2023-batting-analysis.html"><h3 class="article-title">Ipl 2023 Batting Analysis</h3></a>
-<h6 class="subheader" title="2025-06-29T00:00:00-04:00">Sun 29 June 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;C:\datasets\ipl_2023_batting.csv&#39;</span><span class="p">)</span>
-<span class="n">df</span>
-</code></pre></div>
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Player</th>
-      <th>Runs</th>
-      <th>Matches</th>
-      <th>Balls</th>
-      <th>Strike Rate</th>
-      <th>Average</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Shubman Gill …</td></tr></tbody></table></div><p class="subheader">Category: <a href="https://sarasakeena.github.io/pynotes/category/pandas-work.html">pandas-work</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/ipl-2023-batting-analysis.html">Read More</a>
+                <a class="button radius secondary small right" href="https://sarasakeena.github.io/pynotes/filehandling.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
