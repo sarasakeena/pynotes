@@ -16,6 +16,22 @@ print(decoded)
 ```
 
 
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[1], line 3
+          1 text = 'icjoksiay'
+          2 encoding = text.encode('utf-8')
+    ----> 3 b64 = base64.b64encode(encoding)
+          4 print(b64)
+          5 decoded = base64.b64decode(b64).decode('utf-8')
+    
+
+    NameError: name 'base64' is not defined
+
+
+
 ```python
 text = 'sfutpuqmru'
 encoding = text.encode('utf-8')
@@ -6780,6 +6796,21 @@ encoded = text.encode('utf-8')
 hash_val = hashlib.md5(encoded).hexdigest()
 print('md5 hash:', hash_val)
 ```
+
+
+    ---------------------------------------------------------------------------
+
+    NameError                                 Traceback (most recent call last)
+
+    Cell In[2], line 3
+          1 text = 'tnfxepciu'
+          2 encoded = text.encode('utf-8')
+    ----> 3 hash_val = hashlib.md5(encoded).hexdigest()
+          4 print('md5 hash:', hash_val)
+    
+
+    NameError: name 'hashlib' is not defined
+
 
 
 ```python
